@@ -12,14 +12,14 @@
 </div>
 <main class="main media" id="media">
 
-    <section class="tab-target-box appear  active" id="tab-1">
+    <section class="tab-target-box active" id="tab-1">
         <?php
 
         get_template_part("/components/media/content", "blog")
         ?>
 
     </section>
-    <section class="tab-target-box appear " id="tab-2">
+    <section class="tab-target-box " id="tab-2">
         <?php
 
         get_template_part("/components/media/content", "publication")

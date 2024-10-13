@@ -1,6 +1,6 @@
 .banner {
     &-wrapper {
-        @apply w-full bg-no-repeat bg-center bg-cover;
+        @apply w-full bg-no-repeat bg-center bg-cover overflow-hidden;
         height: calc(100vh - var(--header-height));
         background-image: var(--bannerUri);
     }
