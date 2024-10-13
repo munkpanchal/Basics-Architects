@@ -4,6 +4,9 @@
         @apply gap-4 grid sm:grid-cols-3 2xl:grid-cols-4;
         .media-wrap {
             @apply block relative overflow-hidden;
+            img {
+                @apply w-full h-full object-cover;
+            }
             &-content {
                 @apply absolute left-0 top-0 w-full h-full opacity-0 flex justify-center flex-col p-4 gap-4;
                 background-color: #24242425;

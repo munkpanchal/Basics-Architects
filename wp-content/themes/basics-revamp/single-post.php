@@ -10,7 +10,7 @@
     </div>
     <div class="single-blog-page-content">
         <?php
-        the_content()
+        echo get_the_content()
         ?>
     </div>
 </main>
