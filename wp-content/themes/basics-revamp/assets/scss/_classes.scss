@@ -18,10 +18,10 @@
 }
 
 .primary-heading {
-    @apply text-base sm:text-xl lg:text-3xl;
+    @apply text-xl lg:text-3xl mb-2;
 }
 .paragraph {
-    @apply text-xs sm:text-base;
+    @apply text-base;
 }
 .secondary-heading {
     @apply text-xl;

@@ -1,19 +1,21 @@
 .homepage {
     & > *:first-child {
-        @apply my-2 sm:my-4;
+        margin-block: var(--mainPadding);
     }
     & > *:not(:first-child) {
-        @apply mb-2 sm:mb-4;
+        margin-bottom: var(--mainPadding);
     }
 
     .one-by-two {
-        @apply px-2 sm:px-4 grid gap-4 grid-cols-2;
+        @apply grid max-sm:grid-cols-1 gap-4 grid-cols-2;
+        padding-inline: var(--mainPadding);
     }
     .two-by-two {
-        @apply px-2 sm:px-4 grid gap-4  grid-cols-2;
+        @apply grid max-sm:grid-cols-1 gap-4  grid-cols-2;
+        padding-inline: var(--mainPadding);
     }
     .column {
-        @apply w-full h-full flex flex-col justify-center gap-4;
+        @apply w-full h-full flex flex-col justify-center sm:gap-4;
         img {
             @apply w-full object-cover object-center;
         }
