@@ -2,7 +2,8 @@
     @apply sticky top-0  z-50;
     background-color: var(--clr-white);
     &-wrapper {
-        @apply px-2 sm:px-4 flex justify-between mx-auto items-center;
+        @apply flex justify-between mx-auto items-center;
+        padding-inline: var(--mainPadding);
         height: var(--header-height);
 
         .logo,
@@ -34,7 +35,7 @@
             }
         }
         .hamburger {
-            @apply w-[1.5rem] aspect-[4/3] flex sm:hidden flex-col justify-between items-end;
+            @apply w-[1.5rem] aspect-[4/3] flex sm:hidden flex-col justify-between items-end cursor-pointer;
 
             .line {
                 background: var(--clr-black);

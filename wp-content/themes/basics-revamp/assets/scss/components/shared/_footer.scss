@@ -4,28 +4,41 @@
     font-size: 14px;
     line-height: 20px;
     &-wrapper {
-        @apply px-2 sm:px-4 py-12 flex max-sm:flex-col justify-between gap-2 sm:gap-4;
+        @apply flex max-sm:flex-col justify-between gap-4;
+
+        padding-block: calc(2 * var(--mainPadding));
+        padding-inline: var(--mainPadding);
 
         .footer-logo {
             @apply w-[120px] mb-1;
         }
 
         .footer-left {
-            @apply flex flex-col gap-2 sm:gap-4;
+            @apply flex flex-col gap-4;
             &-content {
                 @apply flex flex-col gap-2;
                 p {
                     @apply flex gap-[10px];
+                    // opacity: 0.75;
+                    transition: opacity 400ms ease-in-out;
+                    &:hover {
+                        opacity: 0.75;
+                    }
                 }
             }
         }
         .footer-right {
-            @apply flex flex-col sm:items-end sm:justify-end gap-2 sm:gap-4;
+            @apply flex flex-col sm:items-end sm:justify-end gap-4;
 
             .social-links {
-                @apply flex gap-2 sm:gap-4;
+                @apply flex gap-4;
                 img {
                     @apply h-4;
+                    cursor: pointer;
+                    transition: opacity 400ms ease-in-out;
+                    &:hover {
+                        opacity: 0.75;
+                    }
                 }
             }
             .copyright {

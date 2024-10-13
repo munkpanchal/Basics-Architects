@@ -36,7 +36,7 @@
 
     .media-menu,
     .category-menu {
-        @apply flex justify-center;
+        @apply flex justify-center gap-4;
         .menu-link {
             @apply text-sm uppercase font-bold cursor-pointer;
             &.active {
@@ -65,10 +65,10 @@
 
 .single-blog-page {
     --gap: 1rem;
-    @include mobile {
-        --gap: 2rem;
-    }
-    @apply p-2 sm:p-4;
+    // @include mobile {
+    //     --gap: 1rem;
+    // }
+    padding: var(--mainPadding);
     &-head {
         @apply flex py-8 flex-col justify-center sm:items-center;
         gap: calc(var(--gap) / 4);
@@ -78,7 +78,15 @@
     }
     &-content {
         @apply flex flex-col;
-        gap: var(--gap);
+        .wp-block-heading {
+            @apply text-2xl font-bold;
+            margin-bottom: calc(var(--gap) * 1.5);
+        }
+        p,
+        figure {
+            margin: 0;
+            margin-bottom: var(--gap);
+        }
     }
 
     .wp-block-columns {
@@ -89,10 +97,6 @@
         }
         .wp-block-column {
             @apply flex flex-col;
-            gap: var(--gap);
-            .wp-block-heading {
-                @apply text-2xl font-bold;
-            }
             & > * {
                 @apply max-sm:order-2;
             }
