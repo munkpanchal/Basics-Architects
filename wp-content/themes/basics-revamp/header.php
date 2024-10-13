@@ -8,6 +8,7 @@
     <?php wp_head(); ?>
     <title><?php echo bloginfo('name'); ?></title>
     <meta name="description" content="<?php echo bloginfo('description'); ?>">
+    <link rel="shortcut icon" href="<?php echo get_theme_file_uri("/public/logo-ba.png") ?>" type="favicon">
 
 
 </head>
