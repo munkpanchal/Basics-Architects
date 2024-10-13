@@ -87,6 +87,9 @@
             margin: 0;
             margin-bottom: var(--gap);
         }
+        figure img {
+            @apply w-full;
+        }
     }
 
     .wp-block-columns {
