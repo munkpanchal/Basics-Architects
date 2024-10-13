@@ -1,0 +1,98 @@
+.header {
+    @apply sticky top-0  z-50;
+    background-color: var(--clr-white);
+    &-wrapper {
+        @apply px-2 sm:px-4 flex justify-between mx-auto items-center;
+        height: var(--header-height);
+
+        .logo,
+        .search {
+            width: 180px;
+        }
+
+        .search,
+        .navigation {
+            @apply max-sm:hidden;
+        }
+        .logo {
+            img {
+                @apply w-[120px];
+            }
+        }
+
+        .header-nav-links,
+        .mobile-nav-links {
+            @apply flex gap-6;
+            li {
+                @apply text-sm uppercase transition-all duration-300 font-bold;
+                color: var(--clr-gray);
+
+                &.current_page_item,
+                &:hover {
+                    color: var(--clr-black);
+                }
+            }
+        }
+        .hamburger {
+            @apply w-[1.5rem] aspect-[4/3] flex sm:hidden flex-col justify-between items-end;
+
+            .line {
+                background: var(--clr-black);
+                height: 2px;
+                border-radius: 2px;
+                transform-origin: right;
+                width: 100%;
+                transition: all 400ms ease-in-out;
+                &:nth-child(2) {
+                    width: 80%;
+                }
+                &:last-child {
+                    width: 60%;
+                }
+            }
+        }
+    }
+    &.active {
+        .hamburger {
+            .line {
+                &:first-child {
+                    transform: rotate(-45deg);
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+                &:last-child {
+                    width: 100%;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+}
+.dropdown {
+    height: calc(100vh - var(--header-height));
+    width: 100%;
+    position: fixed;
+    // top: -150vh;
+    background-color: var(--clr-white);
+    transition: all 300ms ease-in-out;
+    pointer-events: none;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    &.active {
+        opacity: 1;
+        pointer-events: all;
+        // top: var(--header-height);
+    }
+    .mobile-nav-links {
+        @apply flex flex-col gap-6 -translate-y-12;
+        li {
+            @apply text-xl text-center;
+        }
+    }
+}

@@ -1,0 +1,67 @@
+{
+    [
+        "product-code"
+    ]=> array(6) {
+        [
+            "name"
+        ]=> string(12) "Product Code"[
+            "value"
+        ]=> string(7) "TFO-007"[
+            "position"
+        ]=> int(0) [
+            "is_visible"
+        ]=> int(1) [
+            "is_variation"
+        ]=> int(0) [
+            "is_taxonomy"
+        ]=> int(0)
+    } [
+        "length"
+    ]=> array(6) {
+        [
+            "name"
+        ]=> string(6) "Length"[
+            "value"
+        ]=> string(5) "100cm"[
+            "position"
+        ]=> int(1) [
+            "is_visible"
+        ]=> int(1) [
+            "is_variation"
+        ]=> int(0) [
+            "is_taxonomy"
+        ]=> int(0)
+    } [
+        "depth"
+    ]=> array(6) {
+        [
+            "name"
+        ]=> string(5) "Depth"[
+            "value"
+        ]=> string(5) "100cm"[
+            "position"
+        ]=> int(2) [
+            "is_visible"
+        ]=> int(1) [
+            "is_variation"
+        ]=> int(0) [
+            "is_taxonomy"
+        ]=> int(0)
+    } [
+        "height"
+    ]=> array(6) {
+        [
+            "name"
+        ]=> string(6) "Height"[
+            "value"
+        ]=> string(5) "100cm"[
+            "position"
+        ]=> int(3) [
+            "is_visible"
+        ]=> int(1) [
+            "is_variation"
+        ]=> int(0) [
+            "is_taxonomy"
+        ]=> int(0)
+    }
+}

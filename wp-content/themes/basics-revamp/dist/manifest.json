@@ -1,0 +1,14 @@
+{
+  "main.css": {
+    "file": "assets/main-dd697bdb.css",
+    "src": "main.css"
+  },
+  "main.js": {
+    "css": [
+      "assets/main-dd697bdb.css"
+    ],
+    "file": "assets/main-ba188bc1.js",
+    "isEntry": true,
+    "src": "main.js"
+  }
+}

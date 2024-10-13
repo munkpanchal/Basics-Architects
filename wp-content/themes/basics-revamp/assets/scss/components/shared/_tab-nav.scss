@@ -1,0 +1,6 @@
+.tab-target-box {
+    @apply hidden;
+    &.active {
+        @apply block;
+    }
+}

@@ -1,0 +1,25 @@
+.homepage {
+    & > *:first-child {
+        @apply my-2 sm:my-4;
+    }
+    & > *:not(:first-child) {
+        @apply mb-2 sm:mb-4;
+    }
+
+    .one-by-two {
+        @apply px-2 sm:px-4 grid gap-2 sm:gap-4 grid-cols-2;
+    }
+    .two-by-two {
+        @apply px-2 sm:px-4 grid gap-2 sm:gap-4  grid-cols-2;
+    }
+    .column {
+        @apply w-full h-full flex flex-col justify-center gap-2 sm:gap-4;
+        img {
+            @apply w-full object-cover object-center;
+        }
+    }
+
+    video {
+        @apply w-full aspect-video object-cover;
+    }
+}

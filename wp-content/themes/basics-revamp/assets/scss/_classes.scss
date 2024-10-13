@@ -1,0 +1,92 @@
+#searchBar {
+    @apply px-2 py-1;
+    border-bottom: 1px solid var(--clr-black);
+    &:focus-within,
+    &:focus,
+    &:focus-visible {
+        border-bottom: 1px solid var(--clr-black);
+
+        outline: none;
+    }
+
+    &::placeholder {
+        @apply text-sm;
+    }
+}
+.anchor {
+    @apply uppercase text-sm;
+}
+
+.primary-heading {
+    @apply text-base sm:text-xl lg:text-3xl;
+}
+.paragraph {
+    @apply text-xs sm:text-base;
+}
+.secondary-heading {
+    @apply text-xl;
+}
+
+.sub-menu-wrap {
+    @apply flex justify-center gap-4 pb-4;
+    z-index: 99;
+    position: sticky;
+    background-color: white;
+    top: var(--header-height);
+
+    .media-menu,
+    .category-menu {
+        @apply flex justify-center gap-4;
+        .menu-link {
+            @apply text-sm uppercase font-bold cursor-pointer;
+            &.active {
+                color: var(--clr-black);
+            }
+        }
+    }
+}
+
+.box {
+    @apply aspect-square  appear bg-black text-white flex justify-center items-center;
+}
+
+.btn {
+    @apply py-2 px-4 w-max text-sm font-bold;
+    transition: 400ms ease-in-out;
+    &.btn-white {
+        border: 1px solid var(--clr-white);
+        color: var(--clr-white);
+        &:hover {
+            background-color: var(--clr-white);
+            color: var(--clr-black);
+        }
+    }
+}
+
+.single-blog-page {
+    @apply p-2 sm:p-4;
+    &-head {
+        @apply flex py-8 flex-col gap-2 sm:gap-4 justify-center sm:items-center;
+        h2 {
+            @apply text-4xl;
+        }
+    }
+    &-content {
+        @apply flex flex-col gap-2 sm:gap-4;
+    }
+}
+
+.wp-block-columns {
+    @apply flex gap-2 sm:gap-4 max-sm:flex-col;
+    & > * {
+        flex: 1;
+    }
+    .wp-block-column {
+        figure {
+            @apply w-full h-full;
+            img {
+                @apply w-full h-full;
+            }
+        }
+    }
+}

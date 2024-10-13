@@ -1,0 +1,36 @@
+// Typography will come here
+* {
+    font-family: var(--ff-primary);
+}
+
+body {
+    color: var(--clr-gray);
+    font-weight: var(--fw-normal);
+    &::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 2px rgba(#242424, 0.3);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--clr-black);
+        outline: 1px solid var(--clr-gray);
+        border-radius: 4px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--clr-black);
+    font-weight: var(--fw-bold);
+    span {
+        font-weight: inherit;
+        color: inherit;
+    }
+}

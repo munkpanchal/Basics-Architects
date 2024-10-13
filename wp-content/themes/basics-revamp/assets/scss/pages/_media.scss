@@ -1,0 +1,28 @@
+.media {
+    @apply p-2 sm:p-4;
+    &-section {
+        @apply gap-2 sm:gap-4 grid sm:grid-cols-3 2xl:grid-cols-4;
+        .media-wrap {
+            @apply block relative overflow-hidden;
+            &-content {
+                @apply absolute left-0 top-0 w-full h-full opacity-0 flex justify-center flex-col p-4 gap-4;
+                background-color: #24242425;
+                transition: 400ms ease-in-out;
+                backdrop-filter: blur(1px);
+                h3,
+                h5 {
+                    color: var(--clr-white);
+                }
+                h3 {
+                    @apply text-2xl;
+                }
+            }
+            &:hover {
+                @apply grayscale;
+                .media-wrap-content {
+                    @apply opacity-100;
+                }
+            }
+        }
+    }
+}

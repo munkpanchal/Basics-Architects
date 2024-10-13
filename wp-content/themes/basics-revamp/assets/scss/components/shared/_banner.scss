@@ -1,0 +1,7 @@
+.banner {
+    &-wrapper {
+        @apply w-full bg-no-repeat bg-center bg-cover;
+        height: calc(100vh - var(--header-height));
+        background-image: var(--bannerUri);
+    }
+}

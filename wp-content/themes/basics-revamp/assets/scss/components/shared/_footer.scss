@@ -1,0 +1,36 @@
+.footer {
+    background: var(--clr-black);
+    color: var(--clr-white);
+    font-size: 14px;
+    line-height: 20px;
+    &-wrapper {
+        @apply px-2 sm:px-4 py-12 flex max-sm:flex-col justify-between gap-2 sm:gap-4;
+
+        .footer-logo {
+            @apply w-[120px] mb-1;
+        }
+
+        .footer-left {
+            @apply flex flex-col gap-2 sm:gap-4;
+            &-content {
+                @apply flex flex-col gap-2;
+                p {
+                    @apply flex gap-[10px];
+                }
+            }
+        }
+        .footer-right {
+            @apply flex flex-col sm:items-end sm:justify-end gap-2 sm:gap-4;
+
+            .social-links {
+                @apply flex gap-2 sm:gap-4;
+                img {
+                    @apply h-4;
+                }
+            }
+            .copyright {
+                @apply sm:text-right;
+            }
+        }
+    }
+}
