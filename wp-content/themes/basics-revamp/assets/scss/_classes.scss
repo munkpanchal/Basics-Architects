@@ -28,7 +28,7 @@
 }
 
 .sub-menu-wrap {
-    @apply flex justify-center gap-4 pb-4;
+    @apply flex justify-center  pb-4;
     z-index: 99;
     position: sticky;
     background-color: white;
@@ -36,7 +36,7 @@
 
     .media-menu,
     .category-menu {
-        @apply flex justify-center gap-4;
+        @apply flex justify-center;
         .menu-link {
             @apply text-sm uppercase font-bold cursor-pointer;
             &.active {
@@ -64,28 +64,43 @@
 }
 
 .single-blog-page {
+    --gap: 1rem;
+    @include mobile {
+        --gap: 2rem;
+    }
     @apply p-2 sm:p-4;
     &-head {
-        @apply flex py-8 flex-col gap-2 sm:gap-4 justify-center sm:items-center;
+        @apply flex py-8 flex-col justify-center sm:items-center;
+        gap: calc(var(--gap) / 4);
         h2 {
             @apply text-4xl;
         }
     }
     &-content {
-        @apply flex flex-col gap-2 sm:gap-4;
+        @apply flex flex-col;
+        gap: var(--gap);
     }
-}
 
-.wp-block-columns {
-    @apply flex gap-2 sm:gap-4 max-sm:flex-col;
-    & > * {
-        flex: 1;
-    }
-    .wp-block-column {
-        figure {
-            @apply w-full h-full;
-            img {
-                @apply w-full h-full;
+    .wp-block-columns {
+        @apply flex max-sm:flex-col;
+        gap: var(--gap);
+        & > * {
+            flex: 1;
+        }
+        .wp-block-column {
+            @apply flex flex-col;
+            gap: var(--gap);
+            .wp-block-heading {
+                @apply text-2xl font-bold;
+            }
+            & > * {
+                @apply max-sm:order-2;
+            }
+            figure {
+                @apply w-full h-full max-sm:order-1;
+                img {
+                    @apply w-full h-full;
+                }
             }
         }
     }
