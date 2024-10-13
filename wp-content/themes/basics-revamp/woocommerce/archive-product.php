@@ -25,14 +25,14 @@ $categories = get_categories(array(
 
 <div class="sub-menu-wrap">
     <div class="category-menu">
-        <span class="menu-link active" data-tab-nav data-tab-target="all">
+        <span class="menu-link active" data-tab-nav-project data-tab-target="all">
             all
         </span>
         <?php
         foreach ($categories as $category) {
 
         ?>
-        <span class="menu-link" data-tab-nav data-tab-target="<?php echo $category->slug; ?>">
+        <span class="menu-link" data-tab-nav-project data-tab-target="<?php echo $category->slug; ?>">
             <?php
                 echo $category->name;
                 ?>
@@ -49,73 +49,51 @@ $categories = get_categories(array(
 ?>
 
 <main class="main projects" id="projects">
-    <?php
-    // foreach ($products as $product) {
-    //     # code...
 
-    //     // Get the product ID
-    //     $product_id = $product->get_id();
-
-    //     // Get the product categories
-    //     $product_categories = get_the_terms($product_id, 'product_cat');
-
-    //     // Print product name and categories
-    //     echo $product->get_name() . '<br>';
-    //     foreach ($product_categories as $category) {
-    //         echo ' - ' . $category->name . '<br>';
-    //     }
-    // }
-    ?>
 
     <?php
-    $rowCount = floor(20 / 3) + 1;
+
+    $totalProducts = wp_count_posts('product');
+    $totalProducts = $totalProducts->publish;
+    $totalProducts = 5 * $totalProducts;
+
+
     ?>
-    <div class="container">
+    <div class="projects-wrapper">
 
-        <div class="projects-wrapper" style="--rowCount:<?php echo $rowCount; ?>">
-            <?php
-
-            $row = 2;
-            ?>
-
-            <div class="project-row project-row-1">
-                <?php
+        <?php
 
 
-                for ($i = 1; $i < 20; $i++) {
-                    # code...
+        foreach ($products as $product) {
 
-                    if ($i == 2 || $i == 6) {
+            $product_id = $product->get_id();
+            $product_categories = get_the_terms($product_id, 'product_cat');
+            $catName = $product_categories[0]->slug;
 
 
-                ?>
-                <div class="project appear <?php echo "project-" . floor(($i - 1) % 3) + 1 ?>">
-                    <h3>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quaerat animi, ipsum culpa
-                        blanditiis voluptatibus impedit enim minima quisquam tempore ad! Dignissimos magni voluptatum
-                        earum
-                        nesciunt ut cum similique voluptate?
-                    </h3>
-                </div>
+            $thumbnail_url = get_the_post_thumbnail_url($product_id, 'full');
 
-                <?php
-                    } else {
+            // var_dump($product);
 
-                    ?>
 
-                <div class="project appear <?php echo "project-" . floor(($i - 1) % 3) + 1 ?>">
-                    <img src=" <?php echo get_theme_file_uri("/public/banner.jpg") ?>" alt="">
-                </div>
-                <?php
-                    }
+        ?>
+        <div data-aos="zoom-in" data-cat="<?php echo $catName; ?>" class="project active ">
+            <img src=" <?php echo $thumbnail_url ?>" alt="">
+            <div class="project-content">
+                <h3><?php echo $product->name; ?></h3>
 
-                    if ($i % 3 == 0) {
-                        echo "</div><div class='project-row project-row-" . $row . "'>";
-                        $row < 2 ? $row++ : $row = 1;
-                    }
-                }
-                ?>
+
+                <p class="para ">
+                    <?php echo wp_trim_words($product->description, 20) ?>...
+                </p>
+                <a class="btn btn-white" target="_blank" href="<?php the_permalink() ?>">Read More</a>
             </div>
         </div>
+        <?php
+
+        }
+        ?>
+    </div>
+
 </main>
 <?php get_footer() ?>
