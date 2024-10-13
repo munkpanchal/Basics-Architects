@@ -1,5 +1,5 @@
 <?php
-$bannerUri = get_theme_file_uri("/public/banner.jpg");
+$bannerUri = get_theme_file_uri("/public/banner.webp");
 ?>
 <section class="banner">
     <div class="banner-wrapper" style="--bannerUri:url(<?php echo $bannerUri ?>)">
