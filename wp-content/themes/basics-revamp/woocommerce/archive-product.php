@@ -49,51 +49,54 @@ $categories = get_categories(array(
 ?>
 
 <main class="main projects" id="projects">
-
-
-    <?php
-
-    $totalProducts = wp_count_posts('product');
-    $totalProducts = $totalProducts->publish;
-    $totalProducts = 5 * $totalProducts;
-
-
-    ?>
-    <div class="projects-wrapper">
+    <div class="container">
 
         <?php
 
-
-        foreach ($products as $product) {
-
-            $product_id = $product->get_id();
-            $product_categories = get_the_terms($product_id, 'product_cat');
-            $catName = $product_categories[0]->slug;
-
-
-            $thumbnail_url = get_the_post_thumbnail_url($product_id, 'full');
-
-            // var_dump($product);
+        $totalProducts = wp_count_posts('product');
+        $totalProducts = $totalProducts->publish;
+        $totalProducts = 5 * $totalProducts;
 
 
         ?>
-            <div data-aos="zoom-in" data-cat="<?php echo $catName; ?>" class="project active ">
-                <img src=" <?php echo $thumbnail_url ?>" alt="">
-                <div class="project-content">
-                    <h3><?php echo $product->name; ?></h3>
+        <section class="projects-wrapper">
+
+            <?php
 
 
-                    <p class="para ">
-                        <?php echo wp_trim_words($product->description, 20) ?>...
-                    </p>
-                    <a class="btn btn-white" target="_blank" href="<?php the_permalink($product_id) ?>">Read More</a>
+            foreach ($products as $product) {
+
+                $product_id = $product->get_id();
+                $product_categories = get_the_terms($product_id, 'product_cat');
+                $catName = $product_categories[0]->slug;
+
+
+                $thumbnail_url = get_the_post_thumbnail_url($product_id, 'full');
+
+                // var_dump($product);
+
+
+            ?>
+                <div data-aos="zoom-in" data-cat="<?php echo $catName; ?>" class="project active ">
+                    <img src=" <?php echo $thumbnail_url ?>" alt="">
+                    <div class="project-content">
+                        <h3><?php echo $product->name; ?></h3>
+
+
+                        <p class="para ">
+                            <?php echo wp_trim_words($product->description, 20) ?>...
+                        </p>
+                        <a class="btn btn-white" target="_blank" href="<?php the_permalink($product_id) ?>">Read More</a>
+                    </div>
                 </div>
-            </div>
-        <?php
+            <?php
 
-        }
-        ?>
+            }
+            ?>
+        </section>
+
     </div>
+
 
 </main>
 <?php get_footer() ?>

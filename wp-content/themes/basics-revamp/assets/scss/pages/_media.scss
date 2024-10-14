@@ -1,5 +1,5 @@
 .media {
-    padding: var(--mainPadding);
+    padding-block: var(--mainPadding);
     &-section {
         @apply gap-4 grid sm:grid-cols-3 2xl:grid-cols-4;
         .media-wrap {

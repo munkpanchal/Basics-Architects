@@ -30,15 +30,15 @@ module.exports = {
                 center: true,
                 // padding: { DEFAULT: "1rem", sm: "2rem", lg: "4rem", xl: "5rem", "2xl": "6rem" },
                 padding: {
-                    DEFAULT: "20px",
+                    DEFAULT: "1rem",
                 },
                 screens: {
                     sm: "100%",
                     md: "100%",
-                    lg: "1024px",
-                    xl: "1200px",
+                    // lg: "1024px",
+                    // xl: "1200px",
 
-                    // "3xl": "1368px",
+                    "3xl": "1368px",
                     // largeScreen: "1536px",
                 },
             },

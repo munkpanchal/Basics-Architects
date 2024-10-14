@@ -42,75 +42,79 @@ get_template_part("/components/shared/content", "banner");
 ?>
 <main class="single-project">
 
-    <?php
-    // foreach ($products as $product) {
-    //     # code...
+    <div class="container">
 
-    //     // Get the product ID
-    //     $product_id = $product->get_id();
-
-    //     // Get the product categories
-    //     $product_categories = get_the_terms($product_id, 'product_cat');
-
-    //     // Print product name and categories
-    //     echo $product->get_name() . '<br>';
-    //     foreach ($product_categories as $category) {
-    //         echo ' - ' . $category->name . '<br>';
-    //     }
-    // }
-    ?>
-
-
-    <div class="single-project-head">
-        <h2 class="project-title">
-            lorem ipsum dolor sit amet
-        </h2>
-
-        <div class="project-details">
-            <p><strong>Location : </strong>Bengaluru</p>
-            <p><strong>Area : </strong>100sq ft</p>
-        </div>
-
-        <div class="project-content">
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam fugiat quo iure necessitatibus eos,
-                atque, commodi facilis nemo repellendus cupiditate eaque odio reprehenderit, delectus esse optio
-                consequatur aperiam ratione voluptas voluptatum et repellat excepturi incidunt ipsam animi? Debitis
-                aperiam sed nesciunt esse dolores accusantium non, saepe amet culpa ab hic.
-            </p>
-        </div>
-
-    </div>
-    <div class="single-project-wrapper">
         <?php
+        // foreach ($products as $product) {
+        //     # code...
 
-        $row = 2;
+        //     // Get the product ID
+        //     $product_id = $product->get_id();
+
+        //     // Get the product categories
+        //     $product_categories = get_the_terms($product_id, 'product_cat');
+
+        //     // Print product name and categories
+        //     echo $product->get_name() . '<br>';
+        //     foreach ($product_categories as $category) {
+        //         echo ' - ' . $category->name . '<br>';
+        //     }
+        // }
         ?>
 
-        <div class="project-row project-row-1">
-            <?php
 
-            for ($i = 1; $i < 20; $i++) {
-                # code...
-            ?>
+        <div class="single-project-head">
+            <h2 class="project-title">
+                lorem ipsum dolor sit amet
+            </h2>
 
-                <div class="project <?php echo "project-" . floor(($i - 1) % 3) + 1 ?>">
-                    <img src=" <?php echo get_theme_file_uri("/public/banner.jpg") ?>" alt="">
-                </div>
-            <?php
-                if ($i == 4) {
-                    $i++;
-                    $i++;
-                }
+            <div class="project-details">
+                <p><strong>Location : </strong>Bengaluru</p>
+                <p><strong>Area : </strong>100sq ft</p>
+            </div>
 
-                if ($i % 3 == 0) {
-                    echo "</div><div class='project-row project-row-" . $row . "'>";
-                    $row < 3 ? $row++ : $row = 1;
-                }
-            }
+            <div class="project-content">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam fugiat quo iure necessitatibus
+                    eos,
+                    atque, commodi facilis nemo repellendus cupiditate eaque odio reprehenderit, delectus esse optio
+                    consequatur aperiam ratione voluptas voluptatum et repellat excepturi incidunt ipsam animi? Debitis
+                    aperiam sed nesciunt esse dolores accusantium non, saepe amet culpa ab hic.
+                </p>
+            </div>
 
-            ?>
         </div>
+        <div class="single-project-wrapper">
+            <?php
 
+            $row = 2;
+            ?>
+
+            <div class="project-row project-row-1">
+                <?php
+
+                for ($i = 1; $i < 20; $i++) {
+                    # code...
+                ?>
+
+                    <div class="project <?php echo "project-" . floor(($i - 1) % 3) + 1 ?>">
+                        <img src=" <?php echo get_theme_file_uri("/public/banner.jpg") ?>" alt="">
+                    </div>
+                <?php
+                    if ($i == 4) {
+                        $i++;
+                        $i++;
+                    }
+
+                    if ($i % 3 == 0) {
+                        echo "</div><div class='project-row project-row-" . $row . "'>";
+                        $row < 3 ? $row++ : $row = 1;
+                    }
+                }
+
+                ?>
+            </div>
+
+        </div>
 </main>
 <?php get_footer() ?>
