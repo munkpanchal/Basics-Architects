@@ -1,2 +1,11 @@
 // Pages will come here
 @import "homepage", "media", "./category-page", "single-project";
+.search-page {
+    @apply min-h-[60vh];
+    & > *:first-child {
+        margin-block: var(--mainPadding);
+    }
+    & > *:not(:first-child) {
+        margin-bottom: var(--mainPadding);
+    }
+}

@@ -30,8 +30,8 @@ get_template_part("/components/shared/content", "banner");
                 </a>
                 <a class="column" href="/">
                     <?php
-                $videoUri = get_theme_file_uri("/public/test.mp4")
-                ?>
+                    $videoUri = get_theme_file_uri("/public/test.mp4")
+                    ?>
                     <video src="<?php echo $videoUri; ?>" autoplay muted playsinline loop controls></video>
                 </a>
             </div>
