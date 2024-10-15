@@ -97,9 +97,9 @@ get_template_part("/components/shared/content", "banner");
                     # code...
                 ?>
 
-                    <div class="project <?php echo "project-" . floor(($i - 1) % 3) + 1 ?>">
-                        <img src=" <?php echo get_theme_file_uri("/public/banner.jpg") ?>" alt="">
-                    </div>
+                <div class="project <?php echo "project-" . floor(($i - 1) % 3) + 1 ?>">
+                    <img src=" <?php echo get_theme_file_uri("/public/banner.jpg") ?>" alt="">
+                </div>
                 <?php
                     if ($i == 4) {
                         $i++;
