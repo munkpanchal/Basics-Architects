@@ -43,9 +43,6 @@
                 grid-template-rows: repeat(2, 1fr);
                 aspect-ratio: 3/4;
             }
-            .project {
-                @apply h-full;
-            }
 
             img {
                 @apply w-full h-full object-cover;
@@ -59,6 +56,9 @@
                 }
             }
             &.project-row-2 {
+                &:first-child {
+                    grid-template-rows: repeat(3, 1fr);
+                }
                 .project {
                     &:first-child {
                         grid-column: 1 /3;

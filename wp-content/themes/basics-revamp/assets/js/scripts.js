@@ -1,4 +1,5 @@
 import "./custom-aos.js";
+import "./custom-lightbox.js";
 
 import "./header";
 import "./tab-nav.js";

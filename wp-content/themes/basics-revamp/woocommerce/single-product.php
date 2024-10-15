@@ -95,11 +95,14 @@ get_template_part("/components/shared/content", "banner");
 
                 for ($i = 1; $i < 20; $i++) {
                     # code...
+                    $image_url =  get_theme_file_uri("/public/banner.jpg");
                 ?>
 
-                <div class="project <?php echo "project-" . floor(($i - 1) % 3) + 1 ?>">
-                    <img src=" <?php echo get_theme_file_uri("/public/banner.jpg") ?>" alt="">
-                </div>
+                <a href="<?php echo $image_url; ?>" data-fancybox="gallery" data-caption="title"
+                    class="project <?php echo "project-" . floor(($i - 1) % 3) + 1 ?>">
+                    <img src=" <?php echo $image_url; ?>" alt="">
+
+                </a>
                 <?php
                     if ($i == 4) {
                         $i++;
