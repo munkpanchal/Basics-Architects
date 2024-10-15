@@ -69,7 +69,7 @@ get_template_part("/components/shared/content", "banner");
             </h2>
 
             <div class="project-details">
-                <p><strong>Location : </strong>Bengaluru</p>
+                <p><strong>Location : </strong>Bengaluru 01</p>
                 <p><strong>Area : </strong>100sq ft</p>
             </div>
 
