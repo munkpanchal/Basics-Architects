@@ -55,9 +55,12 @@
             "items_wrap" => '<ul class="mobile-nav-links">%3$s</ul>'
         ))
         ?>
-        <!-- <div class="jsearch">
+
+        <!-- 
+        <div class="jsearch">
             <?php
             // get_search_form();
             ?>
         </div> -->
+
     </div>
