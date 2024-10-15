@@ -40,7 +40,11 @@
             grid-template-rows: repeat(2, var(--rowSize));
             @include mobile {
                 width: 100%;
-                aspect-ratio: 9/10;
+                grid-template-rows: repeat(2, 1fr);
+                aspect-ratio: 3/4;
+            }
+            .project {
+                @apply h-full;
             }
 
             img {
