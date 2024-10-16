@@ -24,6 +24,9 @@
     .wp-block-columns {
         @apply flex max-sm:flex-col;
         gap: var(--gap);
+        @include mobile {
+            gap: 0;
+        }
         & > * {
             flex: 1;
         }
