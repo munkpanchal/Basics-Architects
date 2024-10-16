@@ -18,12 +18,24 @@
                 h3,
                 h5 {
                     color: var(--clr-white);
+                    opacity: 0.5;
+                    transform: translateY(2rem);
+                    transition: all 400ms ease-in-out;
                 }
                 h3 {
                     @apply text-2xl sm:text-3xl lg:text-4xl 2xl:text-6xl;
                 }
                 .para {
                     @apply text-white text-lg;
+                    transform: translateY(2rem);
+                    transition: all 400ms ease-in-out;
+                    opacity: 0.5;
+                    transition-delay: 100ms;
+                }
+                .btn {
+                    opacity: 0.5;
+                    transform: translateY(2rem);
+                    transition-delay: 200ms;
                 }
             }
             &:hover {
@@ -32,6 +44,28 @@
                 }
                 .project-content {
                     opacity: 1;
+                    h3,
+                    .para,
+                    .btn {
+                        opacity: 1;
+                        transform: translateY(0rem);
+                    }
+                }
+            }
+            &.in-view {
+                @include mobile {
+                    img {
+                        @apply grayscale;
+                    }
+                    .project-content {
+                        opacity: 1;
+                        h3,
+                        .para,
+                        .btn {
+                            opacity: 1;
+                            transform: translateY(0rem);
+                        }
+                    }
                 }
             }
 

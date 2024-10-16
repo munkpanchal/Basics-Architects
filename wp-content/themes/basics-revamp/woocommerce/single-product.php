@@ -18,8 +18,8 @@ $category = $product_categories[0]->name;
 
 // $product_attributes = get_post_meta($product_id, '_product_attributes', true);
 
-// // Get the product gallery attachment IDs
-// $attachment_ids = $product_id ? wc_get_product($product_id)->get_gallery_image_ids() : array();
+// Get the product gallery attachment IDs
+$attachment_ids = $product_id ? wc_get_product($product_id)->get_gallery_image_ids() : array();
 
 
 ?>
@@ -93,16 +93,22 @@ get_template_part("/components/shared/content", "banner");
             <div class="project-row project-row-1">
                 <?php
 
-                for ($i = 1; $i < 20; $i++) {
+
+                $i = 1;
+                // for ($i = 1; $i < 3; $i++) {
+
+                foreach ($attachment_ids as $attachment_id) {
+
                     # code...
-                    $image_url =  get_theme_file_uri("/public/banner.jpg");
+                    // $image_url =  get_theme_file_uri("/public/banner.jpg");
+                    $image_url = wp_get_attachment_url($attachment_id)
                 ?>
 
-                <a href="<?php echo $image_url; ?>" data-fancybox="gallery" data-caption="title"
-                    class="project <?php echo "project-" . floor(($i - 1) % 3) + 1 ?>">
-                    <img src=" <?php echo $image_url; ?>" alt="">
+                    <a href="<?php echo $image_url; ?>" data-fancybox="gallery" data-caption="title"
+                        class="project <?php echo "project-" . floor(($i - 1) % 3) + 1 ?>">
+                        <img src=" <?php echo $image_url; ?>" alt="">
 
-                </a>
+                    </a>
                 <?php
                     if ($i == 4) {
                         $i++;
@@ -113,6 +119,7 @@ get_template_part("/components/shared/content", "banner");
                         echo "</div><div class='project-row project-row-" . $row . "'>";
                         $row < 3 ? $row++ : $row = 1;
                     }
+                    $i++;
                 }
 
                 ?>

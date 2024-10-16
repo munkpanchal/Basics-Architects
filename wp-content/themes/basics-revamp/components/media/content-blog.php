@@ -11,9 +11,6 @@ $custom_posts = get_posts($args);
         <div class="media-section">
             <?php
             foreach ($custom_posts as $post) {
-                // Access post properties here
-                // echo $post->post_title;
-                // echo $post->post_content;
 
                 if (get_the_post_thumbnail_url($post->ID, 'large')) {
                     $imgUrl = get_the_post_thumbnail_url($post->ID, 'large');
@@ -23,7 +20,7 @@ $custom_posts = get_posts($args);
 
             ?>
 
-                <div class="media-wrap">
+                <div class="media-wrap" data-aos="zoom-in">
                     <img src="<?php echo $imgUrl ?>" alt="<?php echo $post->post_title ?>">
                     <div class="media-wrap-content">
                         <h3><?php echo $post->post_title ?></h3>

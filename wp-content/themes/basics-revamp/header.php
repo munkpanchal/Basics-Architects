@@ -19,7 +19,7 @@
         <div class="container">
 
             <div class="header-wrapper">
-                <a href="/" class="logo">
+                <a href="/" class="logo" data-aos="zoom-in">
                     <img src="<?php echo get_theme_file_uri("/public/logo.png") ?>" alt="">
                 </a>
                 <div class="navigation">
@@ -27,11 +27,11 @@
                     echo wp_nav_menu(array(
                         "theme_location" => "header_nav",
                         "container" => false,
-                        "items_wrap" => '<ul class="header-nav-links">%3$s</ul>'
+                        "items_wrap" => '<ul class="header-nav-links"data-aos="zoom-in">%3$s</ul>'
                     ))
                     ?></div>
 
-                <div class="search">
+                <div class="search" data-aos="zoom-in">
                     <?php
                     get_search_form();
                     ?>

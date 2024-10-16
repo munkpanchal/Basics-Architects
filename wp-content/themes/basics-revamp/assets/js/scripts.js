@@ -1,5 +1,6 @@
 import "./custom-aos.js";
 import "./custom-lightbox.js";
+import "./animationTrack.js";
 
 import "./header";
 import "./tab-nav.js";
