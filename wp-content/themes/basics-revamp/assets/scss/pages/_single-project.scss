@@ -105,13 +105,7 @@
                     color: var(--clr-white);
                 }
                 h3 {
-                    @apply text-2xl max-sm:text-xl;
-                }
-                p {
-                    @apply max-sm:text-sm;
-                }
-                .btn {
-                    @apply max-sm:text-sm max-sm:px-2 max-sm:py-1;
+                    @apply text-2xl;
                 }
             }
             &:hover {
