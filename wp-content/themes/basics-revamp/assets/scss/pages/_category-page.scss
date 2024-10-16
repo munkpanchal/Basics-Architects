@@ -48,15 +48,6 @@
             display: none;
             &.active {
                 @apply block;
-                opacity: 0.5;
-                scale: 0.5;
-                animation: fadeMe 400ms ease-in-out 1 forwards;
-                @keyframes fadeMe {
-                    to {
-                        opacity: 1;
-                        scale: 1;
-                    }
-                }
             }
         }
     }
