@@ -1,8 +1,6 @@
 .single-blog-page {
     --gap: 1rem;
     &-head {
-        @apply flex py-8 flex-col justify-center sm:items-center;
-        gap: calc(var(--gap) / 4);
         h2 {
             @apply text-4xl;
         }

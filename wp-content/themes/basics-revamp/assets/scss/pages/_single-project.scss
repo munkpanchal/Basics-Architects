@@ -6,7 +6,7 @@
             @apply text-2xl sm:text-4xl uppercase sm:text-center;
         }
         .project-details {
-            @apply flex flex-col justify-center sm:items-center;
+            @apply flex flex-col gap-1 justify-center sm:items-center;
             p {
                 strong {
                     color: var(--clr-black);
