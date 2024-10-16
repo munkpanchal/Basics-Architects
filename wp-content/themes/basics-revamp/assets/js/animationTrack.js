@@ -18,7 +18,7 @@ const handleIntersection = (entries, observer) => {
 
 const observer = new IntersectionObserver(handleIntersection, {
     rootMargin: "0px", // Adjust as needed
-    threshold: 0.1, // Adjust as needed
+    threshold: 0.3, // Adjust as needed
 });
 
 projects?.forEach((element) => observer.observe(element));
