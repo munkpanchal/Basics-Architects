@@ -73,20 +73,24 @@ $categories = get_categories(array(
 
                 $thumbnail_url = get_the_post_thumbnail_url($product_id, 'full');
 
-                // var_dump($product);
 
 
             ?>
-                <div data-aos="zoom-in" data-cat="<?php echo $catName; ?>" class="project active ">
+                <div data-aos="zoom-in" data-cat="<?php echo $catName; ?>" class="project active fade-box">
                     <img src=" <?php echo $thumbnail_url ?>" alt="">
-                    <div class="project-content">
-                        <h3><?php echo $product->name; ?></h3>
-
+                    <div class="project-content fade-target">
+                        <h3>
+                            <?php echo $product->name; ?>
+                        </h3>
 
                         <p class="para ">
-                            <?php echo wp_trim_words($product->description, 20) ?>...
+                            <?php echo wp_trim_words($product->description, 20) ?>..
                         </p>
-                        <a class="btn btn-white" target="_blank" href="<?php the_permalink($product_id) ?>">Read More</a>
+
+                        <a class="btn btn-white" target="_blank" href="<?php the_permalink($product_id) ?>">
+                            Read More
+                        </a>
+
                     </div>
                 </div>
             <?php

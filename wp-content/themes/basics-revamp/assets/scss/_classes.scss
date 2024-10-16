@@ -85,3 +85,37 @@ div.asl_w .probox {
         }
     }
 }
+
+.fade-box {
+    .fade-target {
+        & > * {
+            opacity: 0.5;
+            transform: translateY(2rem);
+            transition: all 400ms ease-in-out;
+
+            @for $i from 2 through 5 {
+                &:nth-child(#{$i}) {
+                    transition-delay: $i * 50ms;
+                }
+            }
+        }
+    }
+    &:hover {
+        .fade-target {
+            & > * {
+                opacity: 1;
+                transform: translateY(0rem);
+            }
+        }
+    }
+    @include mobile {
+        &.in-view {
+            .fade-target {
+                & > * {
+                    opacity: 1;
+                    transform: translateY(0rem);
+                }
+            }
+        }
+    }
+}

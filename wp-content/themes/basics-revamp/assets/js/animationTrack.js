@@ -1,5 +1,4 @@
-const projects = document.querySelectorAll(".project");
-const mediaWraps = document.querySelectorAll(".media-wrap");
+const fadeBoxes = document.querySelectorAll(".fade-box");
 
 const handleIntersection = (entries, observer) => {
     entries.forEach((entry) => {
@@ -21,5 +20,4 @@ const observer = new IntersectionObserver(handleIntersection, {
     threshold: 0.6, // Adjust as needed
 });
 
-projects?.forEach((element) => observer.observe(element));
-mediaWraps?.forEach((element) => observer.observe(element));
+fadeBoxes?.forEach((element) => observer.observe(element));

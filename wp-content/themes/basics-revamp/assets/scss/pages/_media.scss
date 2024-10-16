@@ -16,33 +16,15 @@
                 h3,
                 h5 {
                     color: var(--clr-white);
-                    opacity: 0.5;
-                    transform: translateY(2rem);
-                    transition: all 400ms ease-in-out;
                 }
                 h3 {
                     @apply text-2xl;
-                }
-                h5 {
-                    transition-delay: 100ms;
-                }
-                .btn {
-                    transform: translateY(2rem);
-                    opacity: 0.5;
-                    transition: all 400ms ease-in-out;
-                    transition-delay: 200ms;
                 }
             }
             &:hover {
                 @apply grayscale;
                 .media-wrap-content {
                     @apply opacity-100;
-                    h3,
-                    h5,
-                    .btn {
-                        opacity: 1;
-                        transform: translateY(0rem);
-                    }
                 }
             }
             &.in-view {
@@ -50,12 +32,6 @@
                     @apply grayscale;
                     .media-wrap-content {
                         @apply opacity-100;
-                        h3,
-                        h5,
-                        .btn {
-                            opacity: 1;
-                            transform: translateY(0rem);
-                        }
                     }
                 }
             }
