@@ -128,10 +128,6 @@ div.asl_w .probox {
         p {
             strong {
                 color: var(--clr-black);
-                width: 100px;
-                @include mobile {
-                    display: inline-block;
-                }
             }
         }
     }
