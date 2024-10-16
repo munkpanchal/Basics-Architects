@@ -40,7 +40,7 @@ get_template_part("/components/shared/content", "banner");
                 <?php
                 if ($year) {
                 ?>
-                    <p data-aos="fade-up"><strong>Year : </strong><?php echo $year; ?></p>
+                <p data-aos="fade-up"><strong>Year : </strong><?php echo $year; ?></p>
                 <?php
                 }
                 ?>
@@ -48,7 +48,7 @@ get_template_part("/components/shared/content", "banner");
                 <?php
                 if ($location) {
                 ?>
-                    <p data-aos="fade-up"><strong>Location : </strong><?php echo $location; ?></p>
+                <p data-aos="fade-up"><strong>Location : </strong><?php echo $location; ?></p>
                 <?php
                 }
                 ?>
@@ -56,7 +56,7 @@ get_template_part("/components/shared/content", "banner");
                 <?php
                 if ($area) {
                 ?>
-                    <p data-aos="fade-up"><strong>Area : </strong><?php echo $area; ?></p>
+                <p data-aos="fade-up"><strong>Area : </strong><?php echo $area; ?></p>
                 <?php
                 }
                 ?>
@@ -94,11 +94,11 @@ get_template_part("/components/shared/content", "banner");
                     $image_url = wp_get_attachment_url($attachment_id)
                 ?>
 
-                    <a href="<?php echo $image_url; ?>" data-fancybox="gallery" data-caption="title"
-                        class="project <?php echo "project-" . floor(($i - 1) % 3) + 1 ?>" data-aos="fade-up">
-                        <img src=" <?php echo $image_url; ?>" alt="">
+                <a href="<?php echo $image_url; ?>" data-fancybox="gallery" data-caption="title"
+                    class="project <?php echo "project-" . floor(($i - 1) % 3) + 1 ?>" data-aos="fade-up">
+                    <img src=" <?php echo $image_url; ?>" alt="">
 
-                    </a>
+                </a>
                 <?php
                     if ($i == 4) {
                         $i++;
@@ -121,7 +121,7 @@ get_template_part("/components/shared/content", "banner");
             <h2 class="primary-heading text-center sm:pb-4" data-aos="fade-up">
                 related projects
             </h2>
-            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+            <div class="grid sm:grid-cols-3 gap-4">
                 <?php
                 for ($i = 1; $i <= 3; $i++) {
                     # code...
@@ -132,22 +132,22 @@ get_template_part("/components/shared/content", "banner");
                         $imgUrl = get_theme_file_uri("/public/default-blog.jpg");
                     }
                 ?>
-                    <div class="rp-box fade-box" data-aos="fade-up">
-                        <img src="<?php echo $imgUrl ?>" alt="<?php echo $post->post_title ?>">
-                        <div class="rp-box-content fade-target">
-                            <h3>
-                                <!-- <?php echo $post->post_title ?> -->
-                                related project <?php
+                <div class="rp-box fade-box" data-aos="fade-up">
+                    <img src="<?php echo $imgUrl ?>" alt="<?php echo $post->post_title ?>">
+                    <div class="rp-box-content fade-target">
+                        <h3>
+                            <!-- <?php echo $post->post_title ?> -->
+                            related project <?php
                                                 echo $i
                                                 ?>
-                            </h3>
-                            <p>
-                                <?php echo wp_trim_words($post->post_content, 10) ?>
-                            </p>
-                            <a class="btn btn-white" target="_blank" href="<?php the_permalink($post->ID) ?>">Read
-                                More</a>
-                        </div>
+                        </h3>
+                        <p>
+                            <?php echo wp_trim_words($post->post_content, 10) ?>
+                        </p>
+                        <a class="btn btn-white" target="_blank" href="<?php the_permalink($post->ID) ?>">Read
+                            More</a>
                     </div>
+                </div>
 
                 <?php
                 }

@@ -89,7 +89,7 @@
         width: min(100%, 900px);
         .rp-box {
             @apply block relative overflow-hidden;
-            &:not(:first-child, :nth-child(2)) {
+            &:not(:first-child) {
                 @apply max-sm:hidden;
             }
             img {
