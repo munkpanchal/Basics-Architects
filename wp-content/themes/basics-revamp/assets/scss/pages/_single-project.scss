@@ -83,4 +83,51 @@
             }
         }
     }
+
+    .related-projects {
+        margin-inline: auto;
+        width: min(100%, 900px);
+        .rp-box {
+            @apply block relative overflow-hidden;
+            &:not(:first-child, :nth-child(2)) {
+                @apply max-sm:hidden;
+            }
+            img {
+                @apply w-full h-full object-cover;
+            }
+            &-content {
+                @apply absolute left-0 top-0 w-full h-full opacity-0 flex justify-center flex-col p-4 gap-3 sm:gap-4;
+                background-color: #24242450;
+                transition: 400ms ease-in-out;
+                backdrop-filter: blur(1px);
+                h3,
+                p {
+                    color: var(--clr-white);
+                }
+                h3 {
+                    @apply text-2xl max-sm:text-xl;
+                }
+                p {
+                    @apply max-sm:text-sm;
+                }
+                .btn {
+                    @apply max-sm:text-sm max-sm:px-2 max-sm:py-1;
+                }
+            }
+            &:hover {
+                @apply grayscale;
+                .rp-box-content {
+                    @apply opacity-100;
+                }
+            }
+            &.in-view {
+                @include mobile {
+                    @apply grayscale;
+                    .rp-box-content {
+                        @apply opacity-100;
+                    }
+                }
+            }
+        }
+    }
 }

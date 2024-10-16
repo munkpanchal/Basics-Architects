@@ -114,7 +114,48 @@ get_template_part("/components/shared/content", "banner");
 
                 ?>
             </div>
-
         </div>
+    </div>
+    <div class="container">
+        <section class="related-projects my-4">
+            <h2 class="primary-heading text-center sm:pb-4" data-aos="fade-up">
+                related projects
+            </h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                <?php
+                for ($i = 1; $i <= 3; $i++) {
+                    # code...
+
+                    if (get_the_post_thumbnail_url($post->ID, 'large')) {
+                        $imgUrl = get_the_post_thumbnail_url($post->ID, 'large');
+                    } else {
+                        $imgUrl = get_theme_file_uri("/public/default-blog.jpg");
+                    }
+                ?>
+                    <div class="rp-box fade-box" data-aos="fade-up">
+                        <img src="<?php echo $imgUrl ?>" alt="<?php echo $post->post_title ?>">
+                        <div class="rp-box-content fade-target">
+                            <h3>
+                                <!-- <?php echo $post->post_title ?> -->
+                                related project <?php
+                                                echo $i
+                                                ?>
+                            </h3>
+                            <p>
+                                <?php echo wp_trim_words($post->post_content, 10) ?>
+                            </p>
+                            <a class="btn btn-white" target="_blank" href="<?php the_permalink($post->ID) ?>">Read
+                                More</a>
+                        </div>
+                    </div>
+
+                <?php
+                }
+                ?>
+            </div>
+        </section>
+
+    </div>
+
 </main>
 <?php get_footer() ?>

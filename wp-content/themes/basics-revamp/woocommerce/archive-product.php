@@ -32,11 +32,11 @@ $categories = get_categories(array(
         foreach ($categories as $category) {
 
         ?>
-            <span class="menu-link" data-tab-nav-project data-tab-target="<?php echo $category->slug; ?>">
-                <?php
+        <span class="menu-link" data-tab-nav-project data-tab-target="<?php echo $category->slug; ?>">
+            <?php
                 echo $category->name;
                 ?>
-            </span>
+        </span>
         <?php
         }
         ?>
@@ -76,28 +76,30 @@ $categories = get_categories(array(
 
 
             ?>
-                <div data-aos="zoom-in" data-cat="<?php echo $catName; ?>" class="project active fade-box">
-                    <img src=" <?php echo $thumbnail_url ?>" alt="">
-                    <div class="project-content fade-target">
-                        <h3>
-                            <?php echo $product->name; ?>
-                        </h3>
+            <div data-aos="zoom-in" data-cat="<?php echo $catName; ?>" class="project active fade-box">
+                <img src=" <?php echo $thumbnail_url ?>" alt="">
+                <div class="project-content fade-target">
+                    <h3>
+                        <?php echo $product->name; ?>
+                    </h3>
 
-                        <p class="para ">
-                            <?php echo wp_trim_words($product->description, 20) ?>..
-                        </p>
+                    <p class="para ">
+                        <?php echo wp_trim_words($product->description, 20) ?>..
+                    </p>
 
-                        <a class="btn btn-white" target="_blank" href="<?php the_permalink($product_id) ?>">
-                            Read More
-                        </a>
+                    <a class="btn btn-white" target="_blank" href="<?php the_permalink($product_id) ?>">
+                        Read More
+                    </a>
 
-                    </div>
                 </div>
+            </div>
             <?php
 
             }
             ?>
         </section>
+
+
 
     </div>
 
