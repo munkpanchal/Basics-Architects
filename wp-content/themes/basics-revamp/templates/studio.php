@@ -16,7 +16,7 @@ get_template_part("/components/shared/content", "banner");
                         our partners
                     </h2>
                     <p>
-                        yet to be updated
+                        on progress
                     </p>
                 </div>
             </div>
