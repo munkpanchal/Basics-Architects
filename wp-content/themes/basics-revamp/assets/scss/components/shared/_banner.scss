@@ -9,7 +9,7 @@
         @apply 2xl:h-auto;
         @include mobile {
             height: auto;
-            aspect-ratio: 3/4;
+            aspect-ratio: 16/9;
         }
         img {
             @apply w-full h-full object-cover object-center;
