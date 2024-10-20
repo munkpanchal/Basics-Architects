@@ -4,7 +4,7 @@
     font-size: 14px;
     color: var(--clr-black);
     &-wrapper {
-        @apply flex flex-col justify-between max-sm:gap-4;
+        @apply flex flex-col justify-between max-sm:gap-4 mt-4;
         border-top: 1px solid var(--clr-gray);
         .footer-top {
             @apply py-4 sm:py-8 flex justify-between sm:m-auto  gap-8 max-sm:flex-col;
