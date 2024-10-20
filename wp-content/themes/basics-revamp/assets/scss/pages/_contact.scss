@@ -1,0 +1,62 @@
+.contact {
+    &-wrapper {
+        --width: 100%;
+        @include landscapes {
+            --width: 768px;
+        }
+        @include desktop {
+            --width: 1024px;
+        }
+
+        @apply flex gap-8 max-sm:flex-col sm:gap-16 lg:gap-24 py-8 mx-auto;
+        width: var(--width);
+
+        & > * {
+            flex: 1;
+        }
+
+        .left {
+            @apply max-sm:order-2;
+            .form-input-wrapper {
+                @apply flex flex-col gap-4;
+                margin: auto;
+
+                input,
+                textarea {
+                    @apply bg-[#24242410] w-full py-3 px-4;
+                    border-radius: 0;
+                }
+                textarea {
+                    height: 160px;
+                    resize: none;
+                }
+
+                input[type="submit"] {
+                    @apply py-2 px-4 uppercase w-max;
+
+                    border: 1px solid var(--clr-black);
+                    color: var(--clr-black);
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    transition: all 400ms ease-in-out;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: var(--clr-black);
+                        color: white;
+                    }
+                }
+            }
+        }
+        .right {
+            @apply flex flex-col gap-4 max-sm:order-1;
+            .contact-box {
+                h4 {
+                    @apply font-bold uppercase mb-1;
+                }
+                p {
+                    width: 16ch;
+                }
+            }
+        }
+    }
+}
