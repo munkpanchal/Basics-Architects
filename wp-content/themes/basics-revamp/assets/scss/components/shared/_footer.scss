@@ -14,7 +14,7 @@
             .footer-heading {
                 @apply text-base w-max mb-4 uppercase font-bold relative cursor-pointer;
 
-                &::after {
+                &::before {
                     content: "+";
                     position: absolute;
                     font-family: monospace;
@@ -29,12 +29,12 @@
                         display: none;
                     }
                 }
-                &.active::after {
+                &.active::before {
                     transform: rotate(135deg);
                 }
 
                 &:hover {
-                    &::after {
+                    &::before {
                         transform: rotate(135deg);
                     }
                 }
