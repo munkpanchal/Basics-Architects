@@ -1,0 +1,42 @@
+/* Basic reset for Contact Form 7 elements */
+.wpcf7 {
+    margin: 0;
+    padding: 0;
+
+    .wpcf7-form {
+        border: 0;
+        outline: 0;
+        background: transparent;
+
+        .wpcf7-form-control {
+            margin: 0;
+            padding: 10px 18px;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+
+            &:focus {
+                outline: 0;
+            }
+            &::placeholder {
+                color: #999;
+            }
+        }
+    }
+}
+
+/* Additional elements (customize as needed) */
+/* Prevent unwanted default styling */
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="email"],
+.wpcf7-form textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.wpcf7-not-valid-tip {
+    @apply text-xs mt-1 ml-1;
+}
+
+// Form styling starts from here

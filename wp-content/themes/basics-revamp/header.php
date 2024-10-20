@@ -20,7 +20,7 @@
 
             <div class="header-wrapper">
                 <a href="/" class="logo">
-                    <img src="<?php echo get_theme_file_uri("/public/logo.png") ?>" alt="">
+                    <img src="<?php echo get_theme_file_uri("/public/logo2.png") ?>" alt="">
                 </a>
                 <div class="navigation">
                     <?php
