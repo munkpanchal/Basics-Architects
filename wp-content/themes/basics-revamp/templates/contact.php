@@ -25,7 +25,7 @@
                 <div class="contact-box">
                     <h4>phone number</h4>
                     <p>
-                        <a href="tel:+918595184113">
+                        <a target="_blank" href="tel:+918595184113">
                             +91 85951 84113
                         </a>
                     </p>
@@ -33,7 +33,7 @@
                 <div class="contact-box">
                     <h4>project enquiry</h4>
                     <p>
-                        <a href="mailto:basics@basic.co.in">
+                        <a target="_blank" href="mailto:basics@basic.co.in">
                             basics@basic.co.in
                         </a>
                     </p>
@@ -41,7 +41,7 @@
                 <div class="contact-box">
                     <h4>career enquiry</h4>
                     <p>
-                        <a href="mailto:careers@basic.co.in">
+                        <a target="_blank" href="mailto:careers@basic.co.in">
                             careers@basic.co.in
                         </a>
                     </p>
@@ -49,7 +49,7 @@
                 <div class="contact-box">
                     <h4>media</h4>
                     <p>
-                        <a href="mailto:admin@basic.co.in">
+                        <a target="_blank" href="mailto:admin@basic.co.in">
                             admin@basic.co.in
                         </a>
                     </p>

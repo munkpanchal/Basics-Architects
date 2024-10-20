@@ -5,6 +5,7 @@ import "./animationTrack.js";
 import "./header";
 import "./tab-nav.js";
 import "./projects.js";
+import "./footer.js";
 
 document.addEventListener("DOMContentLoaded", function () {
     // Handler when the DOM is fully loaded

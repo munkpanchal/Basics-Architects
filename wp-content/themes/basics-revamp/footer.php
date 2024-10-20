@@ -1,55 +1,133 @@
+<!-- 
+<div class="footer-left">
+
+<div class="footer-left-content">
+
+    <p>
+        <img src="<?php echo get_theme_file_uri("/public/icons/phone.svg") ?>" alt="Phone">
+        <a href="tel:+91 85951 84113">
+            +91 85951 84113
+        </a>
+    </p>
+    <p>
+        <img src="<?php echo get_theme_file_uri("/public/icons/email.svg") ?>" alt="Phone">
+        <a href="mailto:basics@basics.co.in">
+            basics@basics.co.in
+        </a>
+    </p>
+    <p>
+        <img src="<?php echo get_theme_file_uri("/public/icons/location.svg") ?>" alt="Phone">
+        <a>
+            B-179 I LGF I Shivalik I New Delhi 110017
+        </a>
+    </p>
+</div>
+</div>
+<div class="footer-right">
+<a class="anchor">privacy policy</a>
+<div class="social-links">
+    <a>
+        <img src="<?php echo get_theme_file_uri("/public/icons/youtube.svg") ?>" alt="youtube">
+    </a>
+    <a>
+        <img src="<?php echo get_theme_file_uri("/public/icons/instagram.svg") ?>" alt="youtube">
+    </a>
+    <a>
+        <img src="<?php echo get_theme_file_uri("/public/icons/linkedin.svg") ?>" alt="youtube">
+    </a>
+    <a>
+        <img src="<?php echo get_theme_file_uri("/public/icons/facebook.svg") ?>" alt="youtube">
+    </a>
+</div>
+<p class="copyright">
+    &copy; 2024, BASICS Architects. All rights reserved
+</p>
+</div> -->
+
 <footer class="footer">
     <div class="container">
         <div class="footer-wrapper">
+            <div class="footer-top">
+                <div class="left">
+                    <h3 class="footer-heading" data-target="data-contact" data-aos="zoom-in"
+                        style="--url:url(<?php echo get_theme_file_uri("/public/icons/plus.svg") ?>)">
+                        contact
+                    </h3>
+                    <div class="footer-content" data-contact>
+                        <div class="fc-wrap">
+                            <h4>address :</h4>
+                            <div>
+                                <p>
+                                    <strong>
+                                        Basics Architects
+                                    </strong>
+                                </p>
+                                <p>B-179 | LGF | Shivalik | New Delhi</p>
+                                <p>110017</p>
+                            </div>
+                        </div>
 
-            <div class="footer-left">
-                <figure class="footer-logo"><img src="<?php echo get_theme_file_uri("/public/logo2.png") ?>"
-                        alt="Basics Architect">
-                </figure>
-                <div class="footer-left-content">
+                        <div class="fc-wrap">
+                            <h4>phone :</h4>
+                            <a href="tel:+918595184113" target="_blank">
+                                +91 85951 84113
+                            </a>
+                        </div>
 
-                    <p>
-                        <img src="<?php echo get_theme_file_uri("/public/icons/phone.svg") ?>" alt="Phone">
-                        <a href="tel:+91 85951 84113">
-                            +91 85951 84113
-                        </a>
-                    </p>
-                    <p>
-                        <img src="<?php echo get_theme_file_uri("/public/icons/email.svg") ?>" alt="Phone">
-                        <a href="mailto:basics@basics.co.in">
-                            basics@basics.co.in
-                        </a>
-                    </p>
-                    <p>
-                        <img src="<?php echo get_theme_file_uri("/public/icons/location.svg") ?>" alt="Phone">
-                        <a>
-                            B-179 I LGF I Shivalik I New Delhi 110017
-                        </a>
-                    </p>
+
+                    </div>
+                </div>
+                <div class="middle">
+                    <h3 class="footer-heading" data-target="data-email" data-aos="zoom-in">
+                        email
+                    </h3>
+                    <div class="footer-content" data-email>
+                        <div class="fc-wrap">
+                            <h4>project enquiry</h4>
+                            <p>
+                                <a target="_blank" href="mailto:basics@basic.co.in">
+                                    basics@basic.co.in
+                                </a>
+                            </p>
+                        </div>
+                        <div class="fc-wrap">
+                            <h4>career enquiry</h4>
+                            <p>
+                                <a target="_blank" href="mailto:careers@basic.co.in">
+                                    careers@basic.co.in
+                                </a>
+                            </p>
+                        </div>
+                        <div class="fc-wrap">
+                            <h4>media</h4>
+                            <p>
+                                <a target="_blank" href="mailto:admin@basic.co.in">
+                                    admin@basic.co.in
+                                </a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="right">
+                    <h3 class="footer-heading" data-target="data-social" data-aos="zoom-in">
+                        social
+                    </h3>
+                    <div class="footer-content" data-social>
+                        <a href="/" data-social-link target="_blank">instagram</a>
+                        <a href="/" data-social-link target="_blank">facebook</a>
+                        <a href="/" data-social-link target="_blank">x</a>
+                        <a href="/" data-social-link target="_blank">youtube</a>
+                    </div>
                 </div>
             </div>
-            <div class="footer-right">
-                <a class="anchor">privacy policy</a>
-                <div class="social-links">
-                    <a>
-                        <img src="<?php echo get_theme_file_uri("/public/icons/youtube.svg") ?>" alt="youtube">
-                    </a>
-                    <a>
-                        <img src="<?php echo get_theme_file_uri("/public/icons/instagram.svg") ?>" alt="youtube">
-                    </a>
-                    <a>
-                        <img src="<?php echo get_theme_file_uri("/public/icons/linkedin.svg") ?>" alt="youtube">
-                    </a>
-                    <a>
-                        <img src="<?php echo get_theme_file_uri("/public/icons/facebook.svg") ?>" alt="youtube">
-                    </a>
-                </div>
-                <p class="copyright">
-                    &copy; 2024, BASICS Architects. All rights reserved
-                </p>
-            </div>
+
+            <p class="copyright" data-aos="zoom-in">
+                &copy; 2024, BASICS Architects | All rights reserved
+            </p>
         </div>
     </div>
+
 </footer>
 <?php wp_footer() ?>
 </body>
