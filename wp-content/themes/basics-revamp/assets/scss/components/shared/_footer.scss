@@ -25,17 +25,14 @@
                     aspect-ratio: 1/1;
                     transition: all 400ms ease-in-out;
                     display: block;
+                    rotate: 0deg;
                     @include mobile {
                         display: none;
                     }
                 }
-                &.active::before {
-                    transform: rotate(135deg);
-                }
-
-                &:hover {
+                &:is(.active) {
                     &::before {
-                        transform: rotate(135deg);
+                        rotate: 135deg;
                     }
                 }
             }
