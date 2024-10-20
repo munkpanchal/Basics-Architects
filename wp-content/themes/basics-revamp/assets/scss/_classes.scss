@@ -112,13 +112,16 @@
 }
 
 .splide {
-    .splide__arrow {
-        opacity: 0;
-        transition: all 300ms ease-in-out;
-    }
-    &:hover {
+    @include landscapes {
         .splide__arrow {
-            opacity: 1;
+            opacity: 0;
+            transition: all 300ms ease-in-out;
+        }
+
+        &:hover {
+            .splide__arrow {
+                opacity: 1;
+            }
         }
     }
 }
