@@ -55,7 +55,7 @@
                     </h3>
                     <div class="footer-content" data-contact>
                         <div class="fc-wrap">
-                            <h4>address :</h4>
+                            <h4>address</h4>
                             <div>
                                 <p>
                                     <strong>
@@ -68,7 +68,7 @@
                         </div>
 
                         <div class="fc-wrap">
-                            <h4>phone :</h4>
+                            <h4>phone</h4>
                             <a href="tel:+918595184113" target="_blank">
                                 +91 85951 84113
                             </a>

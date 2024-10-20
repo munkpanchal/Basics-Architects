@@ -43,6 +43,34 @@ get_template_part("/components/shared/content", "banner");
 
     <section class="section">
         <div class="container">
+            <div class="splide testimonial-slider mt-8" id="testimonial-slider">
+                <div class="splide__track">
+                    <ul class="splide__list">
+
+                        <li class="splide__slide">
+                            <div class="ts-wrap">
+                                <img src="<?php echo get_theme_file_uri("/public/logos/dcm.png") ?>" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="ts-wrap">
+                                <img src="<?php echo get_theme_file_uri("/public/logos/sharda.png") ?>" alt="">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="ts-wrap">
+                                <img src="<?php echo get_theme_file_uri("/public/logos/shree-ram.png") ?>" alt="">
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
 
             <div class="two-by-two">
                 <a class="column" href="/">

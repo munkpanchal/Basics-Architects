@@ -22,4 +22,13 @@
     video {
         @apply w-full aspect-video object-cover;
     }
+
+    .ts-wrap {
+        @apply p-4 flex justify-center items-center;
+        aspect-ratio: 4/3;
+        img {
+            @apply w-full h-full object-contain;
+            max-width: 150px;
+        }
+    }
 }

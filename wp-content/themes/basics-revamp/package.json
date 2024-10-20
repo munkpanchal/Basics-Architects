@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@fancyapps/ui": "^5.0.36",
+    "@splidejs/splide": "^4.1.4",
     "aos": "^2.3.4",
     "jquery": "^3.7.1",
     "sass": "^1.66.1"
