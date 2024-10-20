@@ -9,7 +9,7 @@
         @apply 2xl:h-auto;
         @include mobile {
             height: auto;
-            aspect-ratio: 16/9;
+            aspect-ratio: 9/16;
         }
         img {
             @apply w-full h-full object-cover object-center;
@@ -21,8 +21,13 @@
             }
             .banner-para {
                 @apply text-sm sm:text-base lg:text-lg mb-4;
-
                 width: min(100%, 60ch);
+                @include mobile {
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                }
             }
         }
     }
