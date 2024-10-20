@@ -16,11 +16,19 @@ footerHeading?.forEach((val) => {
             currentElem.classList.remove("active");
             return;
         }
+        footerHeading.forEach((heading) => {
+            if (heading.classList.contains("active")) {
+                heading.classList.remove("active");
+            }
+        });
+
         footerContents.forEach((content) => {
             if (content.classList.contains("active")) {
                 content.classList.remove("active");
             }
         });
+        val.classList.add("active");
+
         currentElem.classList.add("active");
     });
 });

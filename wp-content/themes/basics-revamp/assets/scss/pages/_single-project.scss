@@ -1,12 +1,15 @@
 .single-project {
     &-head {
-        @apply py-8 flex flex-col gap-1 sm:gap-2 lg:gap-4 justify-center sm:items-center;
+        @apply py-8 flex  lg:gap-4 justify-center max-sm:flex-col max-sm:pb-4;
+        & > * {
+            flex: 1;
+        }
 
         .project-title {
-            @apply text-2xl sm:text-4xl uppercase sm:text-center;
+            @apply text-2xl sm:text-4xl uppercase;
         }
         .project-details {
-            @apply flex flex-col gap-1 justify-center sm:items-center;
+            @apply flex flex-col gap-1 justify-center;
             p {
                 strong {
                     color: var(--clr-black);
@@ -16,7 +19,6 @@
         .project-content {
             @apply flex justify-center items-center;
             p {
-                @apply sm:text-center;
                 width: min(100%, 72ch);
             }
         }
