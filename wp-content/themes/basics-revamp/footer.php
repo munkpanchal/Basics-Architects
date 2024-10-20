@@ -3,7 +3,7 @@
         <div class="footer-wrapper">
 
             <div class="footer-left">
-                <figure class="footer-logo"><img src="<?php echo get_theme_file_uri("/public/logo-white.png") ?>"
+                <figure class="footer-logo"><img src="<?php echo get_theme_file_uri("/public/logo2.png") ?>"
                         alt="Basics Architect">
                 </figure>
                 <div class="footer-left-content">

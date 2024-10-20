@@ -1,5 +1,5 @@
 // Pages will come here
-@import "homepage", "media", "./category-page", "single-project", "single-blog", "contact";
+@import "homepage", "media", "./category-page", "single-project", "single-blog", "contact", "studio";
 .search-page {
     @apply min-h-[60vh];
     & > *:first-child {

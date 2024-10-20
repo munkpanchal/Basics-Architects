@@ -14,28 +14,6 @@
     }
 }
 
-#ajaxsearchlite1 .probox,
-div.asl_w .probox {
-    background-color: transparent !important;
-    border-bottom: 1px solid var(--clr-black) !important;
-}
-.promagnifier {
-    display: none;
-}
-.proinput {
-    margin: 0 !important;
-}
-.asl_w_container {
-    @apply min-w-full;
-}
-.wpdreams_asl_results {
-    left: unset !important;
-    right: 1rem !important;
-    width: 400px !important;
-    top: calc(var(--header-height) - 1rem) !important;
-    background: transparent !important;
-}
-
 .anchor {
     @apply uppercase text-sm;
 }
