@@ -22,12 +22,33 @@ $categories = get_categories(array(
 <?php get_header() ?>
 
 
+
+<div class="sub-menu-wrap sm:hidden">
+    <div class="category-menu">
+        <span class="menu-link active" data-tab-nav-project data-tab-target="all">
+            all
+        </span>
+        <?php
+        foreach ($categories as $category) {
+
+        ?>
+            <span class="menu-link" data-tab-nav-project data-tab-target="<?php echo $category->slug; ?>">
+                <?php
+                echo $category->name;
+                ?>
+            </span>
+        <?php
+        }
+        ?>
+    </div>
+</div>
+
 <?php
 get_template_part("/components/shared/content", "banner");
 ?>
 
 
-<div class="sub-menu-wrap">
+<div class="sub-menu-wrap max-sm:hidden">
     <div class="category-menu">
         <span class="menu-link active" data-tab-nav-project data-tab-target="all">
             all
@@ -63,7 +84,7 @@ get_template_part("/components/shared/content", "banner");
 
 
         ?>
-        <section class="projects-wrapper">
+        <section class="projects-wrapper max-sm:mt-4">
 
             <?php
 
