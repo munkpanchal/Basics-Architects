@@ -13,42 +13,42 @@
             </div>
             <div class="right">
                 <div class="contact-box">
-                    <h4>address</h4>
-                    <p>
+                    <h4 data-aos="zoom-in">address</h4>
+                    <p data-aos="zoom-in">
                         <strong>
                             Basics Architects
                         </strong>
                     </p>
-                    <p>B-179 | LGF | Shivalik | New Delhi</p>
-                    <p>110017</p>
+                    <p data-aos="zoom-in">B-179 | LGF | Shivalik | New Delhi</p>
+                    <p data-aos="zoom-in">110017</p>
                 </div>
                 <div class="contact-box">
-                    <h4>phone number</h4>
-                    <p>
+                    <h4 data-aos="zoom-in">phone number</h4>
+                    <p data-aos="zoom-in">
                         <a target="_blank" href="tel:+918595184113">
                             +91 85951 84113
                         </a>
                     </p>
                 </div>
                 <div class="contact-box">
-                    <h4>project enquiry</h4>
-                    <p>
+                    <h4 data-aos="zoom-in">project enquiry</h4>
+                    <p data-aos="zoom-in">
                         <a target="_blank" href="mailto:basics@basic.co.in">
                             basics@basic.co.in
                         </a>
                     </p>
                 </div>
                 <div class="contact-box">
-                    <h4>career enquiry</h4>
-                    <p>
+                    <h4 data-aos="zoom-in">career enquiry</h4>
+                    <p data-aos="zoom-in">
                         <a target="_blank" href="mailto:careers@basic.co.in">
                             careers@basic.co.in
                         </a>
                     </p>
                 </div>
                 <div class="contact-box">
-                    <h4>media</h4>
-                    <p>
+                    <h4 data-aos="zoom-in">media</h4>
+                    <p data-aos="zoom-in">
                         <a target="_blank" href="mailto:admin@basic.co.in">
                             admin@basic.co.in
                         </a>
