@@ -88,7 +88,7 @@
         margin-inline: auto;
         width: min(100%, 1024px);
         .rp-box {
-            @apply block relative overflow-hidden;
+            @apply block relative overflow-hidden aspect-[4/3];
             &:not(:first-child) {
                 @apply max-sm:hidden;
             }
