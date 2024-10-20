@@ -6,7 +6,7 @@
 <main class="main contact" id="contact">
     <div class="container">
         <div class="contact-wrapper">
-            <div class="left">
+            <div class="left" data-aos="zoom-in">
                 <?php
                 echo do_shortcode('[contact-form-7 id="5af879e" title="Contact form 1"]');
                 ?>
