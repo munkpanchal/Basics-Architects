@@ -95,8 +95,8 @@
         }
 
         .copyright {
-            @apply py-4 text-center text-sm;
-            border-top: 1px solid var(--clr-gray);
+            @apply py-4 text-center text-sm font-bold;
+            // border-top: 1px solid var(--clr-gray);
             color: var(--clr-gray);
         }
     }
