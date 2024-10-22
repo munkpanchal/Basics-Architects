@@ -122,7 +122,7 @@
                 </div>
             </div>
 
-            <p class="copyright">
+            <p class="copyright" data-aos="fade-up">
                 &copy; 2024, BASICS Architects | All rights reserved
             </p>
         </div>

@@ -9,7 +9,11 @@
         @apply 2xl:h-auto;
         @include mobile {
             height: auto;
-            aspect-ratio: 16/9;
+            height: calc(100vh - var(--header-height) - 1rem);
+            // aspect-ratio: 16/9;
+            &.sub-cat-banner {
+                height: calc(100vh - var(--header-height) - 1rem);
+            }
         }
         img {
             @apply w-full h-full object-cover object-center;
