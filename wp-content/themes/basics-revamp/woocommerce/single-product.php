@@ -32,7 +32,7 @@ get_template_part("/components/shared/content", "banner");
 
 
 
-                <h2 class="project-title" data-aos="zoom-in">
+                <h2 class="project-title" data-aos="fade-up">
                     <?php
                     echo $product->get_name()
                     ?>
@@ -48,7 +48,7 @@ get_template_part("/components/shared/content", "banner");
                     <?php
                     if ($year) {
                     ?>
-                        <p data-aos="zoom-in"><strong>Year : </strong><?php echo $year; ?></p>
+                        <p data-aos="fade-up"><strong>Year : </strong><?php echo $year; ?></p>
                     <?php
                     }
                     ?>
@@ -56,7 +56,7 @@ get_template_part("/components/shared/content", "banner");
                     <?php
                     if ($location) {
                     ?>
-                        <p data-aos="zoom-in"><strong>Location : </strong><?php echo $location; ?></p>
+                        <p data-aos="fade-up"><strong>Location : </strong><?php echo $location; ?></p>
                     <?php
                     }
                     ?>
@@ -64,7 +64,7 @@ get_template_part("/components/shared/content", "banner");
                     <?php
                     if ($area) {
                     ?>
-                        <p data-aos="zoom-in"><strong>Area : </strong><?php echo $area; ?></p>
+                        <p data-aos="fade-up"><strong>Area : </strong><?php echo $area; ?></p>
                     <?php
                     }
                     ?>
@@ -76,7 +76,7 @@ get_template_part("/components/shared/content", "banner");
             <div class="sph-right">
 
                 <div class="project-content">
-                    <p data-aos="zoom-in">
+                    <p data-aos="fade-up">
                         <?php
                         echo $product->description;
                         ?>
@@ -106,7 +106,7 @@ get_template_part("/components/shared/content", "banner");
                 ?>
 
                     <a href="<?php echo $image_url; ?>" data-fancybox="gallery" data-caption="title"
-                        class="project <?php echo "project-" . floor(($i - 1) % 3) + 1 ?>" data-aos="zoom-in">
+                        class="project <?php echo "project-" . floor(($i - 1) % 3) + 1 ?>" data-aos="fade-up">
                         <img src=" <?php echo $image_url; ?>" alt="">
 
                     </a>
@@ -129,7 +129,7 @@ get_template_part("/components/shared/content", "banner");
     </div>
     <div class="container">
         <section class="related-projects my-4">
-            <h2 class="primary-heading text-center sm:pb-4" data-aos="zoom-in">
+            <h2 class="primary-heading text-center sm:pb-4" data-aos="fade-up">
                 Related projects
             </h2>
             <div class="grid sm:grid-cols-3 gap-4">
@@ -143,7 +143,7 @@ get_template_part("/components/shared/content", "banner");
                         $imgUrl = get_theme_file_uri("/public/default-blog.jpg");
                     }
                 ?>
-                    <div class="rp-box fade-box" data-aos="zoom-in">
+                    <div class="rp-box fade-box" data-aos="fade-up">
                         <img src="<?php echo $imgUrl ?>" alt="<?php echo $post->post_title ?>">
                         <div class="rp-box-content fade-target">
                             <h3 class="uppercase">

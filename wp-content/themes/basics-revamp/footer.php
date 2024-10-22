@@ -49,7 +49,7 @@
         <div class="footer-wrapper">
             <div class="footer-top">
                 <div class="left">
-                    <h3 class="footer-heading" data-target="data-contact" data-aos="zoom-in"
+                    <h3 class="footer-heading" data-target="data-contact"
                         style="--url:url(<?php echo get_theme_file_uri("/public/icons/plus.svg") ?>)">
                         contact
                     </h3>
@@ -78,7 +78,7 @@
                     </div>
                 </div>
                 <div class="middle">
-                    <h3 class="footer-heading" data-target="data-email" data-aos="zoom-in">
+                    <h3 class="footer-heading" data-target="data-email">
                         email
                     </h3>
                     <div class="footer-content" data-email>
@@ -110,7 +110,7 @@
                     </div>
                 </div>
                 <div class="right">
-                    <h3 class="footer-heading" data-target="data-social" data-aos="zoom-in">
+                    <h3 class="footer-heading" data-target="data-social">
                         social
                     </h3>
                     <div class="footer-content" data-social>
@@ -122,7 +122,7 @@
                 </div>
             </div>
 
-            <p class="copyright" data-aos="zoom-in">
+            <p class="copyright">
                 &copy; 2024, BASICS Architects | All rights reserved
             </p>
         </div>

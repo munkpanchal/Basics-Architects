@@ -4,7 +4,7 @@
 <?php get_header() ?>
 
 <div class="sub-menu-wrap">
-    <div class="media-menu" data-aos="zoom-in">
+    <div class="media-menu" data-aos="fade-up">
         <span class="menu-link active" data-tab-nav data-tab-target="tab-1">blogs</span>
         <span class="menu-link" data-tab-nav data-tab-target="tab-2">publication</span>
         <span class="menu-link" data-tab-nav data-tab-target="tab-3">honours</span>

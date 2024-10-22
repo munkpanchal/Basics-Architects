@@ -10,9 +10,14 @@
             @apply py-4 sm:py-8 flex justify-between sm:m-auto  gap-8 max-sm:flex-col;
 
             width: min(100%, 768px);
-
+            &.one-active {
+                height: 262px;
+                @include mobile {
+                    height: max-content;
+                }
+            }
             .footer-heading {
-                @apply text-base w-max mb-4 uppercase font-bold relative cursor-pointer;
+                @apply text-base w-max uppercase font-bold relative cursor-pointer;
 
                 &::before {
                     content: "+";
@@ -51,21 +56,28 @@
                     }
                 }
                 opacity: 0;
-                scale: 0.75;
+                transform: translateY(24px);
                 transition: all 400ms ease-in-out;
+                height: 0;
+                overflow: hidden;
                 &[data-social] {
                     @apply max-sm:flex max-sm:flex-row max-sm:gap-8;
                 }
                 [data-social-link] {
                     @apply capitalize;
                 }
+                $height: 158px;
                 &.active {
                     opacity: 1;
-                    scale: 1;
+                    transform: translateY(0);
+                    height: $height;
+                    margin-top: 1rem;
                 }
                 @include mobile {
                     opacity: 1;
-                    scale: 1;
+                    height: $height;
+                    transform: translateY(0);
+                    margin-top: 1rem;
                 }
             }
             p,

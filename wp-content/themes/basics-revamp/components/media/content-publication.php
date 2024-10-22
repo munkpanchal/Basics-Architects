@@ -21,7 +21,7 @@ $custom_posts = get_posts($args);
 
             ?>
 
-                <div class="media-wrap fade-box" data-aos="zoom-in">
+                <div class="media-wrap fade-box" data-aos="fade-up">
                     <img src="<?php echo get_the_post_thumbnail_url($post->ID, 'large') ?>"
                         alt="<?php echo $post->post_title ?>">
                     <div class="media-wrap-content fade-target">
