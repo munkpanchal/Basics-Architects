@@ -114,10 +114,10 @@
                         social
                     </h3>
                     <div class="footer-content" data-social>
-                        <a href="/" data-social-link target="_blank">instagram</a>
-                        <a href="/" data-social-link target="_blank">facebook</a>
-                        <a href="/" data-social-link target="_blank">x</a>
-                        <a href="/" data-social-link target="_blank">youtube</a>
+                        <a data-aos="fade-up" href="/" data-social-link target="_blank">instagram</a>
+                        <a data-aos="fade-up" href="/" data-social-link target="_blank">facebook</a>
+                        <a data-aos="fade-up" href="/" data-social-link target="_blank">x</a>
+                        <a data-aos="fade-up" href="/" data-social-link target="_blank">youtube</a>
                     </div>
                 </div>
             </div>
