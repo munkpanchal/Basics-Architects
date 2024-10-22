@@ -10,10 +10,9 @@
             @apply py-4 sm:py-8 flex justify-between sm:m-auto  gap-8 max-sm:flex-col;
 
             width: min(100%, 768px);
-            &.one-active {
-                height: 262px;
-                @include mobile {
-                    height: max-content;
+            & > * {
+                @include landscapes {
+                    width: 200px;
                 }
             }
             .footer-heading {
