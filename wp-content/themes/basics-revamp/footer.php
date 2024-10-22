@@ -3,19 +3,19 @@
 
 <div class="footer-left-content">
 
-    <p>
+    <p data-aos="fade-up">
         <img src="<?php echo get_theme_file_uri("/public/icons/phone.svg") ?>" alt="Phone">
         <a href="tel:+91 85951 84113">
             +91 85951 84113
         </a>
     </p>
-    <p>
+    <p data-aos="fade-up">
         <img src="<?php echo get_theme_file_uri("/public/icons/email.svg") ?>" alt="Phone">
         <a href="mailto:basics@basics.co.in">
             basics@basics.co.in
         </a>
     </p>
-    <p>
+    <p data-aos="fade-up">
         <img src="<?php echo get_theme_file_uri("/public/icons/location.svg") ?>" alt="Phone">
         <a>
             B-179 I LGF I Shivalik I New Delhi 110017
@@ -49,7 +49,7 @@
         <div class="footer-wrapper">
             <div class="footer-top">
                 <div class="left">
-                    <h3 class="footer-heading" data-target="data-contact"
+                    <h3 data-aos="fade-up" class="footer-heading" data-target="data-contact"
                         style="--url:url(<?php echo get_theme_file_uri("/public/icons/plus.svg") ?>)">
                         contact
                     </h3>
@@ -57,13 +57,13 @@
                         <div class="fc-wrap">
                             <!-- <h4>address</h4> -->
                             <div>
-                                <p>
+                                <p data-aos="fade-up">
                                     <strong>
                                         Basics Architects
                                     </strong>
                                 </p>
-                                <p>B-179 | LGF | Shivalik | New Delhi</p>
-                                <p>110017</p>
+                                <p data-aos="fade-up">B-179 | LGF | Shivalik | New Delhi</p>
+                                <p data-aos="fade-up">110017</p>
                             </div>
                             <!-- <div class="fc-wrap"> -->
                             <!-- <h4>phone</h4> -->
@@ -78,12 +78,12 @@
                     </div>
                 </div>
                 <div class="middle">
-                    <h3 class="footer-heading" data-target="data-email">
+                    <h3 data-aos="fade-up" class="footer-heading" data-target="data-email">
                         email
                     </h3>
                     <div class="footer-content" data-email>
                         <div class="fc-wrap">
-                            <p>
+                            <p data-aos="fade-up">
                                 <strong>project enquiry</strong>
                                 <a target="_blank" href="mailto:basics@basic.co.in">
                                     basics@basic.co.in
@@ -91,7 +91,7 @@
                             </p>
                         </div>
                         <div class="fc-wrap">
-                            <p>
+                            <p data-aos="fade-up">
                                 <strong>career enquiry</strong>
                                 <a target="_blank" href="mailto:careers@basic.co.in">
                                     careers@basic.co.in
@@ -99,7 +99,7 @@
                             </p>
                         </div>
                         <div class="fc-wrap">
-                            <p>
+                            <p data-aos="fade-up">
                                 <strong>media</strong>
                                 <a target="_blank" href="mailto:admin@basic.co.in">
                                     admin@basic.co.in
@@ -110,7 +110,7 @@
                     </div>
                 </div>
                 <div class="right">
-                    <h3 class="footer-heading" data-target="data-social">
+                    <h3 data-aos="fade-up" class="footer-heading" data-target="data-social">
                         social
                     </h3>
                     <div class="footer-content" data-social>
