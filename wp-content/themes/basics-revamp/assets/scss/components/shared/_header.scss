@@ -29,6 +29,7 @@
                 color: var(--clr-gray);
 
                 &.current_page_item,
+                &.current-menu-item,
                 &:hover {
                     color: var(--clr-black);
                 }
@@ -105,6 +106,7 @@
             color: var(--clr-gray);
 
             &.current_page_item,
+            &.current-menu-item,
             &:hover {
                 color: var(--clr-black);
             }
