@@ -11,8 +11,8 @@ footerHeading?.forEach((val) => {
         val.classList.toggle("active");
         currentElem.classList.toggle("active");
 
-        // Update the 'one-active' class on the footerTop based on the number of active footerContents
-        const hasActiveContent = footerContents.some((content) => content.classList.contains("active"));
-        footerTop.classList.toggle("one-active", hasActiveContent);
+        // // Update the 'one-active' class on the footerTop based on the number of active footerContents
+        // const hasActiveContent = footerContents.some((content) => content.classList.contains("active"));
+        // footerTop.classList.toggle("one-active", hasActiveContent);
     });
 });
