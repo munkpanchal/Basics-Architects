@@ -55,7 +55,7 @@
                     </h3>
                     <div class="footer-content" data-contact>
                         <div class="fc-wrap">
-                            <h4>address</h4>
+                            <!-- <h4>address</h4> -->
                             <div>
                                 <p>
                                     <strong>
@@ -65,14 +65,14 @@
                                 <p>B-179 | LGF | Shivalik | New Delhi</p>
                                 <p>110017</p>
                             </div>
-                        </div>
-
-                        <div class="fc-wrap">
-                            <h4>phone</h4>
+                            <!-- <div class="fc-wrap"> -->
+                            <!-- <h4>phone</h4> -->
                             <a href="tel:+918595184113" target="_blank">
                                 +91 85951 84113
                             </a>
+                            <!-- </div> -->
                         </div>
+
 
 
                     </div>
@@ -83,24 +83,24 @@
                     </h3>
                     <div class="footer-content" data-email>
                         <div class="fc-wrap">
-                            <h4>project enquiry</h4>
                             <p>
+                                <strong>project enquiry</strong>
                                 <a target="_blank" href="mailto:basics@basic.co.in">
                                     basics@basic.co.in
                                 </a>
                             </p>
                         </div>
                         <div class="fc-wrap">
-                            <h4>career enquiry</h4>
                             <p>
+                                <strong>career enquiry</strong>
                                 <a target="_blank" href="mailto:careers@basic.co.in">
                                     careers@basic.co.in
                                 </a>
                             </p>
                         </div>
                         <div class="fc-wrap">
-                            <h4>media</h4>
                             <p>
+                                <strong>media</strong>
                                 <a target="_blank" href="mailto:admin@basic.co.in">
                                     admin@basic.co.in
                                 </a>
