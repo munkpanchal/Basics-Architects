@@ -1,10 +1,13 @@
 <?php
 
+$current_category = get_queried_object();
+$category_id = $current_category->term_id;
 $args = [
     'status' => 'publish',
     'posts_per_page' => -1,
     'orderby' => 'menu_order title',
     'order'  => 'ASC',
+    'product_category_id' => $category_id,
 ];
 
 $products = wc_get_products($args);
@@ -14,8 +17,6 @@ $products = wc_get_products($args);
 //     'parent' => 0,
 // ));
 
-$current_category = get_queried_object();
-$category_id = $current_category->term_id;
 
 
 $child_categories = get_categories(array(
@@ -95,7 +96,7 @@ get_template_part("/components/shared/content", "banner", array('class' => 'sub-
 
                 $product_id = $product->get_id();
                 $product_categories = get_the_terms($product_id, 'product_cat');
-                
+
                 $catName = $product_categories[0]->slug;
 
 
