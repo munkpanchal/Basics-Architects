@@ -4,7 +4,9 @@ $bannerUri = get_theme_file_uri("/public/banner.webp");
 <section class="banner">
     <div class="container">
 
-        <div class="banner-wrapper" style="--bannerUri:url(<?php echo $bannerUri ?>)">
+        <div class="banner-wrapper <?php if ($args['class']) {
+                                        echo $args['class'];
+                                    } ?>" style="--bannerUri:url(<?php echo $bannerUri ?>)">
             <!-- <img src="<?php echo $bannerUri ?>" alt=""> -->
             <div class="banner-content">
                 <h2 class="banner-heading !text-white" data-aos="fade-up">

@@ -1,6 +1,6 @@
 <?php get_header() ?>
 <?php
-get_template_part("/components/shared/content", "banner");
+get_template_part("/components/shared/content", "banner", array('class' => ''));;
 ?>
 
 <main class="main single-blog-page" id="single-blog-page">

@@ -19,7 +19,7 @@
                 }
             }
             .footer-heading {
-                @apply text-base w-max uppercase font-bold relative cursor-pointer sm:-translate-x-2;
+                @apply text-base w-max uppercase font-bold relative cursor-pointer sm:-translate-x-2 max-sm:pointer-events-none;
 
                 &::before {
                     content: "+";

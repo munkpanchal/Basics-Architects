@@ -16,7 +16,7 @@ $attachment_ids = $product_id ? wc_get_product($product_id)->get_gallery_image_i
 <?php get_header() ?>
 
 <?php
-get_template_part("/components/shared/content", "banner");
+get_template_part("/components/shared/content", "banner", array('class' => ''));;
 ?>
 
 <main class="single-project">

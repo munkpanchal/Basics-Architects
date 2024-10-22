@@ -44,7 +44,7 @@ $categories = get_categories(array(
 </div>
 
 <?php
-get_template_part("/components/shared/content", "banner");
+get_template_part("/components/shared/content", "banner", array('class' => 'sub-cat-banner'));
 ?>
 
 
@@ -70,7 +70,7 @@ get_template_part("/components/shared/content", "banner");
 
 
 <?php
-// get_template_part("/components/shared/content", "banner");
+// get_template_part("/components/shared/content", "banner", array('class' => ''));;
 ?>
 
 <main class="main projects" id="projects">
