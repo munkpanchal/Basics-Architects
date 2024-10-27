@@ -1,36 +1,52 @@
+import AOS from "aos";
+
 const projects = document.querySelectorAll(".project");
+
 const tabNavs = document.querySelectorAll("[data-tab-nav-project]");
 let newTimeout;
+
+// Show all projects by default on page load
+projects.forEach((project) => {
+    project.classList.add("active");
+    AOS.refresh(); // Refresh AOS after adding 'active' class initially
+});
+
 tabNavs?.forEach((tabNav) => {
     tabNav.addEventListener("click", (e) => {
-        tabNavs.forEach((tab) => {
-            if (tab.classList.contains("active")) {
-                tab.classList.remove("active");
-            }
-        });
         const currentActive = tabNav.getAttribute("data-tab-target");
-        projects.forEach((project) => {
-            if (project.classList.contains("active")) {
+
+        // Toggle the active class for the clicked tab
+        if (tabNav.classList.contains("active")) {
+            tabNav.classList.remove("active");
+
+            // Show all projects when no tab is active
+            projects.forEach((project) => {
+                project.classList.add("active");
+            });
+            AOS.refresh(); // Refresh AOS after showing all projects
+        } else {
+            tabNavs.forEach((tab) => {
+                tab.classList.remove("active");
+            });
+
+            // Clear all project active states
+            projects.forEach((project) => {
                 project.classList.remove("active");
-            }
-        });
+            });
 
-        clearTimeout(newTimeout);
+            clearTimeout(newTimeout);
 
-        newTimeout = setTimeout(() => {
-            if (currentActive == "all") {
+            // Set new active state after delay
+            newTimeout = setTimeout(() => {
                 projects.forEach((project) => {
-                    project.classList.add("active");
-                });
-            } else {
-                projects.forEach((project) => {
-                    if (project.dataset.cat == currentActive) {
+                    if (project.dataset.cat === currentActive) {
                         project.classList.add("active");
                     }
                 });
-            }
-        }, 50);
+                AOS.refresh(); // Refresh AOS after adding 'active' class to filtered projects
+            }, 50);
 
-        tabNav.classList.add("active");
+            tabNav.classList.add("active");
+        }
     });
 });

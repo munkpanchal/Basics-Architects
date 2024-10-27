@@ -12,17 +12,58 @@ get_template_part("/components/shared/content", "banner", array('class' => ''));
         <div class="studio-wrapper">
             <div class="section">
                 <div class="section-head">
-                    <h2 class="primary-heading text-center">
+                    <h2 class="primary-heading text-center" data-aos="fade-up">
                         our partners
                     </h2>
-                    <p>
-                        on progress
-                    </p>
+                    <div class="flex gap-4 max-xl:flex-col sm:my-8">
+
+                        <div class="left-right flex-1">
+
+                            <div class="content-box">
+                                <h2 data-aos="fade-up">vinod singhi</h2>
+                                <h4 data-aos="fade-up">
+                                    Principal Architect & Managing Partner
+                                </h4>
+                                <p data-aos="fade-up">
+                                    Vinod founded Basics Architects in the year 2004. Combined with his construction
+                                    management experience, he provides a comprehensive understanding of projects with
+                                    seamless integration between Design & Construction.</p>
+                            </div>
+                            <div class="img-box" data-aos="fade-up">
+                                <figure>
+                                    <img src="<?php echo get_theme_file_uri("/public/founders/vinod.webp") ?>" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="left-right flex-1">
+
+                            <div class="img-box" data-aos="fade-up">
+                                <figure>
+                                    <img src="<?php echo get_theme_file_uri("/public/founders/ranju.webp") ?>" alt="">
+                                </figure>
+                            </div>
+                            <div class="content-box">
+                                <h2 data-aos="fade-up">Ranju singhi</h2>
+                                <h4 data-aos="fade-up">
+                                    Principal Architect & Managing Partner
+                                </h4>
+                                <p data-aos="fade-up">
+
+                                    Ranju Singhi co-founded Basics with Vinod Singhi & serves as the Principal Architect
+                                    in the firm. With over 20 years experience in the industry, Ranju has worked on
+                                    variety of projects both Architecture & Interiors.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
                 </div>
             </div>
             <section class="section">
                 <div class="section-head">
-                    <h2 class="primary-heading text-center">
+                    <h2 class="primary-heading text-center" data-aos="fade-up">
                         team basics
                     </h2>
                 </div>

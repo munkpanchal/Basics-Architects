@@ -8,12 +8,15 @@
         aspect-ratio: 9/4;
         @apply 2xl:h-auto;
         @include mobile {
-            height: auto;
             height: calc(100dvh - var(--header-height) - 1rem);
-            // aspect-ratio: 16/9;
             &.sub-cat-banner {
                 height: calc(100dvh - var(--header-height) - 1rem - 44px);
             }
+        }
+        @include tablet {
+            height: auto;
+            aspect-ratio: 16/9;
+            width: 100%;
         }
         img {
             @apply w-full h-full object-cover object-center;
@@ -26,6 +29,7 @@
             .banner-para {
                 @apply text-sm sm:text-base lg:text-lg mb-4;
                 width: min(100%, 60ch);
+                font-family: var(--ff-heading);
                 @include mobile {
                     display: -webkit-box;
                     -webkit-line-clamp: 2;

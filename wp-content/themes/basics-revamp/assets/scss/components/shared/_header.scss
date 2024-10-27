@@ -9,6 +9,9 @@
         .logo,
         .search {
             width: 180px;
+            @include tablet {
+                width: 120px;
+            }
         }
 
         .search,
@@ -72,7 +75,7 @@
     }
 }
 .dropdown {
-    height: calc(100vh - var(--header-height));
+    height: calc(100dvh - var(--header-height));
     width: 100%;
     position: fixed;
     // top: -150vh;

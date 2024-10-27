@@ -6,7 +6,7 @@
         }
 
         .project-title {
-            @apply text-2xl sm:text-4xl uppercase;
+            @apply text-2xl sm:text-4xl uppercase mb-4;
         }
         .project-details {
             @apply flex flex-col gap-1 justify-center;
@@ -28,9 +28,9 @@
         @apply flex flex-col gap-4;
         padding-block: var(--mainPadding);
         columns: 2;
-        --rowSize: calc((100vh - var(--header-height) - 48px) / 2);
+        --rowSize: calc((100dvh - var(--header-height) - 48px) / 2);
         @include mobile {
-            --rowSize: calc((100vh - var(--header-height) - 24px) / 2);
+            --rowSize: calc((100dvh - var(--header-height) - 24px) / 2);
         }
 
         .project-row {
@@ -43,7 +43,10 @@
             }
 
             img {
-                @apply w-full h-full object-cover;
+                @apply w-full h-full object-cover transition-all duration-300;
+                &:hover {
+                    @apply grayscale;
+                }
             }
             &.project-row-1 {
                 .project {

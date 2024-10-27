@@ -28,11 +28,7 @@ get_template_part("/components/shared/content", "banner", array('class' => ''));
 
 
 
-
-
-
-
-                <h2 class="project-title" data-aos="fade-up">
+                <h2 class="project-title " data-aos="fade-up">
                     <?php
                     echo $product->get_name()
                     ?>
@@ -75,7 +71,14 @@ get_template_part("/components/shared/content", "banner", array('class' => ''));
             </div>
             <div class="sph-right">
 
+
+                <h2 class="project-title w-max opacity-0 pointer-events-none">
+                    <?php
+                    echo $product->get_name()
+                    ?>
+                </h2>
                 <div class="project-content">
+
                     <p data-aos="fade-up">
                         <?php
                         echo $product->description;

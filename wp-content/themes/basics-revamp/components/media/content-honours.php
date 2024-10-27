@@ -11,9 +11,6 @@ $custom_posts = get_posts($args);
         <div class="media-section">
             <?php
             foreach ($custom_posts as $post) {
-                // Access post properties here
-                // echo $post->post_title;
-                // echo $post->post_content;
 
                 $post_id = get_the_ID();
             ?>
@@ -25,9 +22,9 @@ $custom_posts = get_posts($args);
                         <h3>
                             <?php echo $post->post_title ?>
                         </h3>
-                        <h5>
-                            <?php echo wp_trim_words($post->post_content, 20) ?>...
-                        </h5>
+                        <p>
+                            <?php echo wp_trim_words($post->post_content, 20) ?>
+                        </p>
                         <a class="btn btn-white " target="_blank" href="<?php the_field('source_uri', $post_id); ?>">
                             Read More
                         </a>
