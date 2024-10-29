@@ -11,11 +11,6 @@ $args = [
 ];
 
 $products = wc_get_products($args);
-// $child_categories = get_categories(array(
-//     'taxonomy' => 'product_cat',
-//     'hide_empty' => true,
-//     'parent' => 0,
-// ));
 
 
 

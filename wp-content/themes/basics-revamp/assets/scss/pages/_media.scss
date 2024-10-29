@@ -1,5 +1,6 @@
 .media {
     padding-block: var(--mainPadding);
+    padding-top: 0;
     &-section {
         @apply gap-4 grid sm:grid-cols-3 2xl:grid-cols-4;
         .media-wrap {
@@ -33,6 +34,10 @@
                         @apply opacity-100;
                     }
                 }
+            }
+            display: none;
+            &.active {
+                @apply block;
             }
         }
     }
