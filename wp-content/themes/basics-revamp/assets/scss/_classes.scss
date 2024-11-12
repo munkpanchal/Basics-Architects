@@ -35,6 +35,9 @@
     width: 100%;
     background-color: white;
     top: var(--header-height);
+    @include mobile {
+        position: sticky;
+    }
 
     .media-menu,
     .category-menu {
