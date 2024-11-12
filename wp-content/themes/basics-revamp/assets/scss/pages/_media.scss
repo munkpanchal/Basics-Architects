@@ -3,8 +3,9 @@
     padding-top: 0;
     &-section {
         @apply gap-4 grid sm:grid-cols-3 2xl:grid-cols-4;
+        padding-top: 44px;
         .media-wrap {
-            @apply block relative overflow-hidden;
+            @apply block relative overflow-hidden aspect-[4/3];
             img {
                 @apply w-full h-full object-cover;
             }

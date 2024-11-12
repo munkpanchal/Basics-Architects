@@ -1,7 +1,7 @@
 // Pages will come here
 @import "homepage", "media", "./category-page", "single-project", "single-blog", "contact", "studio";
 .search-page {
-    @apply min-h-[60vh];
+    @apply min-h-[60dvh];
     & > *:first-child {
         margin-block: var(--mainPadding);
     }

@@ -31,7 +31,8 @@
 .sub-menu-wrap {
     @apply flex justify-center pb-6;
     z-index: 99;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     background-color: white;
     top: var(--header-height);
 
