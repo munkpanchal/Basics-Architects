@@ -1,12 +1,10 @@
 .single-project {
     &-head {
-        @apply py-8 flex  lg:gap-4 justify-center max-sm:flex-col max-sm:pb-4;
-        & > * {
-            flex: 1;
-        }
+        @apply py-8 grid sm:grid-cols-2 lg:gap-4 max-sm:pb-4;
 
         .project-title {
             @apply text-2xl sm:text-4xl uppercase mb-4;
+            text-wrap: balance;
         }
         .project-details {
             @apply flex flex-col gap-1 justify-center;
@@ -17,10 +15,8 @@
             }
         }
         .project-content {
-            @apply flex justify-center items-center;
-            p {
-                width: min(100%, 72ch);
-            }
+            @apply flex flex-col justify-center gap-2;
+            width: min(100%, 60ch);
         }
     }
 

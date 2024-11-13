@@ -72,18 +72,26 @@ get_template_part("/components/shared/content", "banner", array('class' => ''));
             <div class="sph-right">
 
 
-                <h2 class="project-title w-max opacity-0 pointer-events-none">
+                <h2 class="project-title opacity-0 pointer-events-none max-sm:hidden">
                     <?php
                     echo $product->get_name()
                     ?>
                 </h2>
-                <div class="project-content">
+                <div class="project-content max-sm:pt-2">
 
-                    <p data-aos="fade-up">
-                        <?php
-                        echo $product->description;
-                        ?>
-                    </p>
+                    <div data-aos="fade-up">
+                        <details>
+                            <summary>
+                                <?php
+                                echo $product->short_description;
+                                ?>
+                            </summary>
+                            <?php
+                            echo $product->description;
+                            ?>
+                        </details>
+
+                    </div>
                 </div>
             </div>
 
