@@ -176,3 +176,11 @@
         }
     }
 }
+
+details {
+    cursor: pointer;
+    padding-left: 1rem;
+    summary {
+        list-style-position: outside;
+    }
+}
