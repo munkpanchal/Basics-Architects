@@ -106,7 +106,7 @@
                     color: var(--clr-white);
                 }
                 h3 {
-                    @apply text-2xl;
+                    @apply text-lg sm:text-2xl;
                 }
                 p {
                     @include mobile {
