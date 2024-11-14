@@ -148,7 +148,7 @@ if ($thumbnail_url) {
                         $i++;
                     }
 
-                    if ($i % 3 == 0 && $i != 18) {
+                    if ($i % 3 == 0) {
                         echo "</div><div class='project-row project-row-" . $row . "'>";
                         $row < 3 ? $row++ : $row = 2;
                     }
