@@ -44,7 +44,7 @@ get_template_part("/components/shared/content", "banner", array('class' => ''));
                     <?php
                     if ($year) {
                     ?>
-                    <p data-aos="fade-up"><strong>Year : </strong><?php echo $year; ?></p>
+                        <p data-aos="fade-up"><strong>Year : </strong><?php echo $year; ?></p>
                     <?php
                     }
                     ?>
@@ -52,7 +52,7 @@ get_template_part("/components/shared/content", "banner", array('class' => ''));
                     <?php
                     if ($location) {
                     ?>
-                    <p data-aos="fade-up"><strong>Location : </strong><?php echo $location; ?></p>
+                        <p data-aos="fade-up"><strong>Location : </strong><?php echo $location; ?></p>
                     <?php
                     }
                     ?>
@@ -60,7 +60,7 @@ get_template_part("/components/shared/content", "banner", array('class' => ''));
                     <?php
                     if ($area) {
                     ?>
-                    <p data-aos="fade-up"><strong>Area : </strong><?php echo $area; ?></p>
+                        <p data-aos="fade-up"><strong>Area : </strong><?php echo $area; ?></p>
                     <?php
                     }
                     ?>
@@ -72,30 +72,30 @@ get_template_part("/components/shared/content", "banner", array('class' => ''));
             <?php
             if ($product->description) {
             ?>
-            <div class="sph-right">
+                <div class="sph-right">
 
-                <h2 class="project-title opacity-0 pointer-events-none max-sm:hidden">
-                    <?php
+                    <h2 class="project-title opacity-0 pointer-events-none max-sm:hidden">
+                        <?php
                         echo $product->get_name()
                         ?>
-                </h2>
-                <div class="project-content max-sm:pt-2">
+                    </h2>
+                    <div class="project-content max-sm:pt-2">
 
-                    <div data-aos="fade-up">
-                        <details>
-                            <summary>
-                                <?php
+                        <div data-aos="fade-up">
+                            <details>
+                                <summary>
+                                    <?php
                                     echo $product->short_description;
                                     ?>
-                            </summary>
-                            <?php
+                                </summary>
+                                <?php
                                 echo $product->description;
                                 ?>
-                        </details>
+                            </details>
 
+                        </div>
                     </div>
                 </div>
-            </div>
 
             <?php
             }
@@ -121,11 +121,11 @@ get_template_part("/components/shared/content", "banner", array('class' => ''));
                     $image_url = wp_get_attachment_url($attachment_id)
                 ?>
 
-                <a href="<?php echo $image_url; ?>" data-fancybox="gallery" data-caption="title"
-                    class="project <?php echo "project-" . floor(($i - 1) % 3) + 1 ?>" data-aos="fade-up">
-                    <img src=" <?php echo $image_url; ?>" alt="">
+                    <a href="<?php echo $image_url; ?>" data-fancybox="gallery" data-caption="title"
+                        class="project <?php echo "project-" . floor(($i - 1) % 3) + 1 ?>" data-aos="fade-up">
+                        <img src=" <?php echo $image_url; ?>" alt="">
 
-                </a>
+                    </a>
                 <?php
                     if ($i == 4) {
                         $i++;
@@ -159,22 +159,22 @@ get_template_part("/components/shared/content", "banner", array('class' => ''));
                         $imgUrl = get_theme_file_uri("/public/default-blog.jpg");
                     }
                 ?>
-                <div class="rp-box fade-box" data-aos="fade-up">
-                    <img src="<?php echo $imgUrl ?>" alt="<?php echo $post->post_title ?>">
-                    <div class="rp-box-content fade-target">
-                        <h3 class="uppercase">
-                            <!-- <?php echo $post->post_title ?> -->
-                            related project <?php
-                                                echo $i
-                                                ?>
-                        </h3>
-                        <p>
-                            <?php echo wp_trim_words($post->post_content, 10) ?>
-                        </p>
-                        <a class="btn btn-white" target="_blank" href="<?php the_permalink($post->ID) ?>">Read
-                            More</a>
+                    <div class="rp-box fade-box" data-aos="fade-up">
+                        <img src="<?php echo $imgUrl ?>" alt="<?php echo $post->post_title ?>">
+                        <div class="rp-box-content fade-target">
+                            <h3 class="uppercase">
+                                <?php echo $post->post_title ?>
+                                <?php
+                                echo $i
+                                ?>
+                            </h3>
+                            <p>
+                                <?php echo wp_trim_words($post->post_content, 10) ?>
+                            </p>
+                            <a class="btn btn-white" target="_blank" href="<?php the_permalink($post->ID) ?>">Read
+                                More</a>
+                        </div>
                     </div>
-                </div>
 
                 <?php
                 }
