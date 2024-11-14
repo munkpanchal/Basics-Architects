@@ -163,7 +163,7 @@ get_template_part("/components/shared/content", "banner", array('class' => ''));
                         <img src="<?php echo $imgUrl ?>" alt="<?php echo $post->post_title ?>">
                         <div class="rp-box-content fade-target">
                             <h3 class="uppercase">
-                                <?php echo $post->get_name() ?>
+                                <?php echo $post->post_title ?>
 
                             </h3>
                             <p>
