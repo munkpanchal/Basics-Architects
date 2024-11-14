@@ -16,9 +16,20 @@ $attachment_ids = $product_id ? wc_get_product($product_id)->get_gallery_image_i
 <?php get_header() ?>
 
 <?php
-// get_template_part("/components/shared/content", "banner", array('class' => ''));;
+$bannerUri = get_theme_file_uri("/public/banner.webp");
 ?>
+<section class="banner">
+    <div class="container">
 
+        <div class="banner-wrapper <?php if ($args['class']) {
+                                        echo $args['class'];
+                                    } ?>" style="--bannerUri:url(<?php echo $bannerUri ?>)">
+            <!-- <img src="<?php echo $bannerUri ?>" alt=""> -->
+
+
+        </div>
+    </div>
+</section>
 <main class="single-project">
 
     <div class="container">
@@ -44,7 +55,7 @@ $attachment_ids = $product_id ? wc_get_product($product_id)->get_gallery_image_i
                     <?php
                     if ($year) {
                     ?>
-                        <p data-aos="fade-up"><strong>Year : </strong><?php echo $year; ?></p>
+                    <p data-aos="fade-up"><strong>Year : </strong><?php echo $year; ?></p>
                     <?php
                     }
                     ?>
@@ -52,7 +63,7 @@ $attachment_ids = $product_id ? wc_get_product($product_id)->get_gallery_image_i
                     <?php
                     if ($location) {
                     ?>
-                        <p data-aos="fade-up"><strong>Location : </strong><?php echo $location; ?></p>
+                    <p data-aos="fade-up"><strong>Location : </strong><?php echo $location; ?></p>
                     <?php
                     }
                     ?>
@@ -60,7 +71,7 @@ $attachment_ids = $product_id ? wc_get_product($product_id)->get_gallery_image_i
                     <?php
                     if ($area) {
                     ?>
-                        <p data-aos="fade-up"><strong>Area : </strong><?php echo $area; ?></p>
+                    <p data-aos="fade-up"><strong>Area : </strong><?php echo $area; ?></p>
                     <?php
                     }
                     ?>
@@ -72,30 +83,30 @@ $attachment_ids = $product_id ? wc_get_product($product_id)->get_gallery_image_i
             <?php
             if ($product->description) {
             ?>
-                <div class="sph-right">
+            <div class="sph-right">
 
-                    <h2 class="project-title opacity-0 pointer-events-none max-sm:hidden">
-                        <?php
+                <h2 class="project-title opacity-0 pointer-events-none max-sm:hidden">
+                    <?php
                         echo $product->get_name()
                         ?>
-                    </h2>
-                    <div class="project-content max-sm:pt-2">
+                </h2>
+                <div class="project-content max-sm:pt-2">
 
-                        <div data-aos="fade-up">
-                            <details>
-                                <summary>
-                                    <?php
+                    <div data-aos="fade-up">
+                        <details>
+                            <summary>
+                                <?php
                                     echo $product->short_description;
                                     ?>
-                                </summary>
-                                <?php
+                            </summary>
+                            <?php
                                 echo $product->description;
                                 ?>
-                            </details>
+                        </details>
 
-                        </div>
                     </div>
                 </div>
+            </div>
 
             <?php
             }
@@ -121,11 +132,11 @@ $attachment_ids = $product_id ? wc_get_product($product_id)->get_gallery_image_i
                     $image_url = wp_get_attachment_url($attachment_id)
                 ?>
 
-                    <a href="<?php echo $image_url; ?>" data-fancybox="gallery" data-caption="title"
-                        class="project <?php echo "project-" . floor(($i - 1) % 3) + 1 ?>" data-aos="fade-up">
-                        <img src=" <?php echo $image_url; ?>" alt="">
+                <a href="<?php echo $image_url; ?>" data-fancybox="gallery" data-caption="title"
+                    class="project <?php echo "project-" . floor(($i - 1) % 3) + 1 ?>" data-aos="fade-up">
+                    <img src=" <?php echo $image_url; ?>" alt="">
 
-                    </a>
+                </a>
                 <?php
                     if ($i == 4) {
                         $i++;
@@ -175,19 +186,19 @@ $attachment_ids = $product_id ? wc_get_product($product_id)->get_gallery_image_i
                     }
                 ?>
 
-                    <div class="rp-box fade-box" data-aos="fade-up">
-                        <img src="<?php echo $imgUrl ?>" alt="<?php echo $product->get_name() ?>">
-                        <div class="rp-box-content fade-target">
-                            <h3 class="uppercase">
-                                <?php echo $product->get_name() ?>
-                            </h3>
-                            <p>
-                                <?php echo wp_trim_words($product->get_short_description(), 10) ?>
-                            </p>
-                            <a class="btn btn-white" target="_blank"
-                                href="<?php echo get_permalink($product->get_id()) ?>">Read More</a>
-                        </div>
+                <div class="rp-box fade-box" data-aos="fade-up">
+                    <img src="<?php echo $imgUrl ?>" alt="<?php echo $product->get_name() ?>">
+                    <div class="rp-box-content fade-target">
+                        <h3 class="uppercase">
+                            <?php echo $product->get_name() ?>
+                        </h3>
+                        <p>
+                            <?php echo wp_trim_words($product->get_short_description(), 10) ?>
+                        </p>
+                        <a class="btn btn-white" target="_blank"
+                            href="<?php echo get_permalink($product->get_id()) ?>">Read More</a>
                     </div>
+                </div>
 
                 <?php
                 }
