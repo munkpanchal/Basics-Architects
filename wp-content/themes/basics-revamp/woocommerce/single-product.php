@@ -143,14 +143,14 @@ if ($thumbnail_url) {
 
                     </a>
                 <?php
-                    if ($i == 4) {
+                    if ($i == 4 || $i == 10) {
                         $i++;
                         $i++;
                     }
 
                     if ($i % 3 == 0) {
                         echo "</div><div class='project-row project-row-" . $row . "'>";
-                        $row < 3 ? $row++ : $row = 1;
+                        $row < 3 ? $row++ : $row = 2;
                     }
                     $i++;
                 }
