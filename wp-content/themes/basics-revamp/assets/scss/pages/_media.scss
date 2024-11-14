@@ -5,7 +5,7 @@
         @apply gap-4 grid sm:grid-cols-3 2xl:grid-cols-4 sm:pt-[44px];
 
         .media-wrap {
-            @apply block relative overflow-hidden aspect-[4/3];
+            @apply block relative overflow-hidden aspect-square;
             img {
                 @apply w-full h-full object-cover;
             }
