@@ -163,10 +163,8 @@ get_template_part("/components/shared/content", "banner", array('class' => ''));
                         <img src="<?php echo $imgUrl ?>" alt="<?php echo $post->post_title ?>">
                         <div class="rp-box-content fade-target">
                             <h3 class="uppercase">
-                                <?php echo $post->post_title ?>
-                                <?php
-                                echo $i
-                                ?>
+                                <?php echo $post->get_name() ?>
+
                             </h3>
                             <p>
                                 <?php echo wp_trim_words($post->post_content, 10) ?>
