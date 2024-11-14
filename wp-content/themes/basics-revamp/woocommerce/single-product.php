@@ -150,27 +150,42 @@ get_template_part("/components/shared/content", "banner", array('class' => ''));
             </h2>
             <div class="grid sm:grid-cols-3 gap-4">
                 <?php
-                for ($i = 1; $i <= 3; $i++) {
-                    # code...
+                $current_category = get_queried_object();
+                $category_id = $current_category->term_id;
 
-                    if (get_the_post_thumbnail_url($post->ID, 'large')) {
-                        $imgUrl = get_the_post_thumbnail_url($post->ID, 'large');
-                    } else {
+                $args = [
+                    'status' => 'publish',
+                    'posts_per_page' => 3,
+                    'orderby' => 'menu_order title',
+                    'order' => 'ASC',
+                    'product_category' => $category_id,
+                ];
+
+                $products = wc_get_products($args);
+
+                foreach ($products as $product) {
+                    if ($product->get_id() === get_the_ID()) {
+                        continue;
+                    }
+
+                    $imgUrl = get_the_post_thumbnail_url($product->get_id(), 'large');
+
+                    if (!$imgUrl) {
                         $imgUrl = get_theme_file_uri("/public/default-blog.jpg");
                     }
                 ?>
+
                     <div class="rp-box fade-box" data-aos="fade-up">
-                        <img src="<?php echo $imgUrl ?>" alt="<?php echo $post->post_title ?>">
+                        <img src="<?php echo $imgUrl ?>" alt="<?php echo $product->get_name() ?>">
                         <div class="rp-box-content fade-target">
                             <h3 class="uppercase">
-                                <?php echo $post->post_title ?>
-
+                                <?php echo $product->get_name() ?>
                             </h3>
                             <p>
-                                <?php echo wp_trim_words($post->post_content, 10) ?>
+                                <?php echo wp_trim_words($product->get_short_description(), 10) ?>
                             </p>
-                            <a class="btn btn-white" target="_blank" href="<?php the_permalink($post->ID) ?>">Read
-                                More</a>
+                            <a class="btn btn-white" target="_blank"
+                                href="<?php echo get_permalink($product->get_id()) ?>">Read More</a>
                         </div>
                     </div>
 
