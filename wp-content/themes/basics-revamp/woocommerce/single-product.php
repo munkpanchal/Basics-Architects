@@ -128,34 +128,43 @@ if ($thumbnail_url) {
 
 
                 $i = 1;
-                // for ($i = 1; $i < 3; $i++) {
 
+                $type = false;
                 foreach ($attachment_ids as $attachment_id) {
 
-                    # code...
-                    // $image_url =  get_theme_file_uri("/public/banner.jpg");
-                    $image_url = wp_get_attachment_url($attachment_id)
-                ?>
-
-                    <a href="<?php echo $image_url; ?>" data-fancybox="gallery" data-caption="title"
-                        class="project <?php echo "project-" . floor(($i - 1) % 3) + 1 ?>" data-aos="fade-up">
-                        <img src=" <?php echo $image_url; ?>" alt="">
-
-                    </a>
-                <?php
-                    if ($i == 4 || $i == 10 || $i == 16) {
+                    $image_url = wp_get_attachment_url($attachment_id);
+                    if ($row == 1) {
                         $i++;
                         $i++;
                     }
 
+
+                ?>
+
+
+
+                    <a href="<?php echo $image_url; ?>" data-fancybox="gallery" data-caption="title" class="project"
+                        data-aos="fade-up">
+                        <img src=" <?php echo $image_url; ?>" alt="">
+
+                    </a>
+                    <?php
+
                     if ($i % 3 == 0) {
-                        echo "</div><div class='project-row project-row-" . $row . "'>";
-                        $row < 3 ? $row++ : $row = 2;
+                    ?>
+
+            </div>
+            <div class='project-row project-row-<?php echo $row ?> <?php echo $type ? "type-1" : "" ?>'>
+        <?php
+                        $row < 2 ? $row++ : $row = 1;
+                        if ($row == 1) {
+                            $type = !$type;
+                        }
                     }
                     $i++;
                 }
 
-                ?>
+        ?>
             </div>
         </div>
     </div>
