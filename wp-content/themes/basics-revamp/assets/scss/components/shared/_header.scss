@@ -24,7 +24,28 @@
             }
         }
 
-        .header-nav-links,
+        .header-nav-links {
+            column-gap: 1.5rem;
+            column-count: 5;
+            column-rule-style: solid;
+            column-rule-width: 1px;
+
+            & > * {
+                width: max-content;
+                margin: auto;
+            }
+            li {
+                @apply text-sm uppercase transition-all duration-300 font-bold;
+                color: var(--clr-gray);
+
+                &.current_page_item,
+                &.current-menu-item,
+                &:hover {
+                    color: var(--clr-black);
+                }
+            }
+        }
+
         .mobile-nav-links {
             @apply flex gap-6;
             li {
