@@ -31,7 +31,14 @@ if ($thumbnail_url) {
                                     } ?>" style="--bannerUri:url(<?php echo $bannerUri ?>)">
             <!-- <img src="<?php echo $bannerUri ?>" alt=""> -->
 
+            <div class="banner-content">
+                <h2 class="banner-heading !text-white" data-aos="fade-up">
+                    <?php
+                    echo $product->get_name()
+                    ?>
+                </h2>
 
+            </div>
         </div>
     </div>
 </section>
@@ -43,12 +50,12 @@ if ($thumbnail_url) {
             <div class="sph-left">
 
 
-
+                <!-- 
                 <h2 class="project-title " data-aos="fade-up">
                     <?php
                     echo $product->get_name()
                     ?>
-                </h2>
+                </h2> -->
 
                 <?php
                 $year = get_field("year");
@@ -90,11 +97,11 @@ if ($thumbnail_url) {
             ?>
                 <div class="sph-right">
 
-                    <h2 class="project-title opacity-0 pointer-events-none max-sm:hidden">
+                    <!-- <h2 class="project-title opacity-0 pointer-events-none max-sm:hidden">
                         <?php
                         echo $product->get_name()
                         ?>
-                    </h2>
+                    </h2> -->
                     <div class="project-content max-sm:pt-2">
 
                         <div data-aos="fade-up">
