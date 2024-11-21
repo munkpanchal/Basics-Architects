@@ -36,6 +36,11 @@ $custom_posts = get_posts($args);
                     }
                     $post_type = get_post_type();
 
+                    $url = get_the_permalink($post->ID);
+                    if (get_field("external_url")) {
+                        $url = get_field("external_url");
+                    }
+
                 ?>
 
 
@@ -48,7 +53,7 @@ $custom_posts = get_posts($args);
                             <p>
                                 <?php echo wp_trim_words($post->post_content, 20) ?>
                             </p>
-                            <a class="btn btn-white" target="_blank" href="<?php the_permalink($post->ID) ?>">Read More</a>
+                            <a class="btn btn-white" target="_blank" href="<?php echo $url; ?>">Read More</a>
                         </div>
                     </div>
                 <?php
