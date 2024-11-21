@@ -52,26 +52,24 @@ get_template_part("/components/shared/content", "banner", array('class' => ''));
 
                 // Get the remaining words after the first 10
                 $remaining_excerpt = implode(' ', array_slice($words, $sliceCount));
+                if ($words) {
                 ?>
-
                 <details data-aos="fade-up" data-aos-delay="100">
                     <summary>
                         <?php
-                        echo $trimmed_excerpt;
-                        ?>
+                            echo $trimmed_excerpt;
+                            ?>
                     </summary>
                     <p>
                         <?php
-                        echo $remaining_excerpt;
-                        ?>
+                            echo $remaining_excerpt;
+                            ?>
                     </p>
                 </details>
+                <?php
+                }
+                ?>
 
-                <p class="sph-content" data-aos="fade-up">
-                    <?php
-
-                    ?>
-                </p>
             </div>
 
         </div>
