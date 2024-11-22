@@ -9,7 +9,7 @@ if ($thumbnail_url) {
 }
 
 ?>
-<section class="banner">
+<section class="banner blog">
     <div class="container">
 
         <div class="banner-wrapper <?php if ($args['class']) {
@@ -77,7 +77,7 @@ if ($thumbnail_url) {
                 $remaining_excerpt = implode(' ', array_slice($words, $sliceCount));
                 if ($words) {
                 ?>
-                    <details data-aos="fade-up" data-aos-delay="100">
+                    <!-- <details data-aos="fade-up" data-aos-delay="100">
                         <summary>
                             <?php
                             echo $trimmed_excerpt;
@@ -88,7 +88,7 @@ if ($thumbnail_url) {
                             echo $remaining_excerpt;
                             ?>
                         </p>
-                    </details>
+                    </details> -->
                 <?php
                 }
                 ?>
