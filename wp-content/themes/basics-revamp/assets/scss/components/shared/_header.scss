@@ -29,8 +29,12 @@
             column-gap: 16;
             column-rule-style: solid;
             column-rule-width: 1px;
+            padding-inline: 8px;
+            border-left: 1px solid var(--clr-gray);
+            border-right: 1px solid var(--clr-gray);
             li {
-                @apply text-sm uppercase transition-all duration-300 font-bold flex justify-center;
+                @apply uppercase transition-all duration-300 font-bold flex justify-center;
+                font-size: 14px;
                 color: var(--clr-gray);
 
                 &.current_page_item,

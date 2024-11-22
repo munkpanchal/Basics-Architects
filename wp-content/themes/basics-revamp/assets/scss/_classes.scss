@@ -43,9 +43,11 @@
     .category-menu {
         @apply flex justify-center gap-4;
         .menu-link {
-            @apply text-sm capitalize font-bold cursor-pointer;
+            @apply capitalize font-bold cursor-pointer;
+
+            font-size: 15px;
             &.active {
-                color: var(--clr-black);
+                @apply underline;
             }
         }
     }
