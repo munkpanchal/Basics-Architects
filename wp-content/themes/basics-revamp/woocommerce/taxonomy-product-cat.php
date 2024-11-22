@@ -146,7 +146,7 @@ $bannerUri = get_theme_file_uri("/public/banner.webp");
 
 
             ?>
-                <div data-cat="<?php echo $catName; ?>" class="project active ">
+                <div data-cat="<?php echo $catName; ?>" class="project active  fade-box">
                     <img src=" <?php echo $thumbnail_url ?>" alt="">
                     <div class="project-content fade-target">
                         <h3>
