@@ -2,8 +2,31 @@
 
 
 <?php
-get_template_part("/components/shared/content", "banner", array('class' => ''));;
+$bannerUri = get_theme_file_uri("/public/banner.webp");
+$thumbnail_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
+if ($thumbnail_url) {
+    $bannerUri = $thumbnail_url;
+}
+
 ?>
+<section class="banner">
+    <div class="container">
+
+        <div class="banner-wrapper <?php if ($args['class']) {
+                                        echo $args['class'];
+                                    } ?>" style="--bannerUri:url(<?php echo $bannerUri ?>)">
+
+            <div class="banner-content">
+                <h2 class="banner-heading !text-white" data-aos="fade-up">
+                    <?php
+                    echo get_the_title()
+                    ?>
+                </h2>
+
+            </div>
+        </div>
+    </div>
+</section>
 
 <main class="main single-blog-page" id="single-blog-page">
     <div class="container">
@@ -14,7 +37,7 @@ get_template_part("/components/shared/content", "banner", array('class' => ''));
 
                 <h2 class="project-title " data-aos="fade-up">
                     <?php
-                    echo get_the_title()
+                    // echo get_the_title()
                     ?>
                 </h2>
 
@@ -37,7 +60,7 @@ get_template_part("/components/shared/content", "banner", array('class' => ''));
 
                 <h2 class="project-title w-max opacity-0 pointer-events-none">
                     <?php
-                    echo get_the_title()
+                    // echo get_the_title()
                     ?>
                 </h2>
                 <?php
@@ -54,18 +77,18 @@ get_template_part("/components/shared/content", "banner", array('class' => ''));
                 $remaining_excerpt = implode(' ', array_slice($words, $sliceCount));
                 if ($words) {
                 ?>
-                <details data-aos="fade-up" data-aos-delay="100">
-                    <summary>
-                        <?php
+                    <details data-aos="fade-up" data-aos-delay="100">
+                        <summary>
+                            <?php
                             echo $trimmed_excerpt;
                             ?>
-                    </summary>
-                    <p>
-                        <?php
+                        </summary>
+                        <p>
+                            <?php
                             echo $remaining_excerpt;
                             ?>
-                    </p>
-                </details>
+                        </p>
+                    </details>
                 <?php
                 }
                 ?>
