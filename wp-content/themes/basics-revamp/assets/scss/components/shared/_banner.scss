@@ -6,7 +6,7 @@
         background-image: var(--bannerUri);
         height: calc(100dvh - var(--header-height) - 1rem);
         aspect-ratio: 9/4;
-        // @apply 2xl:h-auto;
+        @apply 2xl:h-auto;
         @include mobile {
             height: calc(100dvh - var(--header-height) - 1rem);
             &.sub-cat-banner {
