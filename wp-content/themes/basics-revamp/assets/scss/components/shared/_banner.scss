@@ -66,17 +66,22 @@
                     transition: all 400ms ease-in-out;
                     opacity: 0;
                     transform: translateY(100px);
-                    color: var(--clr-black);
-                    width: auto;
-                    max-width: 60ch;
-                    font-size: 24px;
-                    line-height: 1.5;
                 }
-                &.active {
+                &.abc {
                     background-color: white;
-                    opacity: 1;
                     justify-content: center;
                     align-items: center;
+                    .banner-para {
+                        color: var(--clr-black);
+                        width: auto;
+                        max-width: 60ch;
+                        font-size: 24px;
+                        line-height: 1.5;
+                    }
+                }
+                &.active {
+                    opacity: 1;
+
                     .banner-heading {
                         opacity: 1;
                         transform: translateY(0);

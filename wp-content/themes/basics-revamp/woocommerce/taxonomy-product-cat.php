@@ -34,11 +34,11 @@ $child_categories = get_categories(array(
         foreach ($child_categories as $category) {
 
         ?>
-        <span class="menu-link" data-tab-nav-project data-tab-target="<?php echo $category->slug; ?>">
-            <?php
+            <span class="menu-link" data-tab-nav-project data-tab-target="<?php echo $category->slug; ?>">
+                <?php
                 echo $category->name;
                 ?>
-        </span>
+            </span>
         <?php
         }
         ?>
@@ -62,7 +62,7 @@ $bannerUri = get_theme_file_uri("/public/banner.webp");
 
             ?>
 
-            <div class="banner-content subcat active" data-content data-content-none data-content-id="none">
+            <div class="banner-content subcat abc active" data-content data-content-none data-content-id="none">
                 <h2 class="banner-heading " data-aos="fade-up">
                     <?php
                     // echo $current_category->name;
@@ -86,23 +86,23 @@ $bannerUri = get_theme_file_uri("/public/banner.webp");
                 $thumbnail_id = get_term_meta($cat_id, 'thumbnail_id', true);
                 $image_url = wp_get_attachment_url($thumbnail_id);
             ?>
-            <img src="<?php echo $image_url ?>" data-img data-image-id="<?php echo $category->slug; ?>" alt="">
+                <img src="<?php echo $image_url ?>" data-img data-image-id="<?php echo $category->slug; ?>" alt="">
 
-            <div class="banner-content subcat" data-content data-content-id="<?php echo $category->slug; ?>">
-                <h2 class="banner-heading !text-white" data-aos="fade-up">
-                    <?php
+                <div class="banner-content subcat" data-content data-content-id="<?php echo $category->slug; ?>">
+                    <h2 class="banner-heading !text-white" data-aos="fade-up">
+                        <?php
                         echo $category->name;
                         ?>
-                </h2>
+                    </h2>
 
-                <p class="banner-para" data-aos="fade-up" data-aos-delay="100">
-                    <?php
+                    <p class="banner-para" data-aos="fade-up" data-aos-delay="100">
+                        <?php
                         echo $category->description
                         ?>
-                </p>
+                    </p>
 
 
-            </div>
+                </div>
 
             <?php
             }
@@ -146,23 +146,23 @@ $bannerUri = get_theme_file_uri("/public/banner.webp");
 
 
             ?>
-            <div data-cat="<?php echo $catName; ?>" class="project active ">
-                <img src=" <?php echo $thumbnail_url ?>" alt="">
-                <div class="project-content fade-target">
-                    <h3>
-                        <?php echo $product->name; ?>
-                    </h3>
+                <div data-cat="<?php echo $catName; ?>" class="project active ">
+                    <img src=" <?php echo $thumbnail_url ?>" alt="">
+                    <div class="project-content fade-target">
+                        <h3>
+                            <?php echo $product->name; ?>
+                        </h3>
 
-                    <p class="para ">
-                        <?php echo wp_trim_words($product->description, 20) ?>..
-                    </p>
+                        <p class="para ">
+                            <?php echo wp_trim_words($product->description, 20) ?>..
+                        </p>
 
-                    <a class="btn btn-white" target="_blank" href="<?php the_permalink($product_id) ?>">
-                        Read More
-                    </a>
+                        <a class="btn btn-white" target="_blank" href="<?php the_permalink($product_id) ?>">
+                            Read More
+                        </a>
 
+                    </div>
                 </div>
-            </div>
             <?php
 
             }
