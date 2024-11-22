@@ -35,7 +35,7 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            background-image: linear-gradient(to bottom, rgba(36, 36, 36, 0.1), rgba(36, 36, 36, 0.75));
+            // background-image: linear-gradient(to bottom, rgba(36, 36, 36, 0.1), rgba(36, 36, 36, 0.75));
             .banner-heading {
                 @apply uppercase text-4xl lg:text-5xl mb-4;
                 max-width: 32ch;
