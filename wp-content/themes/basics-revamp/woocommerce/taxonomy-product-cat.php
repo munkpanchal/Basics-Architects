@@ -60,7 +60,6 @@ $bannerUri = get_theme_file_uri("/public/banner.webp");
             $thumbnail_id = get_term_meta($category_id, 'thumbnail_id', true);
             $image_url = wp_get_attachment_url($thumbnail_id);
 
-
             ?>
 
             <div class="banner-content subcat active" data-content data-content-none data-content-id="none">
@@ -88,6 +87,12 @@ $bannerUri = get_theme_file_uri("/public/banner.webp");
                         echo $category->name;
                         ?>
                     </h2>
+
+                    <p class="banner-para" data-aos="fade-up" data-aos-delay="100">
+                        <?php
+                        echo $category->description
+                        ?>
+                    </p>
 
 
                 </div>

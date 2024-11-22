@@ -61,9 +61,18 @@
                     opacity: 0;
                     transform: translateY(100px);
                 }
+                .banner-para {
+                    transition: all 400ms ease-in-out;
+                    opacity: 0;
+                    transform: translateY(100px);
+                }
                 &.active {
                     opacity: 1;
                     .banner-heading {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                    .banner-para {
                         opacity: 1;
                         transform: translateY(0);
                     }

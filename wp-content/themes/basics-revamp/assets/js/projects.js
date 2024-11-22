@@ -39,7 +39,7 @@ tabNavs?.forEach((tabNav) => {
         });
         tabBannersContent?.forEach((tbc) => {
             let innerActive = tbc.getAttribute("data-content-id");
-            console.log(innerActive);
+            // console.log(innerActive);
             if (innerActive == currentActive) {
                 if (!tbc.classList.contains("active")) {
                     tabBannersContent?.forEach((tbci) => {
