@@ -25,14 +25,13 @@
         }
 
         .header-nav-links {
-            @apply flex gap-0;
+            column-count: 5;
+            column-gap: 16;
+            column-rule-style: solid;
+            column-rule-width: 1px;
             li {
-                @apply text-sm uppercase transition-all duration-300 font-bold px-3;
+                @apply text-sm uppercase transition-all duration-300 font-bold flex justify-center;
                 color: var(--clr-gray);
-                border-right: 1px solid var(--clr-gray);
-                &:last-child {
-                    border: none;
-                }
 
                 &.current_page_item,
                 &.current-menu-item,

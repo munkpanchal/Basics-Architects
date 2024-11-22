@@ -43,7 +43,7 @@
     .category-menu {
         @apply flex justify-center gap-4;
         .menu-link {
-            @apply text-sm uppercase font-bold cursor-pointer;
+            @apply text-sm capitalize font-bold cursor-pointer;
             &.active {
                 color: var(--clr-black);
             }
