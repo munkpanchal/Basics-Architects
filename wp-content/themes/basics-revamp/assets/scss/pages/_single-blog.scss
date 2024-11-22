@@ -1,5 +1,7 @@
 .single-blog-page {
     --gap: 1rem;
+    max-width: 900px;
+    margin: auto;
     &-head {
         h2 {
             @apply text-4xl;
@@ -7,8 +9,7 @@
     }
     &-content {
         @apply flex flex-col;
-        max-width: 900px;
-        margin: auto;
+
         .wp-block-heading {
             @apply text-2xl font-bold;
             margin-bottom: calc(var(--gap) * 1.5);
