@@ -103,6 +103,12 @@
             height: auto;
             aspect-ratio: 16 / 9;
             margin-top: 1rem;
+
+            .banner-heading {
+                margin-bottom: -1rem;
+                font-size: 2rem;
+                line-height: 1.5;
+            }
         }
     }
 }
