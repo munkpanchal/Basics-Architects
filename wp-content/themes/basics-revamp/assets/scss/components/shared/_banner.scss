@@ -5,7 +5,7 @@
         // background-image: linear-gradient(0, 0, 0, 0.35);
         // background-image: linear-gradient(to bottom, rgba(36, 36, 36, 0.46), rgba(36, 36, 36, 0.95)), var(--bannerUri);
 
-        background-image: linear-gradient(to bottom, rgba(36, 36, 36, 0.1), rgba(36, 36, 36, 0.6)), var(--bannerUri);
+        background-image: linear-gradient(to bottom, rgba(36, 36, 36, 0.1), rgba(36, 36, 36, 0.75)), var(--bannerUri);
         height: calc(100dvh - var(--header-height) - 1rem);
         aspect-ratio: 9/4;
         @apply 2xl:h-auto;
