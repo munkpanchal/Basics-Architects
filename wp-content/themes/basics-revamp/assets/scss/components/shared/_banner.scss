@@ -27,6 +27,8 @@
             @apply absolute bottom-4 sm:bottom-8 left-4 sm:left-8 text-white;
             .banner-heading {
                 @apply uppercase text-4xl lg:text-5xl mb-4;
+                max-width: 32ch;
+                line-height: 1.35;
             }
             .banner-para {
                 @apply text-sm sm:text-base lg:text-lg mb-4;
