@@ -98,5 +98,11 @@
     &.blog {
         max-width: 900px;
         margin: auto;
+
+        .banner-wrapper {
+            height: auto;
+            aspect-ratio: 16 / 9;
+            margin-top: 1rem;
+        }
     }
 }
