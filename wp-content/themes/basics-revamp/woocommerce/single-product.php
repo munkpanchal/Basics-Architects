@@ -4,7 +4,6 @@ $product_id = get_the_ID();
 
 $product = wc_get_product($product_id);
 $product_categories = wp_get_post_terms($product_id, 'product_cat');
-
 // Get the product gallery attachment IDs
 $attachment_ids = $product_id ? wc_get_product($product_id)->get_gallery_image_ids() : array();
 
@@ -180,51 +179,74 @@ if ($thumbnail_url) {
             <h2 class="primary-heading text-center sm:pb-4" data-aos="fade-up">
                 Related projects
             </h2>
-            <div class="grid sm:grid-cols-3 gap-4">
-                <?php
-                $current_category = get_queried_object();
-                $category_id = $current_category->term_id;
+            <?php
 
-                $args = [
-                    'status' => 'publish',
-                    'posts_per_page' => 3,
-                    'orderby' => 'menu_order title',
-                    'order' => 'ASC',
-                    'product_category' => $category_id,
-                ];
 
-                $products = wc_get_products($args);
+            $product_categories = get_the_terms($product_id, 'product_cat');
+            $category_id = $product_categories[0]->term_id;
 
-                foreach ($products as $product) {
-                    if ($product->get_id() === get_the_ID()) {
-                        continue;
-                    }
+            $args = array(
+                'post_type' => 'product',
+                'post_status' => 'publish',
+                'posts_per_page' => 3,
+                'orderby' => 'menu_order title',
+                'order' => 'ASC',
 
-                    $imgUrl = get_the_post_thumbnail_url($product->get_id(), 'large');
+                'post__not_in' => array($product_id),
+                'tax_query' => array(
+                    array(
+                        'taxonomy' => 'product_cat',
+                        'field' => 'term_id',
+                        'terms' => $category_id, // You can adjust this to include multiple categories if needed
+                    ),
+                ),
+            );
 
-                    if (!$imgUrl) {
-                        $imgUrl = get_theme_file_uri("/public/default-blog.jpg");
-                    }
-                ?>
+            $products = wc_get_products($args);
 
-                    <div class="rp-box fade-box" data-aos="fade-up">
-                        <img src="<?php echo $imgUrl ?>" alt="<?php echo $product->get_name() ?>">
-                        <div class="rp-box-content fade-target">
-                            <h3 class="uppercase">
-                                <?php echo $product->get_name() ?>
-                            </h3>
-                            <p>
-                                <?php echo wp_trim_words($product->get_short_description(), 10) ?>
-                            </p>
-                            <a class="btn btn-white" target="_blank"
-                                href="<?php echo get_permalink($product->get_id()) ?>">Read More</a>
+            if ($products) {
+            ?>
+
+                <div class="grid sm:grid-cols-3 gap-4">
+                    <?php
+
+                    foreach ($products as $product) {
+                        if ($product->get_id() === get_the_ID()) {
+                            continue;
+                        }
+
+                        $imgUrl = get_the_post_thumbnail_url($product->get_id(), 'large');
+
+                        if (!$imgUrl) {
+                            $imgUrl = get_theme_file_uri("/public/default-blog.jpg");
+                        }
+                    ?>
+
+                        <div class="rp-box fade-box" data-aos="fade-up">
+                            <img src="<?php echo $imgUrl ?>" alt="<?php echo $product->get_name() ?>">
+                            <div class="rp-box-content fade-target">
+                                <h3 class="uppercase">
+                                    <?php echo $product->get_name() ?>
+                                </h3>
+                                <p>
+                                    <?php echo wp_trim_words($product->get_short_description(), 10) ?>
+                                </p>
+                                <a class="btn btn-white" target="_blank"
+                                    href="<?php echo get_permalink($product->get_id()) ?>">Read More</a>
+                            </div>
                         </div>
-                    </div>
 
+                    <?php
+                    }
+                } else {
+                    ?>
+                    <p class="text-center">
+                        No Related Project found.
+                    </p>
                 <?php
                 }
                 ?>
-            </div>
+                </div>
         </section>
 
     </div>
