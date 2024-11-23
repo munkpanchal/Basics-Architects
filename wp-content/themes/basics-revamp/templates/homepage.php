@@ -68,8 +68,8 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                     $videoUri = get_theme_file_uri("/public/homepage/soti_carl.mp4");
                     $videoUri = "https://lemonchiffon-hawk-580804.hostingersite.com/wp-content/uploads/2024/11/Vinod-Environment-Video.mp4"
                     ?>
-                    <video class="!aspect-square" src="<?php echo $videoUri; ?>" autoplay muted playsinline loop
-                        controls></video>
+                    <video class="max-sm:!aspect-[3/4] !aspect-square" src="<?php echo $videoUri; ?>" autoplay muted
+                        playsinline loop controls></video>
 
                     <div>
                         <p>
