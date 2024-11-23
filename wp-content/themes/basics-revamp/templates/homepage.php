@@ -69,6 +69,14 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                     $videoUri = "https://lemonchiffon-hawk-580804.hostingersite.com/wp-content/uploads/2024/11/Vinod-Environment-Video.mp4"
                     ?>
                     <video src="<?php echo $videoUri; ?>" autoplay muted playsinline loop controls></video>
+
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sapiente dolorem, facilis sit
+                            quis neque? Deserunt ipsa, reprehenderit nam animi quam ex, quas officiis libero enim
+                            pariatur necessitatibus dolorum rerum?
+                        </p>
+                    </div>
                 </div>
                 <div class="out-box">
                     <img src="<?php echo get_theme_file_uri("/public/homepage/5.webp") ?>" alt="">
