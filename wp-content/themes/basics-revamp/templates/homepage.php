@@ -66,7 +66,7 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                 <div class="out-box">
                     <?php
                     $videoUri = get_theme_file_uri("/public/homepage/soti_carl.mp4");
-                    $videoUri = "https://lemonchiffon-hawk-580804.hostingersite.com/wp-content/uploads/2024/11/vinod_environment_video.mov"
+                    $videoUri = "https://lemonchiffon-hawk-580804.hostingersite.com/wp-content/uploads/2024/11/Vinod-Environment-Video.mp4"
                     ?>
                     <video src="<?php echo $videoUri; ?>" autoplay muted playsinline loop controls></video>
                 </div>
