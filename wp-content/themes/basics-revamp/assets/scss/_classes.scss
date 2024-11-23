@@ -189,3 +189,47 @@ details {
 .fancybox__caption {
     display: none !important;
 }
+
+.h-section {
+    height: calc(100dvh - var(--header-height));
+    @include widescreen {
+        height: auto;
+    }
+
+    .container {
+        @apply h-full;
+    }
+}
+
+.out-box {
+    @apply flex gap-4 max-sm:flex-col;
+    img,
+    video {
+        @apply h-full w-full object-cover object-center 2xl:aspect-video;
+    }
+}
+
+.one-upon-two {
+    @apply h-full grid grid-cols-2 grid-rows-2 gap-4;
+    .out-box {
+        @apply first:col-span-2;
+    }
+}
+.one-side-two {
+    @apply h-full grid grid-cols-2 grid-rows-2 gap-4;
+    .out-box {
+        @apply first:row-span-2;
+    }
+}
+.two-side-one {
+    @apply h-full grid grid-cols-2 grid-rows-2 gap-4;
+    .out-box {
+        &:last-child {
+            grid-row: 1/3;
+            grid-column: 2/3;
+        }
+    }
+}
+.two-by-two {
+    @apply h-full grid grid-cols-2 grid-rows-2 gap-4;
+}
