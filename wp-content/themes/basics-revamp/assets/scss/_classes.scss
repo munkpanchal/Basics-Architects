@@ -192,9 +192,12 @@ details {
 
 .h-section {
     height: calc(100dvh - var(--header-height));
-    @include widescreen {
+    @include mobile {
         height: auto;
     }
+    // @include widescreen {
+    //     height: auto;
+    // }
 
     .container {
         @apply h-full;
@@ -202,34 +205,40 @@ details {
 }
 
 .out-box {
-    @apply flex gap-4 max-sm:flex-col;
+    @apply flex gap-4 max-sm:flex-col 2xl:flex-col overflow-hidden;
+    & > * {
+        flex: 1;
+    }
+
     img,
     video {
-        @apply h-full w-full object-cover object-center 2xl:aspect-video;
+        @apply h-full w-full object-cover object-center;
     }
 }
 
 .one-upon-two {
-    @apply h-full grid grid-cols-2 grid-rows-2 gap-4;
+    @apply h-full grid sm:grid-cols-2 sm:grid-rows-2 gap-4;
     .out-box {
         @apply first:col-span-2;
     }
 }
 .one-side-two {
-    @apply h-full grid grid-cols-2 grid-rows-2 gap-4;
+    @apply h-full grid sm:grid-cols-2 sm:grid-rows-2 gap-4;
     .out-box {
         @apply first:row-span-2;
     }
 }
 .two-side-one {
-    @apply h-full grid grid-cols-2 grid-rows-2 gap-4;
+    @apply h-full grid sm:grid-cols-2 sm:grid-rows-2 gap-4;
     .out-box {
         &:last-child {
-            grid-row: 1/3;
-            grid-column: 2/3;
+            @include landscapes {
+                grid-row: 1/3;
+                grid-column: 2/3;
+            }
         }
     }
 }
 .two-by-two {
-    @apply h-full grid grid-cols-2 grid-rows-2 gap-4;
+    @apply h-full grid sm:grid-cols-2 sm:grid-rows-2 gap-4;
 }

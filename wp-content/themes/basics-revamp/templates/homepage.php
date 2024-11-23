@@ -30,7 +30,7 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
 
     <section class="section">
         <div class="container">
-            <p class="text-lg sm:text-xl px-16 text-center">
+            <p class="text-lg sm:text-xl sm:px-8 xl:px-16 sm:text-center">
                 BASICS Architects is an award-winning architecture and interior design firm providing Nature-integrated
                 design solutions across residential, commercial, educational and hospitality segments. Founded in 2004
                 by Vinod Singhi & Ranju Singhi, our firm has delivered 100+ projects in 28 cities across India, UK, UAE
@@ -68,7 +68,8 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                     $videoUri = get_theme_file_uri("/public/homepage/soti_carl.mp4");
                     $videoUri = "https://lemonchiffon-hawk-580804.hostingersite.com/wp-content/uploads/2024/11/Vinod-Environment-Video.mp4"
                     ?>
-                    <video src="<?php echo $videoUri; ?>" autoplay muted playsinline loop controls></video>
+                    <video class="!aspect-square" src="<?php echo $videoUri; ?>" autoplay muted playsinline loop
+                        controls></video>
 
                     <div>
                         <p>
