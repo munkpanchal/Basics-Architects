@@ -35,7 +35,7 @@ if (Splide && slider) {
             gap: 16,
             breakpoints: {
                 640: {
-                    perPage: 2,
+                    perPage: 1,
                 },
                 1024: {
                     perPage: 4,
