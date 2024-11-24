@@ -28,7 +28,9 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
 </section>
 <main class="main homepage" id="homepage">
 
-
+    <?php
+    get_template_part("/components/homepage/content", "clients")
+    ?>
 
 
     <section class="section">
