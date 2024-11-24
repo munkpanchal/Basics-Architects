@@ -36,6 +36,7 @@
         }
         .ts-content {
             p {
+                min-height: 18ch;
                 display: -webkit-box;
                 -webkit-line-clamp: 4;
                 -webkit-box-orient: vertical;
