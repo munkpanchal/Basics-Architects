@@ -30,40 +30,41 @@ $testimonials = get_posts($args);
 
                     ?>
 
-                    <li class="splide__slide">
-                        <div class="ts-wrap">
-                            <div class="ts-head">
-                                <img src="<?php echo $imgUrl ?>" alt="<?php echo $post->post_title ?>">
-                            </div>
-                            <div class="ts-content">
-                                <p>
+                        <li class="splide__slide">
+                            <div class="ts-wrap">
+                                <div class="ts-head">
+                                    <img src="<?php echo $imgUrl ?>" alt="<?php echo $post->post_title ?>">
+                                </div>
+                                <div class="ts-content">
+
                                     <?php
 
-                                        echo      $post->post_content
-                                        ?>
-                                </p>
-                            </div>
-                            <div class="ts-info">
-                                <h2>
-                                    <?php
+                                    echo $post->post_content
+                                    ?>
+
+
+                                </div>
+                                <div class="ts-info">
+                                    <h2>
+                                        <?php
                                         echo $post->post_title
                                         ?>
-                                </h2>
-                                <?php
+                                    </h2>
+                                    <?php
                                     if (get_field("designation")) {
 
                                     ?>
-                                <span>
-                                    <?php
+                                        <span>
+                                            <?php
                                             echo get_field("designation")
                                             ?>
-                                </span>
-                                <?php
+                                        </span>
+                                    <?php
                                     }
                                     ?>
+                                </div>
                             </div>
-                        </div>
-                    </li>
+                        </li>
                     <?php
                     }
                     ?>

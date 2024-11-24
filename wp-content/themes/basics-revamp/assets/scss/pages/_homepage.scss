@@ -31,7 +31,15 @@
             @apply flex gap-4 justify-center;
             // border-bottom: 1px solid var(--clr-gray);
             img {
-                @apply w-20 aspect-square object-cover rounded-full object-center;
+                @apply w-28 aspect-square object-cover rounded-full object-center;
+            }
+        }
+        .ts-content {
+            p {
+                display: -webkit-box;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
             }
         }
         .ts-info {

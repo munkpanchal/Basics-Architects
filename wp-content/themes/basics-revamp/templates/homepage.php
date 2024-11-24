@@ -29,9 +29,6 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
 <main class="main homepage" id="homepage">
 
 
-    <?php
-    get_template_part("/components/homepage/content", "testimonial")
-    ?>
 
 
     <section class="section">
@@ -158,6 +155,11 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
     </section>
 
     <!-- Testimonial Container -->
+
+    <?php
+    get_template_part("/components/homepage/content", "testimonial")
+    ?>
+
 
 </main>
 <?php get_footer() ?>
