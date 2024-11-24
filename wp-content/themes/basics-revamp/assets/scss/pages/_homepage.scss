@@ -24,11 +24,35 @@
     }
 
     .ts-wrap {
-        @apply p-4 flex justify-center items-center;
-        aspect-ratio: 4/3;
-        img {
-            @apply w-full h-full object-contain;
-            max-width: 150px;
+        @apply flex flex-col gap-4;
+        border: 0.15px solid #99999950;
+        padding: 1rem;
+        .ts-head {
+            @apply flex gap-4 justify-center;
+            // border-bottom: 1px solid var(--clr-gray);
+            img {
+                @apply w-20 aspect-square object-cover rounded-full object-center;
+            }
         }
+        .ts-info {
+            @apply flex flex-col items-end;
+            h2 {
+                @apply capitalize text-lg;
+                letter-spacing: 1px;
+            }
+            span {
+                @apply capitalize text-sm;
+            }
+        }
+    }
+}
+
+.splide__pagination {
+    bottom: -2rem !important;
+}
+.splide__pagination__page {
+    margin: 4px !important;
+    &.is-active {
+        background-color: var(--clr-black) !important;
     }
 }

@@ -25,11 +25,11 @@ if (Splide && slider) {
     if (document.querySelector("#testimonial-slider")) {
         const slide2 = new Splide("#testimonial-slider", {
             type: "loop",
-            perPage: 5,
+            perPage: 3,
             perMove: 1,
             interval: 2000,
-            // arrows: false,
-            pagination: false,
+            arrows: false,
+            pagination: true,
             autoplay: true,
             speed: 300,
             gap: 16,

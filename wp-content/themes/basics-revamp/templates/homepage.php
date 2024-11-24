@@ -28,6 +28,12 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
 </section>
 <main class="main homepage" id="homepage">
 
+
+    <?php
+    get_template_part("/components/homepage/content", "testimonial")
+    ?>
+
+
     <section class="section">
         <div class="container">
             <p class="text-lg sm:text-xl sm:px-8 xl:px-16 sm:text-center">
@@ -74,7 +80,8 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                     <div>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sapiente dolorem, facilis sit
-                            quis neque? Deserunt ipsa, reprehenderit nam animi quam ex, quas officiis libero enim
+                            quis neque? Deserunt ipsa, repreh
+                            enderit nam animi quam ex, quas officiis libero enim
                             pariatur necessitatibus dolorum rerum?
                         </p>
                     </div>
@@ -150,7 +157,7 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
         </div>
     </section>
 
-
+    <!-- Testimonial Container -->
 
 </main>
 <?php get_footer() ?>
