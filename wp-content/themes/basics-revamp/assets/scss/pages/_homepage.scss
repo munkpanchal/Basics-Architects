@@ -36,7 +36,7 @@
         }
         .ts-content {
             p {
-                min-height: 18ch;
+                min-height: 20ch;
                 display: -webkit-box;
                 -webkit-line-clamp: 4;
                 -webkit-box-orient: vertical;
@@ -57,9 +57,9 @@
 }
 
 .clients-wrapper {
-    @apply flex gap-4 sm:gap-8 flex-wrap justify-center;
+    @apply grid max-sm:grid-cols-3 sm:flex gap-4 sm:gap-8 flex-wrap justify-center;
     .cw-wrap {
-        @apply w-36 sm:w-40 h-16 sm:h-20;
+        @apply sm:w-40 h-16 sm:h-20;
         img {
             @apply w-full h-full object-contain grayscale hover:grayscale-0 transition-all ease-in-out duration-200;
         }
