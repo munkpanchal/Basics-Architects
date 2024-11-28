@@ -117,10 +117,7 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                     <img src="<?php echo get_theme_file_uri("/public/homepage/6.webp") ?>" alt="">
                     <img src="<?php echo get_theme_file_uri("/public/homepage/ranju.webp") ?>" alt="">
                 </div>
-                <div class="out-box">
 
-                    <img src="<?php echo get_theme_file_uri("/public/homepage/7.webp") ?>" alt="">
-                </div>
                 <div class="out-box">
                     <div class="flex flex-col gap-4 justify-center h-full ">
                         <img src="<?php echo get_theme_file_uri("/public/homepage/8.webp") ?>" alt="">
@@ -145,6 +142,10 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                     </div>
 
 
+                </div>
+                <div class="out-box">
+
+                    <img src="<?php echo get_theme_file_uri("/public/homepage/7.webp") ?>" alt="">
                 </div>
                 <!-- <div class="out-box">
                     <img src="<?php echo get_theme_file_uri("/public/homepage/8.webp") ?>" alt="">
