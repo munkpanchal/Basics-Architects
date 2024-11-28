@@ -67,7 +67,7 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                 </div>
                 <div class="out-box">
                     <!-- <img src="<?php echo get_theme_file_uri("/public/homepage/5.webp") ?>" alt=""> -->
-                    <div class="flex flex-col gap-4">
+                    <div class="flex flex-col gap-4 justify-center h-full">
 
                         <h2 class="text-3xl 2xl:text-5xl">
 
