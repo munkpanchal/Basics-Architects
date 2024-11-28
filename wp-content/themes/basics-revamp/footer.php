@@ -85,24 +85,24 @@
                         <div class="fc-wrap">
                             <p>
                                 <strong>project enquiry</strong>
-                                <a target="_blank" href="mailto:basics@basic.co.in">
-                                    basics@basic.co.in
+                                <a target="_blank" href="mailto:basics@basics.co.in">
+                                    basics@basics.co.in
                                 </a>
                             </p>
                         </div>
                         <div class="fc-wrap">
                             <p>
                                 <strong>career enquiry</strong>
-                                <a target="_blank" href="mailto:careers@basic.co.in">
-                                    careers@basic.co.in
+                                <a target="_blank" href="mailto:careers@basics.co.in">
+                                    careers@basics.co.in
                                 </a>
                             </p>
                         </div>
                         <div class="fc-wrap">
                             <p>
                                 <strong>media</strong>
-                                <a target="_blank" href="mailto:admin@basic.co.in">
-                                    admin@basic.co.in
+                                <a target="_blank" href="mailto:admin@basics.co.in">
+                                    admin@basics.co.in
                                 </a>
                             </p>
                         </div>

@@ -33,24 +33,24 @@
                 <div class="contact-box">
                     <h4 data-aos="fade-up">project enquiry</h4>
                     <p data-aos="fade-up">
-                        <a target="_blank" href="mailto:basics@basic.co.in">
-                            basics@basic.co.in
+                        <a target="_blank" href="mailto:basics@basics.co.in">
+                            basics@basics.co.in
                         </a>
                     </p>
                 </div>
                 <div class="contact-box">
                     <h4 data-aos="fade-up">career enquiry</h4>
                     <p data-aos="fade-up">
-                        <a target="_blank" href="mailto:careers@basic.co.in">
-                            careers@basic.co.in
+                        <a target="_blank" href="mailto:careers@basics.co.in">
+                            careers@basics.co.in
                         </a>
                     </p>
                 </div>
                 <div class="contact-box">
                     <h4 data-aos="fade-up">media</h4>
                     <p data-aos="fade-up">
-                        <a target="_blank" href="mailto:admin@basic.co.in">
-                            admin@basic.co.in
+                        <a target="_blank" href="mailto:admin@basics.co.in">
+                            admin@basics.co.in
                         </a>
                     </p>
                 </div>
