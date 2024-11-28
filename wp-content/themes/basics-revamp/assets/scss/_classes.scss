@@ -205,7 +205,7 @@ details {
 }
 
 .out-box {
-    @apply flex gap-4 max-sm:flex-col 2xl:flex-col overflow-hidden;
+    @apply flex gap-4 max-sm:flex-col  overflow-hidden;
     & > * {
         flex: 1;
     }

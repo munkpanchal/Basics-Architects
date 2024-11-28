@@ -122,8 +122,33 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                     <img src="<?php echo get_theme_file_uri("/public/homepage/7.webp") ?>" alt="">
                 </div>
                 <div class="out-box">
-                    <img src="<?php echo get_theme_file_uri("/public/homepage/8.webp") ?>" alt="">
+                    <div class="flex flex-col gap-4 justify-center h-full ">
+                        <img src="<?php echo get_theme_file_uri("/public/homepage/8.webp") ?>" alt="">
+                    </div>
+                    <div class="flex flex-col gap-2 justify-center h-full ">
+
+                        <h2 class="text-xl">
+                            Designs that deliver
+                        </h2>
+
+                        <p class="">
+                            We recognise the value of a client's investment - be it a family home, an office, a school
+                            or a hotel, every project carries with it many aspirations, and must fulfl many objectives.
+                            We design to honour these aspirations and objectives
+                        </p>
+                        <p class="">
+
+                            in BASICS, you have a partner you can trust to understand and translate your vision
+                            into built form.
+
+                        </p>
+                    </div>
+
+
                 </div>
+                <!-- <div class="out-box">
+                    <img src="<?php echo get_theme_file_uri("/public/homepage/8.webp") ?>" alt="">
+                </div> -->
             </div>
 
         </div>
@@ -143,8 +168,27 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                     ?>
                     <video src="<?php echo $videoUri; ?>" autoplay muted playsinline loop controls></video>
                 </div>
-                <div class="out-box">
+                <!-- <div class="out-box">
                     <img src="<?php echo get_theme_file_uri("/public/homepage/10.webp") ?>" alt="">
+                </div> -->
+                <div class="out-box">
+                    <div class="flex flex-col gap-2 justify-center h-full ">
+
+                        <h2 class="text-xl">
+                            Outcome-driven, process-oriented
+
+                        </h2>
+
+                        <p class="">
+                            Our studio of architects, designers and visualisers works with a network of consultants
+                            contractors and AEC experts to ensure seamless project execution and delivery
+
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-4 justify-center h-full ">
+                        <img src="<?php echo get_theme_file_uri("/public/homepage/5.webp") ?>" alt="">
+                    </div>
+
                 </div>
             </div>
         </div>
