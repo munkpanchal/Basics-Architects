@@ -75,6 +75,9 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                             design firm providing
                             Nature-integrated
                             design solutions across residential, commercial, educational and hospitality segments.
+                        </p>
+                        <p class="text-xl">
+
                             Founded in 2004
                             by Vinod Singhi & Ranju Singhi, our firm has delivered 100+ projects in 28 cities across
                             India, UK, UAE
