@@ -69,16 +69,16 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                     <!-- <img src="<?php echo get_theme_file_uri("/public/homepage/5.webp") ?>" alt=""> -->
                     <div class="flex flex-col gap-4">
 
-                        <h2>
+                        <h2 class="text-3xl">
 
                             For people, with nature
                         </h2>
 
-                        <p>
+                        <p class="text-xl">
                             We abide by the principles of Nature Integrated Design (NID), a holistic approach devised by
                             BASICS that connects humans with nature.
                         </p>
-                        <p>
+                        <p class="text-xl">
 
                             We use resource-efficient and environmentally-conscious strategies to incorporate natural
                             elements in built spaces for lower stress, higher productivity and improved wellbeing.
