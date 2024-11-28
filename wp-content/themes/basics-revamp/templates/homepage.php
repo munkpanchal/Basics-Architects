@@ -33,7 +33,7 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
 
 
 
-    <section class="section">
+    <!-- <section class="section">
         <div class="container">
             <p class="text-[22px] leading-7 sm:text-xl sm:px-8 xl:px-16 sm:text-center">
                 Basics Architects is an award-winning architecture and interior
@@ -46,7 +46,7 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
             </p>
 
         </div>
-    </section>
+    </section> -->
 
     <section class="section h-section">
         <div class="container">
@@ -68,18 +68,19 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                 <div class="out-box">
                     <div class="flex flex-col gap-4 justify-center h-full ">
 
-                        <h2 class="!text-3xl">
-                            For people, with nature
-                        </h2>
 
                         <p class="text-xl">
-                            We abide by the principles of Nature Integrated Design (NID), a holistic approach devised by
-                            BASICS that connects humans with nature.
-                        </p>
-                        <p class="text-xl">
 
-                            We use resource-efficient and environmentally-conscious strategies to incorporate natural
-                            elements in built spaces for lower stress, higher productivity and improved wellbeing.
+                            Basics Architects is an award-winning architecture and interior
+                            design firm providing
+                            Nature-integrated
+                            design solutions across residential, commercial, educational and hospitality segments.
+                            Founded in 2004
+                            by Vinod Singhi & Ranju Singhi, our firm has delivered 100+ projects in 28 cities across
+                            India, UK, UAE
+                            and Canada. We create spaces that protect and prioritise the Fuman-nature connection,
+                            fostering user
+                            health & wellness with minimal environmental impact.
 
                         </p>
                     </div>
@@ -120,27 +121,25 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
 
                 <div class="out-box">
                     <div class="flex flex-col gap-4 justify-center h-full ">
-                        <img src="<?php echo get_theme_file_uri("/public/homepage/8.webp") ?>" alt="">
-                    </div>
-                    <div class="flex flex-col gap-4 justify-center h-full ">
 
                         <h2 class="!text-3xl">
-                            Designs that deliver
+                            For people, with nature
                         </h2>
 
                         <p class="text-xl">
-                            We recognise the value of a client's investment - be it a family home, an office, a school
-                            or a hotel, every project carries with it many aspirations, and must fulfl many objectives.
-                            We design to honour these aspirations and objectives
+                            We abide by the principles of Nature Integrated Design (NID), a holistic approach devised by
+                            BASICS that connects humans with nature.
                         </p>
                         <p class="text-xl">
 
-                            in BASICS, you have a partner you can trust to understand and translate your vision
-                            into built form.
+                            We use resource-efficient and environmentally-conscious strategies to incorporate natural
+                            elements in built spaces for lower stress, higher productivity and improved wellbeing.
 
                         </p>
                     </div>
-
+                    <div class="flex flex-col gap-4 justify-center h-full ">
+                        <img src="<?php echo get_theme_file_uri("/public/homepage/5.webp") ?>" alt="">
+                    </div>
 
                 </div>
                 <div class="out-box">
@@ -174,21 +173,27 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                 </div> -->
                 <div class="out-box">
                     <div class="flex flex-col gap-4 justify-center h-full ">
+                        <img src="<?php echo get_theme_file_uri("/public/homepage/8.webp") ?>" alt="">
+                    </div>
+                    <div class="flex flex-col gap-4 justify-center h-full ">
 
                         <h2 class="!text-3xl">
-                            Outcome-driven, process-oriented
-
+                            Designs that deliver
                         </h2>
 
                         <p class="text-xl">
-                            Our studio of architects, designers and visualisers works with a network of consultants
-                            contractors and AEC experts to ensure seamless project execution and delivery
+                            We recognise the value of a client's investment - be it a family home, an office, a school
+                            or a hotel, every project carries with it many aspirations, and must fulfl many objectives.
+                            We design to honour these aspirations and objectives
+                        </p>
+                        <p class="text-xl">
+
+                            in BASICS, you have a partner you can trust to understand and translate your vision
+                            into built form.
 
                         </p>
                     </div>
-                    <div class="flex flex-col gap-4 justify-center h-full ">
-                        <img src="<?php echo get_theme_file_uri("/public/homepage/5.webp") ?>" alt="">
-                    </div>
+
 
                 </div>
             </div>
@@ -206,10 +211,31 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                 <div class="out-box">
                     <img src="<?php echo get_theme_file_uri("/public/homepage/12.webp") ?>" alt="">
                 </div>
+
                 <div class="out-box">
+                    <div class="flex flex-col gap-4 justify-center h-full ">
+
+                        <h2 class="!text-3xl">
+                            Outcome-driven, process-oriented
+
+                        </h2>
+
+                        <p class="text-xl">
+                            Our studio of architects, designers and visualisers works with a network of consultants
+                            contractors and AEC experts to ensure seamless project execution and delivery
+
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-4 justify-center h-full ">
+                        <img src="<?php echo get_theme_file_uri("/public/homepage/5.webp") ?>" alt="">
+                    </div>
+
+                </div>
+
+                <!-- <div class="out-box">
 
                     <img src="<?php echo get_theme_file_uri("/public/homepage/13.webp") ?>" alt="">
-                </div>
+                </div> -->
                 <div class="out-box">
                     <img src="<?php echo get_theme_file_uri("/public/homepage/14.webp") ?>" alt="">
                 </div>
