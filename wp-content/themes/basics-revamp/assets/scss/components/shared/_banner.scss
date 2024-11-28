@@ -7,8 +7,8 @@
         height: calc(100dvh - var(--header-height) - 1rem);
         // aspect-ratio: 9/4;
         @apply 2xl:h-auto;
+        height: calc(100dvh - var(--header-height) - 1rem);
         @include mobile {
-            height: calc(100dvh - var(--header-height) - 1rem);
             &.sub-cat-banner {
                 height: calc(100dvh - var(--header-height) - 1rem - 44px);
             }
