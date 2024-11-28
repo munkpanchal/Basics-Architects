@@ -38,7 +38,7 @@ module.exports = {
                     // lg: "1024px",
                     // xl: "1200px",
 
-                    "3xl": "1368px",
+                    // "3xl": "1368px",
                     // largeScreen: "1536px",
                 },
             },

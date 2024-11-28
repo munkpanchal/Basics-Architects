@@ -35,8 +35,7 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
 
     <section class="section">
         <div class="container">
-            <p class="text-[22px] leading-7 sm:text-xl sm:px-8 xl:px-16 sm:text-center"
-                style="width: min(82ch,100%);margin:auto">
+            <p class="text-[22px] leading-7 sm:text-xl sm:px-8 xl:px-16 sm:text-center">
                 Basics Architects is an award-winning architecture and interior
                 design firm providing
                 Nature-integrated
