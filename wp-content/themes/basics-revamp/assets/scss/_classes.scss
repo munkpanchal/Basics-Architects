@@ -47,7 +47,7 @@
 
             font-size: 15px;
             &.active {
-                @apply font-bold;
+                color: var(--clr-black);
             }
         }
     }

@@ -14,9 +14,9 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
     <div class="container">
 
         <div class="banner-wrapper" style="--bannerUri:url(<?php echo $bannerUri ?>)">
-            <div class="banner-content !justify-start !items-center">
+            <div class="banner-content !justify-end !items-center">
                 <h2 class="banner-heading !text-white text-center mt-8 " style="background-image: linear-gradient(to right bottom, #ec8508, #bd562a, #82342e, #431d22, #000000);  background-clip: text;
-  -webkit-text-fill-color: transparent;;" data-aos="fade-up">
+  -webkit-text-fill-color: transparent;text-transform: capitalize;" data-aos="fade-up">
                     creating nature integrated designs.
                 </h2>
 
