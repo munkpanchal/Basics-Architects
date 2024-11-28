@@ -30,8 +30,6 @@
             column-rule-style: solid;
             column-rule-width: 1px;
             padding-inline: 8px;
-            border-left: 1px solid var(--clr-gray);
-            border-right: 1px solid var(--clr-gray);
             li {
                 @apply uppercase transition-all duration-300 font-bold flex justify-center;
                 font-size: 14px;
