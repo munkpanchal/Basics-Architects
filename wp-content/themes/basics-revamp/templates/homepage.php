@@ -68,7 +68,7 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                 <div class="out-box">
                     <div class="flex flex-col gap-4 justify-center h-full ">
 
-                        <h2 class="!text-4xl">
+                        <h2 class="!text-3xl">
                             For people, with nature
                         </h2>
 
@@ -124,7 +124,7 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                     </div>
                     <div class="flex flex-col gap-4 justify-center h-full ">
 
-                        <h2 class="!text-4xl">
+                        <h2 class="!text-3xl">
                             Designs that deliver
                         </h2>
 
@@ -175,7 +175,7 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                 <div class="out-box">
                     <div class="flex flex-col gap-4 justify-center h-full ">
 
-                        <h2 class="!text-4xl">
+                        <h2 class="!text-3xl">
                             Outcome-driven, process-oriented
 
                         </h2>
