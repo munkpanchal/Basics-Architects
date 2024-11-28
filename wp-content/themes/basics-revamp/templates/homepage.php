@@ -17,8 +17,9 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
             <div class="banner-content !justify-end !items-center">
                 <!-- <h2 class="banner-heading !text-white text-center mt-8 " style="background-image: linear-gradient(to right bottom, #ec8508, #bd562a, #82342e, #431d22, #000000);  background-clip: text;
   -webkit-text-fill-color: transparent;text-transform: capitalize;" data-aos="fade-up"> -->
-                <h2 class="banner-heading !text-white text-center !mb-24" style="text-transform: capitalize;">
-                    creating "nature-integrated-designs"
+                <h2 class="banner-heading  !text-white text-center !mb-24"
+                    style="text-transform: capitalize; max-width:100%">
+                    creating "nature integrated designs"
                 </h2>
 
 
@@ -34,12 +35,15 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
 
     <section class="section">
         <div class="container">
-            <p class="text-lg sm:text-xl sm:px-8 xl:px-16 sm:text-center">
-                BASICS Architects is an award-winning architecture and interior design firm providing Nature-integrated
+            <p class="text-[22px] leading-7 sm:text-xl sm:px-8 xl:px-16 sm:text-center">
+                Basics Architects is an award-winning architecture and interior
+                design firm providing
+                Nature-integrated
                 design solutions across residential, commercial, educational and hospitality segments. Founded in 2004
                 by Vinod Singhi & Ranju Singhi, our firm has delivered 100+ projects in 28 cities across India, UK, UAE
                 and Canada. We create spaces that protect and prioritise the Fuman-nature connection, fostering user
-                health & wellness with minimal environmental impact.</p>
+                health & wellness with minimal environmental impact.
+            </p>
 
         </div>
     </section>
