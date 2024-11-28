@@ -47,23 +47,7 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
 
         </div>
     </section>
-    <section class="section h-section">
-        <div class="container">
-            <div class="one-upon-two">
 
-                <div class="out-box">
-                    <img src="<?php echo get_theme_file_uri("/public/homepage/1.webp") ?>" alt="">
-                </div>
-                <div class="out-box">
-                    <img src="<?php echo get_theme_file_uri("/public/homepage/2.webp") ?>" alt="">
-                </div>
-                <div class="out-box">
-                    <img src="<?php echo get_theme_file_uri("/public/homepage/3.webp") ?>" alt="">
-                </div>
-            </div>
-
-        </div>
-    </section>
     <section class="section h-section">
         <div class="container">
             <div class="one-side-two">
@@ -79,17 +63,45 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                     <video class="max-sm:!aspect-[3/4] !aspect-square" src="<?php echo $videoUri; ?>" autoplay muted
                         playsinline loop controls></video>
 
-                    <div>
+
+                </div>
+                <div class="out-box">
+                    <!-- <img src="<?php echo get_theme_file_uri("/public/homepage/5.webp") ?>" alt=""> -->
+                    <div class="flex flex-col gap-4">
+
+                        <h2>
+
+                            For people, with nature
+                        </h2>
+
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sapiente dolorem, facilis sit
-                            quis neque? Deserunt ipsa, repreh
-                            enderit nam animi quam ex, quas officiis libero enim
-                            pariatur necessitatibus dolorum rerum?
+                            We abide by the principles of Nature Integrated Design (NID), a holistic approach devised by
+                            BASICS that connects humans with nature.
+                        </p>
+                        <p>
+
+                            We use resource-efficient and environmentally-conscious strategies to incorporate natural
+                            elements in built spaces for lower stress, higher productivity and improved wellbeing.
+
                         </p>
                     </div>
                 </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="section h-section">
+        <div class="container">
+            <div class="one-upon-two">
+
                 <div class="out-box">
-                    <img src="<?php echo get_theme_file_uri("/public/homepage/5.webp") ?>" alt="">
+                    <img src="<?php echo get_theme_file_uri("/public/homepage/1.webp") ?>" alt="">
+                </div>
+                <div class="out-box">
+                    <img src="<?php echo get_theme_file_uri("/public/homepage/2.webp") ?>" alt="">
+                </div>
+                <div class="out-box">
+                    <img src="<?php echo get_theme_file_uri("/public/homepage/3.webp") ?>" alt="">
                 </div>
             </div>
 
