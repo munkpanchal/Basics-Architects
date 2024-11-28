@@ -68,15 +68,15 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                 <div class="out-box">
                     <div class="flex flex-col gap-2 justify-center h-full ">
 
-                        <h2 class="text-xl">
+                        <h2 class="text-2xl">
                             For people, with nature
                         </h2>
 
-                        <p class="">
+                        <p class="text-xl">
                             We abide by the principles of Nature Integrated Design (NID), a holistic approach devised by
                             BASICS that connects humans with nature.
                         </p>
-                        <p class="">
+                        <p class="text-xl">
 
                             We use resource-efficient and environmentally-conscious strategies to incorporate natural
                             elements in built spaces for lower stress, higher productivity and improved wellbeing.
@@ -124,16 +124,16 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                     </div>
                     <div class="flex flex-col gap-2 justify-center h-full ">
 
-                        <h2 class="text-xl">
+                        <h2 class="text-2xl">
                             Designs that deliver
                         </h2>
 
-                        <p class="">
+                        <p class="text-xl">
                             We recognise the value of a client's investment - be it a family home, an office, a school
                             or a hotel, every project carries with it many aspirations, and must fulfl many objectives.
                             We design to honour these aspirations and objectives
                         </p>
-                        <p class="">
+                        <p class="text-xl">
 
                             in BASICS, you have a partner you can trust to understand and translate your vision
                             into built form.
@@ -175,12 +175,12 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                 <div class="out-box">
                     <div class="flex flex-col gap-2 justify-center h-full ">
 
-                        <h2 class="text-xl">
+                        <h2 class="text-2xl">
                             Outcome-driven, process-oriented
 
                         </h2>
 
-                        <p class="">
+                        <p class="text-xl">
                             Our studio of architects, designers and visualisers works with a network of consultants
                             contractors and AEC experts to ensure seamless project execution and delivery
 
