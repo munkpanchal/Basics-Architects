@@ -66,25 +66,26 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
 
                 </div>
                 <div class="out-box">
-                    <div class="flex flex-col gap-4 justify-center h-full">
+                    <div class="flex flex-col gap-2 justify-center h-full ">
 
-                        <h2 class="text-3xl">
-
+                        <h2 class="text-xl">
                             For people, with nature
                         </h2>
 
-                        <p class="text-xl ">
+                        <p class="">
                             We abide by the principles of Nature Integrated Design (NID), a holistic approach devised by
                             BASICS that connects humans with nature.
                         </p>
-                        <p class="text-xl ">
+                        <p class="">
 
                             We use resource-efficient and environmentally-conscious strategies to incorporate natural
                             elements in built spaces for lower stress, higher productivity and improved wellbeing.
 
                         </p>
                     </div>
-                    <img src="<?php echo get_theme_file_uri("/public/homepage/5.webp") ?>" alt="">
+                    <div class="flex flex-col gap-4 justify-center h-full ">
+                        <img src="<?php echo get_theme_file_uri("/public/homepage/5.webp") ?>" alt="">
+                    </div>
 
                 </div>
             </div>
