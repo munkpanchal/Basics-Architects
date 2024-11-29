@@ -152,11 +152,9 @@ $bannerUri = get_theme_file_uri("/public/banner.webp");
                         <h3>
                             <?php echo $product->name; ?>
                         </h3>
-
-                        <!-- <p class="para ">
+                        <p class="para">
                             <?php echo wp_trim_words($product->description, 20) ?>..
-                        </p> -->
-
+                        </p>
                         <a class="btn btn-white" target="_blank" href="<?php the_permalink($product_id) ?>">
                             Read More
                         </a>

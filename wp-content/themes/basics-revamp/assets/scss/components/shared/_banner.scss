@@ -3,6 +3,7 @@
         @apply w-full bg-no-repeat bg-center bg-cover overflow-hidden sm:mb-4 relative;
 
         // background-image: linear-gradient(to bottom, rgba(36, 36, 36, 0.1), rgba(36, 36, 36, 0.75)), var(--bannerUri);
+
         background-image: var(--bannerUri);
         height: calc(100dvh - var(--header-height) - 1rem);
         // aspect-ratio: 9/4;

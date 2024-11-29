@@ -15,17 +15,17 @@ $clients = get_posts($args);
         </h2>
         <div class="clients-wrapper">
             <?php
-                foreach ($clients as $post) {
-                    if (get_the_post_thumbnail_url($post->ID, 'large')) {
-                        $imgUrl = get_the_post_thumbnail_url($post->ID, 'large');
-                    } else {
-                        $imgUrl = get_theme_file_uri("/public/default-user.jpg");
-                    }
+            foreach ($clients as $post) {
+                if (get_the_post_thumbnail_url($post->ID, 'large')) {
+                    $imgUrl = get_the_post_thumbnail_url($post->ID, 'large');
+                } else {
+                    $imgUrl = get_theme_file_uri("/public/default-user.jpg");
+                }
 
             ?>
-            <figure class="cw-wrap">
-                <img src="<?php echo $imgUrl ?>" alt="">
-            </figure>
+                <figure class="cw-wrap" data-aos="fade-up">
+                    <img src="<?php echo $imgUrl ?>" alt="client">
+                </figure>
             <?php
             }
             ?>

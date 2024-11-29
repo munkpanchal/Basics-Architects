@@ -18,15 +18,29 @@
     @apply uppercase text-sm;
 }
 
-.primary-heading {
-    @apply uppercase text-xl lg:text-3xl mb-4;
-}
 .paragraph {
     @apply text-base;
 }
-.secondary-heading {
-    @apply text-xl;
+
+/* 
+Font sizes for the website Starts 
+*/
+// @apply uppercase text-xl lg:text-3xl mb-4;
+.primary-heading {
+    @apply uppercase mb-4;
+    font-size: var(--fs-primary-heading);
 }
+.secondary-heading {
+    font-size: var(--fs-sub-heading);
+}
+
+.para {
+    font-size: var(--fs-para);
+}
+
+/* 
+Font sizes for the website Ends
+*/
 
 .sub-menu-wrap {
     @apply flex justify-center pb-3;

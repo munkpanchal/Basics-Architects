@@ -14,4 +14,30 @@
     --header-height: 60px;
     --sub-menu-height: 60px;
     --mainPadding: 1rem;
+
+    --fs-para: 14px;
+    --fs-primary-heading: 22px;
+    --fs-sub-heading: 18px;
+    --fs-banner-heading: 18px;
+
+    @include media(sm) {
+        --fs-para: 14px;
+        --fs-primary-heading: 26px;
+        --fs-sub-heading: 22px;
+        --fs-banner-heading: 18px;
+    }
+
+    @include media(xl) {
+        --fs-para: 16px;
+        --fs-primary-heading: 30px;
+        --fs-sub-heading: 26px;
+        --fs-banner-heading: 18px;
+    }
+
+    @include media(3xl) {
+        --fs-para: 20px;
+        --fs-primary-heading: 36px;
+        --fs-sub-heading: 32px;
+        --fs-banner-heading: 18px;
+    }
 }

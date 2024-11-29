@@ -29,6 +29,13 @@
         @content;
     }
 }
+/*   mixin for widescreen desktop device */
+
+@mixin widescreen {
+    @media only screen and (min-width: 2000px) {
+        @content;
+    }
+}
 
 /*   mixin for landscapes device */
 
@@ -38,7 +45,42 @@
     }
 }
 
-@function staticUrl($val) {
-    $str: "/wp-content/themes/tikovina/public";
-    @return url($str + $val);
+// New Mixins
+// Breakpoint Variables
+$breakpoints: (
+    xs: 0,
+
+    // Extra small devices (phones, <576px)
+    sm: 576px,
+
+    // Small devices (landscape phones, ≥576px)
+    md: 768px,
+
+    // Medium devices (tablets, ≥768px)
+    lg: 992px,
+
+    // Large devices (desktops, ≥992px)
+    xl: 1200px,
+
+    // Extra large devices (large desktops, ≥1200px)
+    2xl: 1400px,
+
+    // Extra-extra large devices (larger desktops, ≥1400px),
+    3xl: 1599px,
+
+    // Extra-extra large devices (larger desktops, ≥1400px),
+    4xl: 1900px // Extra-extra large devices (larger desktops, ≥1400px),,,,,,,,,,,
+);
+
+// Mixin for media queries
+@mixin media($breakpoint) {
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+    @if $breakpoint-value != null {
+        @media (min-width: $breakpoint-value) {
+            @content;
+        }
+    } @else {
+        @error "Invalid breakpoint '#{$breakpoint}' provided. Available breakpoints: #{map-keys($breakpoints)}";
+    }
 }

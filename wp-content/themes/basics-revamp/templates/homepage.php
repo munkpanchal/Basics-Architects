@@ -17,7 +17,7 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
             <div class="banner-content !justify-end !items-center">
                 <!-- <h2 class="banner-heading !text-white text-center mt-8 " style="background-image: linear-gradient(to right bottom, #ec8508, #bd562a, #82342e, #431d22, #000000);  background-clip: text;
   -webkit-text-fill-color: transparent;text-transform: capitalize;" data-aos="fade-up"> -->
-                <h2 class="banner-heading  !text-white text-center !mb-24"
+                <h2 class="banner-heading !text-white text-center !mb-24"
                     style="text-transform: capitalize; max-width:100%">
                     creating "nature integrated designs"
                 </h2>
@@ -69,14 +69,14 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                     <div class="flex flex-col gap-4 justify-center h-full ">
 
 
-                        <p class="text-xl">
+                        <p class="para">
 
                             Basics Architects is an award-winning architecture and interior
                             design firm providing
                             Nature-integrated
                             design solutions across residential, commercial, educational and hospitality segments.
                         </p>
-                        <p class="text-xl">
+                        <p class="para">
 
                             Founded in 2004
                             by Vinod Singhi & Ranju Singhi, our firm has delivered 100+ projects in 28 cities across
@@ -129,11 +129,11 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                             For people, with nature
                         </h2>
 
-                        <p class="text-xl">
+                        <p class="para">
                             We abide by the principles of Nature Integrated Design (NID), a holistic approach devised by
                             BASICS that connects humans with nature.
                         </p>
-                        <p class="text-xl">
+                        <p class="para">
 
                             We use resource-efficient and environmentally-conscious strategies to incorporate natural
                             elements in built spaces for lower stress, higher productivity and improved wellbeing.
@@ -184,12 +184,12 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                             Designs that deliver
                         </h2>
 
-                        <p class="text-xl">
+                        <p class="para">
                             We recognise the value of a client's investment - be it a family home, an office, a school
                             or a hotel, every project carries with it many aspirations, and must fulfl many objectives.
                             We design to honour these aspirations and objectives
                         </p>
-                        <p class="text-xl">
+                        <p class="para">
 
                             in BASICS, you have a partner you can trust to understand and translate your vision
                             into built form.
@@ -223,7 +223,7 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
 
                         </h2>
 
-                        <p class="text-xl">
+                        <p class="para">
                             Our studio of architects, designers and visualisers works with a network of consultants
                             contractors and AEC experts to ensure seamless project execution and delivery
 
