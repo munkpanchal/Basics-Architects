@@ -11,7 +11,7 @@ $args = array(
 );
 
 $custom_posts = get_posts($args);
-
+shuffle($custom_posts);
 
 ?>
 
