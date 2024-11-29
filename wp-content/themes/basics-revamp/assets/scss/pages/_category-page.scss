@@ -8,7 +8,7 @@
         }
 
         .project {
-            @apply relative w-full aspect-[4/3];
+            @apply relative w-full aspect-square sm:aspect-[4/3];
 
             &-content {
                 @apply absolute left-0 top-0 w-full h-full opacity-0 flex justify-center flex-col p-4 gap-4;
