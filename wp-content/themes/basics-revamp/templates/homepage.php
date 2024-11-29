@@ -17,7 +17,7 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
             <div class="banner-content !justify-end !items-center">
                 <!-- <h2 class="banner-heading !text-white text-center mt-8 " style="background-image: linear-gradient(to right bottom, #ec8508, #bd562a, #82342e, #431d22, #000000);  background-clip: text;
   -webkit-text-fill-color: transparent;text-transform: capitalize;" data-aos="fade-up"> -->
-                <h2 class="banner-heading !text-white text-center !mb-24"
+                <h2 class="banner-heading !text-white text-center !mb-[8%]"
                     style="text-transform: capitalize; max-width:100%">
                     creating "nature integrated designs"
                 </h2>
@@ -125,7 +125,7 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                 <div class="out-box">
                     <div class="flex flex-col gap-4 justify-center h-full ">
 
-                        <h2 class="!text-3xl">
+                        <h2 class="secondary-heading">
                             For people, with nature
                         </h2>
 
@@ -180,7 +180,7 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                     </div>
                     <div class="flex flex-col gap-4 justify-center h-full ">
 
-                        <h2 class="!text-3xl">
+                        <h2 class="secondary-heading">
                             Designs that deliver
                         </h2>
 
@@ -218,7 +218,7 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                 <div class="out-box">
                     <div class="flex flex-col gap-4 justify-center h-full ">
 
-                        <h2 class="!text-3xl">
+                        <h2 class="secondary-heading">
                             Outcome-driven, process-oriented
 
                         </h2>

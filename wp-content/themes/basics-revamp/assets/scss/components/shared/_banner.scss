@@ -39,7 +39,8 @@
             justify-content: flex-end;
             // background-image: linear-gradient(to bottom, rgba(36, 36, 36, 0.1), rgba(36, 36, 36, 0.75));
             .banner-heading {
-                @apply uppercase text-4xl lg:text-5xl mb-4;
+                @apply uppercase mb-4;
+                font-size: var(--fs-banner-heading);
                 max-width: 32ch;
                 line-height: 1.35;
             }
