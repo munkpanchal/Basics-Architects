@@ -38,6 +38,7 @@
         --fs-para: 20px;
         --fs-primary-heading: 36px;
         --fs-sub-heading: 32px;
+        --header-height: 80px;
         --fs-banner-heading: 5rem;
     }
     @include media(4xl) {
@@ -45,5 +46,6 @@
         --fs-primary-heading: 42px;
         --fs-sub-heading: 36px;
         --fs-banner-heading: 6rem;
+        --header-height: 96px;
     }
 }
