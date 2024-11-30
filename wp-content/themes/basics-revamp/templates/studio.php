@@ -15,53 +15,9 @@ $bannerUri = get_theme_file_uri("/public/banner.webp");
 
         <div class="banner-wrapper <?php if ($args['class']) {
                                         echo $args['class'];
-                                    } ?>">
+                                    } ?>" style="--bannerUri:url(<?php echo $bannerUri ?>)">
             <!-- <img src="<?php echo $bannerUri ?>" alt=""> -->
-            <div class="flex gap-4 max-sm:flex-col h-full">
-                <div class="banner-left flex-1">
-                    <p class="banner-para" data-aos="fade-up" data-aos-delay="100">
-                        Vinod and Ranju Singhi laid the foundation of BASICS in 2004. Since then, BASICS Architects has
-                        been dedicated to changing the way projects are envisioned – from standalone structures in brick
-                        and mortar, to sustainable spaces that exist in harmony with their natural environment.
 
-                    </p>
-                    <p class="banner-para" data-aos="fade-up" data-aos-delay="100">
-
-                        This approach soon made its mark, with institutional giants like Mayo College and Shriram Group
-                        trusting BASICS with their multi-phase projects from the studio’s earliest days.
-                    </p>
-
-                </div>
-                <div class="banner-left flex-1">
-                    <p class="banner-para" data-aos="fade-up" data-aos-delay="100">
-                        Over the years, we formalisedour values as a distinct design philosophy: Nature Integrated
-                        Design (NID). NID is a holistic approach to design that connects humans with nature, focusing on
-                        the health & wellbeing of end-users while minimisingthe impact of architecture on the
-                        environment.
-                    </p>
-                    <p class="banner-para" data-aos="fade-up" data-aos-delay="100">
-
-
-                        Simplyput, NID helps us create spaces that are habitable and sustainable.
-                    </p>
-                    <p class="banner-para" data-aos="fade-up" data-aos-delay="100">
-
-                        Naturalelements like sunlight, fresh air, greenery, and pleasant views are an essential part of
-                        every BASICS project. We preserve the simple but profound benefits of these elements, while also
-                        tackling the complex challenge of creating resilient, resource-efficient and low-carbon spaces.
-                    </p>
-                    <p class="banner-para" data-aos="fade-up" data-aos-delay="100">
-
-                        You can read about the approach in detail here and here.
-                    </p>
-
-                </div>
-
-                <!-- <h2 class="banner-heading text-white" data-aos="fade-up">
-                    Lorem ipsum dolor sit.
-                </h2> -->
-
-            </div>
 
         </div>
     </div>
@@ -70,6 +26,68 @@ $bannerUri = get_theme_file_uri("/public/banner.webp");
 <main class="main studio" id="studio">
     <div class="container">
         <div class="studio-wrapper">
+            <div class="section">
+                <div class="section-head">
+                    <!-- <h2 class="primary-heading text-center" data-aos="fade-up">
+                        our partners
+                    </h2> -->
+                    <div class="flex gap-4 max-sm:flex-col h-full ">
+                        <div class="banner-left flex-1">
+                            <p class="banner-para" data-aos="fade-up" data-aos-delay="100">
+                                Vinod and Ranju Singhi laid the foundation of BASICS in 2004. Since then, BASICS
+                                Architects has
+                                been dedicated to changing the way projects are envisioned – from standalone structures
+                                in brick
+                                and mortar, to sustainable spaces that exist in harmony with their natural environment.
+
+                            </p>
+                            <p class="banner-para" data-aos="fade-up" data-aos-delay="100">
+
+                                This approach soon made its mark, with institutional giants like Mayo College and
+                                Shriram Group
+                                trusting BASICS with their multi-phase projects from the studio’s earliest days.
+                            </p>
+                            <p class="banner-para" data-aos="fade-up" data-aos-delay="100">
+                                Over the years, we formalisedour values as a distinct design philosophy: Nature
+                                Integrated
+                                Design (NID).
+                            </p>
+
+                        </div>
+                        <div class="banner-left flex-1">
+                            <p class="banner-para" data-aos="fade-up" data-aos-delay="100">
+                                NID is a holistic approach to design that connects humans with nature, focusing on
+                                the health & wellbeing of end-users while minimisingthe impact of architecture on the
+                                environment.
+                            </p>
+                            <p class="banner-para" data-aos="fade-up" data-aos-delay="100">
+
+
+                                Simplyput, NID helps us create spaces that are habitable and sustainable.
+                            </p>
+                            <p class="banner-para" data-aos="fade-up" data-aos-delay="100">
+
+                                Naturalelements like sunlight, fresh air, greenery, and pleasant views are an essential
+                                part of
+                                every BASICS project. We preserve the simple but profound benefits of these elements,
+                                while also
+                                tackling the complex challenge of creating resilient, resource-efficient and low-carbon
+                                spaces.
+                            </p>
+                            <p class="banner-para" data-aos="fade-up" data-aos-delay="100">
+
+                                You can read about the approach in detail here and here.
+                            </p>
+
+                        </div>
+
+                        <!-- <h2 class="banner-heading text-white" data-aos="fade-up">
+                    Lorem ipsum dolor sit.
+                </h2> -->
+
+                    </div>
+                </div>
+            </div>
             <div class="section">
                 <div class="section-head">
                     <h2 class="primary-heading text-center" data-aos="fade-up">
