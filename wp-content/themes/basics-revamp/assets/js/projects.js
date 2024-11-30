@@ -33,6 +33,7 @@ tabNavs?.forEach((tabNav) => {
                             AOS.refresh(); // Refresh AOS after changing image category
                         }
                     });
+                    console.log(tabBanner.classList);
                     tabBannerNone.classList.add("active");
                 }
             }

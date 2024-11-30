@@ -53,7 +53,7 @@ shuffle($custom_posts);
                             <p>
                                 <?php echo wp_trim_words($post->post_content, 20) ?>
                             </p>
-                            <a class="btn btn-white" target="_blank" href="<?php echo $url; ?>">Read More</a>
+                            <a class="btn btn-white" href="<?php echo $url; ?>">Read More</a>
                         </div>
                     </div>
                 <?php
