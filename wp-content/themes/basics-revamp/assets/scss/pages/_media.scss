@@ -19,7 +19,8 @@
                     color: var(--clr-white);
                 }
                 h3 {
-                    @apply text-2xl;
+                    // @apply text-2xl;
+                    @apply text-2xl sm:text-3xl  2xl:text-4xl;
                 }
             }
             &:hover {
