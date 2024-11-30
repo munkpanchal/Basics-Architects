@@ -1,49 +1,3 @@
-<!-- 
-<div class="footer-left">
-
-<div class="footer-left-content">
-
-    <p >
-        <img src="<?php echo get_theme_file_uri("/public/icons/phone.svg") ?>" alt="Phone">
-        <a href="tel:+91 85951 84113">
-            +91 85951 84113
-        </a>
-    </p>
-    <p >
-        <img src="<?php echo get_theme_file_uri("/public/icons/email.svg") ?>" alt="Phone">
-        <a href="mailto:basics@basics.co.in">
-            basics@basics.co.in
-        </a>
-    </p>
-    <p >
-        <img src="<?php echo get_theme_file_uri("/public/icons/location.svg") ?>" alt="Phone">
-        <a>
-            B-179 I LGF I Shivalik I New Delhi 110017
-        </a>
-    </p>
-</div>
-</div>
-<div class="footer-right">
-<a class="anchor">privacy policy</a>
-<div class="social-links">
-    <a>
-        <img src="<?php echo get_theme_file_uri("/public/icons/youtube.svg") ?>" alt="youtube">
-    </a>
-    <a>
-        <img src="<?php echo get_theme_file_uri("/public/icons/instagram.svg") ?>" alt="youtube">
-    </a>
-    <a>
-        <img src="<?php echo get_theme_file_uri("/public/icons/linkedin.svg") ?>" alt="youtube">
-    </a>
-    <a>
-        <img src="<?php echo get_theme_file_uri("/public/icons/facebook.svg") ?>" alt="youtube">
-    </a>
-</div>
-<p class="copyright">
-    &copy; 2024, BASICS Architects. All rights reserved
-</p>
-</div> -->
-
 <footer class="footer">
     <div class="container">
         <div class="footer-wrapper">
@@ -109,6 +63,25 @@
 
                     </div>
                 </div>
+                <div class="middle">
+                    <h3 class="footer-heading" data-target="data-newsletter">
+                        newsletter
+                    </h3>
+                    <div class="footer-content" data-newsletter>
+                        <div class="fc-wrap">
+                            <p>
+                                <strong>
+                                    subscribe to our news letter</strong>
+
+                            </p>
+                            <input type="text" placeholder="Enter your email..">
+
+                        </div>
+
+
+                    </div>
+                </div>
+
                 <div class="right">
                     <h3 class="footer-heading" data-target="data-social">
                         social
@@ -116,11 +89,20 @@
                     <div class="footer-content" data-social>
                         <a href="/" data-social-link target="_blank">instagram</a>
                         <a href="/" data-social-link target="_blank">facebook</a>
-                        <a href="/" data-social-link target="_blank">x</a>
+                        <!-- <a href="/" data-social-link target="_blank">x</a> -->
                         <a href="/" data-social-link target="_blank">youtube</a>
                     </div>
                 </div>
+
+
             </div>
+            <!-- 
+            <div class="news-letter">
+                <h3 class="footer-heading sm:mx-auto">
+                    subscribe to our news letter
+                </h3>
+                <input type="text" placeholder="Enter your email..">
+            </div> -->
 
             <p class="copyright">
                 &copy; 2024, BASICS Architects | All rights reserved

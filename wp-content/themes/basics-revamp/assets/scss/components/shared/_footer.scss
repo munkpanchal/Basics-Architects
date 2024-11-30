@@ -3,13 +3,16 @@
     // color: var(--clr-white);
     font-size: 14px;
     color: var(--clr-black);
+    .footer-heading {
+        @apply text-base w-max uppercase font-bold relative cursor-pointer sm:-translate-x-2 max-sm:pointer-events-none;
+    }
     &-wrapper {
         @apply flex flex-col justify-between max-sm:gap-4 mt-4;
         border-top: 1px solid var(--clr-gray);
         .footer-top {
             @apply py-4 sm:py-8 flex justify-between sm:m-auto  gap-8 max-sm:flex-col;
 
-            width: min(100%, 768px);
+            // width: min(100%, 768px);
             & > * {
                 display: flex;
                 flex-direction: column;
@@ -19,8 +22,6 @@
                 }
             }
             .footer-heading {
-                @apply text-base w-max uppercase font-bold relative cursor-pointer sm:-translate-x-2 max-sm:pointer-events-none;
-
                 &::before {
                     content: "+";
                     position: absolute;
@@ -102,6 +103,29 @@
             @apply py-4 text-center text-sm font-bold;
             border-top: 1px solid var(--clr-gray);
             color: var(--clr-gray);
+        }
+    }
+    input {
+        @apply px-2 py-1 w-[min(100%_,_250px)];
+        border-bottom: 1px solid var(--clr-black);
+        &:focus-within,
+        &:focus,
+        &:focus-visible {
+            border-bottom: 1px solid var(--clr-black);
+
+            outline: none;
+        }
+
+        &::placeholder {
+            @apply text-sm;
+        }
+    }
+    .news-letter {
+        @apply w-full sm:items-center flex justify-center flex-col gap-8 m-auto py-8;
+
+        border-top: 1px solid var(--clr-gray);
+        h3 {
+            @apply w-full translate-x-0 sm:text-center;
         }
     }
 }
