@@ -31,7 +31,7 @@ $bannerUri = get_theme_file_uri("/public/banner.webp");
                     <!-- <h2 class="primary-heading text-center" data-aos="fade-up">
                         our partners
                     </h2> -->
-                    <div class="flex gap-4 max-sm:flex-col h-full ">
+                    <div class="flex py-8 sm:py-16 gap-4  h-full ">
                         <div class="banner-left flex-1">
                             <p class="banner-para" data-aos="fade-up" data-aos-delay="100">
                                 Vinod and Ranju Singhi laid the foundation of BASICS in 2004. Since then, BASICS

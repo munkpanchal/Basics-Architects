@@ -8,6 +8,6 @@
 .banner-right {
     @apply flex flex-col justify-center gap-4 h-full;
     .banner-para {
-        font-size: var(--fs-banner-para);
+        font-size: var(--fs-para);
     }
 }
