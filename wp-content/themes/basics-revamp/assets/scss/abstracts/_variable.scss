@@ -30,14 +30,14 @@
     }
 
     @include media(xl) {
-        --fs-para: 16px;
+        --fs-para: 18px;
         --fs-primary-heading: 30px;
         --fs-sub-heading: 26px;
         // --fs-banner-heading: 4rem;
     }
 
     @include media(3xl) {
-        --fs-para: 20px;
+        --fs-para: 22px;
         --fs-primary-heading: 36px;
         --fs-sub-heading: 32px;
         --header-height: 80px;
