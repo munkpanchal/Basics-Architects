@@ -6,7 +6,7 @@
 
 .banner-left,
 .banner-right {
-    @apply flex flex-col gap-4;
+    @apply flex flex-col justify-center gap-4;
     .banner-para {
         font-size: var(--fs-banner-para);
     }
