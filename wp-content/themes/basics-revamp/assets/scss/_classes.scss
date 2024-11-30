@@ -274,12 +274,12 @@ details {
         @apply w-max;
         input {
             width: 180px;
-            border-radius: 0;
+            border-radius: 0 !important;
         }
     }
     .wpcf7-submit {
         @apply py-2 px-4 w-max text-sm font-bold;
-        border-radius: 0;
+        border-radius: 0 !important;
         transition: 400ms ease-in-out;
     }
     .wpcf7-spinner {
