@@ -74,7 +74,11 @@
                                     subscribe to our news letter</strong>
 
                             </p>
-                            <input type="text" placeholder="Enter your email..">
+                            <div class="news-letter-box">
+                                <?php
+                                echo do_shortcode('[contact-form-7 id="fd760f0" title="Untitled"]');
+                                ?>
+                            </div>
 
                         </div>
 
