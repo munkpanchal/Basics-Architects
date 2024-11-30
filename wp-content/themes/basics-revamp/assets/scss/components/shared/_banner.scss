@@ -11,7 +11,7 @@
         height: calc(100dvh - var(--header-height) - 1rem);
         @include mobile {
             &.sub-cat-banner {
-                height: calc(100dvh - var(--header-height) - 1rem - 44px);
+                height: calc(100dvh - var(--header-height) - 1rem - 32px);
             }
         }
         @include tablet {
