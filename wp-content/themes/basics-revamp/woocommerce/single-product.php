@@ -66,7 +66,7 @@ if ($thumbnail_url) {
                     <?php
                     if ($year) {
                     ?>
-                        <p data-aos="fade-up"><strong>Year : </strong><?php echo $year; ?></p>
+                    <p data-aos="fade-up"><strong>Year : </strong><?php echo $year; ?></p>
                     <?php
                     }
                     ?>
@@ -74,7 +74,7 @@ if ($thumbnail_url) {
                     <?php
                     if ($location) {
                     ?>
-                        <p data-aos="fade-up"><strong>Location : </strong><?php echo $location; ?></p>
+                    <p data-aos="fade-up"><strong>Location : </strong><?php echo $location; ?></p>
                     <?php
                     }
                     ?>
@@ -82,7 +82,7 @@ if ($thumbnail_url) {
                     <?php
                     if ($area) {
                     ?>
-                        <p data-aos="fade-up"><strong>Area : </strong><?php echo $area; ?></p>
+                    <p data-aos="fade-up"><strong>Area : </strong><?php echo $area; ?></p>
                     <?php
                     }
                     ?>
@@ -94,30 +94,30 @@ if ($thumbnail_url) {
             <?php
             if ($product->description) {
             ?>
-                <div class="sph-right">
+            <div class="sph-right">
 
-                    <!-- <h2 class="project-title opacity-0 pointer-events-none max-sm:hidden">
+                <!-- <h2 class="project-title opacity-0 pointer-events-none max-sm:hidden">
                         <?php
                         echo $product->get_name()
                         ?>
                     </h2> -->
-                    <div class="project-content max-sm:pt-2">
+                <div class="project-content max-sm:pt-2">
 
-                        <div data-aos="fade-up">
-                            <details>
-                                <summary>
-                                    <?php
+                    <div data-aos="fade-up">
+                        <details>
+                            <summary>
+                                <?php
                                     echo $product->short_description;
                                     ?>
-                                </summary>
-                                <?php
+                            </summary>
+                            <?php
                                 echo $product->description;
                                 ?>
-                            </details>
+                        </details>
 
-                        </div>
                     </div>
                 </div>
+            </div>
 
             <?php
             }
@@ -149,19 +149,19 @@ if ($thumbnail_url) {
 
 
 
-                    <a href="<?php echo $image_url; ?>" data-fancybox="gallery" data-caption="title" class="project"
-                        data-aos="fade-up">
-                        <img src=" <?php echo $image_url; ?>" alt="">
+                <a href="<?php echo $image_url; ?>" data-fancybox="gallery" data-caption="title" class="project"
+                    data-aos="fade-up">
+                    <img src=" <?php echo $image_url; ?>" alt="">
 
-                    </a>
-                    <?php
+                </a>
+                <?php
 
                     if ($i % 3 == 0) {
                     ?>
 
             </div>
             <div class='project-row project-row-<?php echo $row ?> <?php echo $type ? "type-1" : "" ?>'>
-        <?php
+                <?php
                         $row < 2 ? $row++ : $row = 1;
                         if ($row == 1) {
                             $type = !$type;
@@ -207,8 +207,8 @@ if ($thumbnail_url) {
             if ($products) {
             ?>
 
-                <div class="grid sm:grid-cols-3 gap-4">
-                    <?php
+            <div class="grid sm:grid-cols-3 gap-4">
+                <?php
 
                     foreach ($products as $product) {
                         if ($product->get_id() === get_the_ID()) {
@@ -222,31 +222,30 @@ if ($thumbnail_url) {
                         }
                     ?>
 
-                        <div class="rp-box fade-box" data-aos="fade-up">
-                            <img src="<?php echo $imgUrl ?>" alt="<?php echo $product->get_name() ?>">
-                            <div class="rp-box-content fade-target">
-                                <h3 class="uppercase">
-                                    <?php echo $product->get_name() ?>
-                                </h3>
-                                <p>
-                                    <?php echo wp_trim_words($product->get_short_description(), 10) ?>
-                                </p>
-                                <a class="btn btn-white" target="_blank"
-                                    href="<?php echo get_permalink($product->get_id()) ?>">Read More</a>
-                            </div>
-                        </div>
+                <div class="rp-box fade-box" data-aos="fade-up">
+                    <img src="<?php echo $imgUrl ?>" alt="<?php echo $product->get_name() ?>">
+                    <div class="rp-box-content fade-target">
+                        <h3 class="uppercase">
+                            <?php echo $product->get_name() ?>
+                        </h3>
+                        <p>
+                            <?php echo wp_trim_words($product->get_short_description(), 10) ?>
+                        </p>
+                        <a class="btn btn-white" href="<?php echo get_permalink($product->get_id()) ?>">Read More</a>
+                    </div>
+                </div>
 
-                    <?php
+                <?php
                     }
                 } else {
                     ?>
-                    <p class="text-center">
-                        No Related Project found.
-                    </p>
+                <p class="text-center">
+                    No Related Project found.
+                </p>
                 <?php
                 }
                 ?>
-                </div>
+            </div>
         </section>
 
     </div>

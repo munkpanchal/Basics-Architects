@@ -93,7 +93,6 @@
                     <div class="footer-content" data-social>
                         <a href="/" data-social-link target="_blank">instagram</a>
                         <a href="/" data-social-link target="_blank">facebook</a>
-                        <!-- <a href="/" data-social-link target="_blank">x</a> -->
                         <a href="/" data-social-link target="_blank">youtube</a>
                     </div>
                 </div>
