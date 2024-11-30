@@ -30,7 +30,7 @@ if (Splide && slider) {
             interval: 2000,
             arrows: false,
             pagination: true,
-            autoplay: true,
+            autoplay: false,
             speed: 300,
             gap: 16,
             breakpoints: {

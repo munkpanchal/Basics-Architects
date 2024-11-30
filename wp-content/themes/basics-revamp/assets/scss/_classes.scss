@@ -27,7 +27,7 @@ Font sizes for the website Starts
 */
 // @apply uppercase text-xl lg:text-3xl mb-4;
 .primary-heading {
-    @apply uppercase mb-4;
+    @apply capitalize mb-4;
     font-size: var(--fs-primary-heading);
 }
 .secondary-heading {
