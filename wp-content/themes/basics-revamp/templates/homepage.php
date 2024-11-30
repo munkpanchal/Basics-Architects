@@ -56,16 +56,6 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                     <img src="<?php echo get_theme_file_uri("/public/homepage/4.webp") ?>" alt="">
                 </div>
                 <div class="out-box">
-                    <?php
-                    $videoUri = get_theme_file_uri("/public/homepage/soti_carl.mp4");
-                    $videoUri = "https://lemonchiffon-hawk-580804.hostingersite.com/wp-content/uploads/2024/11/Vinod-Environment-Video.mp4"
-                    ?>
-                    <video class="max-sm:!aspect-[3/4] !aspect-square" src="<?php echo $videoUri; ?>" autoplay muted
-                        playsinline loop controls></video>
-
-
-                </div>
-                <div class="out-box">
                     <div class="flex flex-col gap-4 justify-center h-full ">
 
 
@@ -92,6 +82,17 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                     </div>
 
                 </div>
+                <div class="out-box">
+                    <?php
+                    $videoUri = get_theme_file_uri("/public/homepage/soti_carl.mp4");
+                    $videoUri = "https://lemonchiffon-hawk-580804.hostingersite.com/wp-content/uploads/2024/11/Vinod-Environment-Video.mp4"
+                    ?>
+                    <video class="max-sm:!aspect-[3/4] !aspect-square" src="<?php echo $videoUri; ?>" autoplay muted
+                        playsinline loop controls></video>
+
+
+                </div>
+
             </div>
 
         </div>
