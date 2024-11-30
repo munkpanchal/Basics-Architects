@@ -19,6 +19,7 @@
             aspect-ratio: 16/9;
             width: 100%;
         }
+
         img {
             @apply w-full h-full object-cover object-center;
             position: absolute;
@@ -91,6 +92,11 @@
                     .banner-para {
                         opacity: 1;
                         transform: translateY(0);
+                    }
+                }
+                &.video-wrap {
+                    video {
+                        @apply w-full h-full object-cover object-center;
                     }
                 }
             }
