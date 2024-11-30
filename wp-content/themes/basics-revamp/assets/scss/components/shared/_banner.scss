@@ -62,7 +62,7 @@
             }
             .banner-para {
                 // @apply text-sm sm:text-base lg:text-lg mb-4;
-                @apply mb-4;
+                @apply mb-0;
                 font-size: var(--fs-banner-para);
                 width: min(100%, 60ch);
                 font-family: var(--ff-heading);
