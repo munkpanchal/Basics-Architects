@@ -32,7 +32,7 @@
             }
         }
         .banner-cat-name {
-            @apply uppercase mb-4;
+            @apply capitalize mb-4;
             position: absolute;
             color: white;
             font-weight: 700;
