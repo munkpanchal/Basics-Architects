@@ -265,3 +265,24 @@ details {
         }
     }
 }
+
+// News letter
+
+.news-letter-form {
+    @apply flex gap-4;
+    .wpcf7-form-control-wrap {
+        @apply w-max;
+        input {
+            width: 180px;
+            border-radius: 0;
+        }
+    }
+    .wpcf7-submit {
+        @apply py-2 px-4 w-max text-sm font-bold;
+        border-radius: 0;
+        transition: 400ms ease-in-out;
+    }
+    .wpcf7-spinner {
+        display: none;
+    }
+}

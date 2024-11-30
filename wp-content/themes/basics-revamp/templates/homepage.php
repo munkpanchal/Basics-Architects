@@ -23,6 +23,8 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                 </h2>
 
 
+
+
             </div>
 
         </div>

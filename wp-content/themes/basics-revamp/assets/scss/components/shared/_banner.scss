@@ -2,15 +2,15 @@
     &-wrapper {
         @apply w-full bg-no-repeat bg-center bg-cover overflow-hidden sm:mb-4 relative;
 
-        // background-image: linear-gradient(to bottom, rgba(36, 36, 36, 0.1), rgba(36, 36, 36, 0.75)), var(--bannerUri);
-
         background-image: var(--bannerUri);
-        height: calc(100dvh - var(--header-height) - 1rem);
-        // aspect-ratio: 9/4;
+        $val: 1rem;
         @apply 2xl:h-auto;
-        height: calc(100dvh - var(--header-height) - 1rem);
+        height: calc(100dvh - var(--header-height) - calc(3 * $val));
+
+        margin-top: calc(2 * $val);
         @include mobile {
             &.sub-cat-banner {
+                margin-top: 0;
                 height: calc(100dvh - var(--header-height) - 1rem - 32px);
             }
         }
