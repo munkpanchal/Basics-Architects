@@ -51,10 +51,14 @@
             width: 100%;
             display: flex;
             flex-direction: column;
-
             justify-content: flex-end;
-            gap: 2rem;
+            // gap: 2rem;
+
             // background-image: linear-gradient(to bottom, rgba(36, 36, 36, 0.1), rgba(36, 36, 36, 0.75));
+            .banner-inner {
+                @apply flex flex-col gap-4;
+            }
+
             .banner-heading {
                 @apply capitalize;
                 font-size: var(--fs-banner-heading);

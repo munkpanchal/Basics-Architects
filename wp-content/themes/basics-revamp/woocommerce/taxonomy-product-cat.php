@@ -34,11 +34,11 @@ $child_categories = get_categories(array(
         foreach ($child_categories as $category) {
 
         ?>
-            <span class="menu-link" data-tab-nav-project data-tab-target="<?php echo $category->slug; ?>">
-                <?php
+        <span class="menu-link" data-tab-nav-project data-tab-target="<?php echo $category->slug; ?>">
+            <?php
                 echo $category->name;
                 ?>
-            </span>
+        </span>
         <?php
         }
         ?>
@@ -80,19 +80,22 @@ $bannerUri = get_theme_file_uri("/public/banner.webp");
                 ?>
                 <video class="absolute left-0 top-0 w-full h-full" src="<?php echo $videoUri; ?>" autoplay muted
                     playsinline loop></video>
-                <h2 class="banner-heading !text-white" data-aos="fade-up">
-                    <?php
-                    echo get_field('catlabel', $current_category);
+                <div class="banner-inner">
 
-                    ?>
-                </h2>
+                    <h2 class="banner-heading !text-white" data-aos="fade-up">
+                        <?php
+                        echo get_field('catlabel', $current_category);
 
-                <p class="banner-para" data-aos="fade-up" data-aos-delay="100">
-                    <?php
-                    echo $current_category->description
-                    ?>
-                </p>
+                        ?>
+                    </h2>
 
+                    <p class="banner-para" data-aos="fade-up" data-aos-delay="100">
+                        <?php
+                        echo $current_category->description
+                        ?>
+                    </p>
+
+                </div>
 
             </div>
 
@@ -106,23 +109,26 @@ $bannerUri = get_theme_file_uri("/public/banner.webp");
                 $catlabel =    get_field('catlabel', $category);
                 echo $catlabel;
             ?>
-                <img src="<?php echo $image_url ?>" data-img data-image-id="<?php echo $category->slug; ?>" alt="">
+            <img src="<?php echo $image_url ?>" data-img data-image-id="<?php echo $category->slug; ?>" alt="">
 
-                <div class="banner-content subcat" data-content data-content-id="<?php echo $category->slug; ?>">
+            <div class="banner-content subcat" data-content data-content-id="<?php echo $category->slug; ?>">
+                <div class="banner-inner">
+
                     <h2 class="banner-heading !text-white" data-aos="fade-up">
                         <?php
-                        echo $catlabel;
-                        ?>
+                            echo $catlabel;
+                            ?>
                     </h2>
 
                     <p class="banner-para" data-aos="fade-up" data-aos-delay="100">
                         <?php
-                        echo $category->description
-                        ?>
+                            echo $category->description
+                            ?>
                     </p>
-
-
                 </div>
+
+
+            </div>
 
             <?php
             }
@@ -167,21 +173,21 @@ $bannerUri = get_theme_file_uri("/public/banner.webp");
             ?>
 
 
-                <div data-cat="<?php echo $catName; ?>" class="project active  fade-box">
-                    <img src=" <?php echo $thumbnail_url ?>" alt="">
-                    <div class="project-content fade-target">
-                        <h3>
-                            <?php echo $product->name; ?>
-                        </h3>
-                        <p class="para">
-                            <?php echo wp_trim_words($product->description, 20) ?>..
-                        </p>
-                        <a class="btn btn-white" target="_blank" href="<?php the_permalink($product_id) ?>">
-                            Read More
-                        </a>
+            <div data-cat="<?php echo $catName; ?>" class="project active  fade-box">
+                <img src=" <?php echo $thumbnail_url ?>" alt="">
+                <div class="project-content fade-target">
+                    <h3>
+                        <?php echo $product->name; ?>
+                    </h3>
+                    <p class="para">
+                        <?php echo wp_trim_words($product->description, 20) ?>..
+                    </p>
+                    <a class="btn btn-white" target="_blank" href="<?php the_permalink($product_id) ?>">
+                        Read More
+                    </a>
 
-                    </div>
                 </div>
+            </div>
             <?php
 
             }
