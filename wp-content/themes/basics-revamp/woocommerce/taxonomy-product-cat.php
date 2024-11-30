@@ -84,13 +84,14 @@ $bannerUri = get_theme_file_uri("/public/banner.webp");
                 $cat_id = $category->term_id;
                 $thumbnail_id = get_term_meta($cat_id, 'thumbnail_id', true);
                 $image_url = wp_get_attachment_url($thumbnail_id);
+                $catlabel =    get_field("gallery", $cat_id);
             ?>
             <img src="<?php echo $image_url ?>" data-img data-image-id="<?php echo $category->slug; ?>" alt="">
 
             <div class="banner-content subcat" data-content data-content-id="<?php echo $category->slug; ?>">
                 <h2 class="banner-heading !text-white" data-aos="fade-up">
                     <?php
-                        echo $category->name;
+                        echo $catlabel;
                         ?>
                 </h2>
 
