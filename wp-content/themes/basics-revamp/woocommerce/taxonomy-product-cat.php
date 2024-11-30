@@ -61,6 +61,9 @@ $bannerUri = get_theme_file_uri("/public/banner.webp");
             $image_url = wp_get_attachment_url($thumbnail_id);
 
             ?>
+            <h3 class="banner-cat-name">
+                <?php echo $current_category->name; ?>
+            </h3>
             <div class="banner-content subcat video-wrap active" data-content
                 data-content-id="<?php echo $category->slug; ?>">
 

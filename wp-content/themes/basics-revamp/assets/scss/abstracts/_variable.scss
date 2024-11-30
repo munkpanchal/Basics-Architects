@@ -18,7 +18,9 @@
     --fs-para: 14px;
     --fs-primary-heading: 22px;
     --fs-sub-heading: 18px;
+    --fs-banner-category: 3rem;
     --fs-banner-heading: 2rem;
+    --fs-banner-para: 1.5rem;
 
     @include media(sm) {
         --fs-para: 14px;
@@ -31,7 +33,7 @@
         --fs-para: 16px;
         --fs-primary-heading: 30px;
         --fs-sub-heading: 26px;
-        --fs-banner-heading: 4rem;
+        // --fs-banner-heading: 4rem;
     }
 
     @include media(3xl) {
@@ -39,13 +41,13 @@
         --fs-primary-heading: 36px;
         --fs-sub-heading: 32px;
         --header-height: 80px;
-        --fs-banner-heading: 5rem;
+        // --fs-banner-heading: 5rem;
     }
     @include media(4xl) {
         --fs-para: 28px;
         --fs-primary-heading: 42px;
         --fs-sub-heading: 36px;
         --fs-banner-heading: 6rem;
-        --header-height: 96px;
+        // --header-height: 96px;
     }
 }

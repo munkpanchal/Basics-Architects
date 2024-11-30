@@ -31,12 +31,27 @@
                 opacity: 1;
             }
         }
+        .banner-cat-name {
+            @apply uppercase mb-4;
+            position: absolute;
+            color: white;
+            font-weight: 700;
+            top: 3rem;
+            z-index: 99;
+            left: 2rem;
+            font-size: var(--fs-banner-heading);
+            font-size: var(--fs-banner-category);
+            max-width: 32ch;
+            line-height: 1.35;
+        }
+
         .banner-content {
             @apply absolute bottom-0 left-0 p-4 sm:p-8 text-white;
             height: 100%;
             width: 100%;
             display: flex;
             flex-direction: column;
+
             justify-content: flex-end;
             // background-image: linear-gradient(to bottom, rgba(36, 36, 36, 0.1), rgba(36, 36, 36, 0.75));
             .banner-heading {
@@ -46,7 +61,9 @@
                 line-height: 1.35;
             }
             .banner-para {
-                @apply text-sm sm:text-base lg:text-lg mb-4;
+                // @apply text-sm sm:text-base lg:text-lg mb-4;
+                @apply mb-4;
+                font-size: var(--fs-banner-para);
                 width: min(100%, 60ch);
                 font-family: var(--ff-heading);
                 @include mobile {
