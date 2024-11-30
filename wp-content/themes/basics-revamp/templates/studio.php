@@ -17,7 +17,7 @@ $bannerUri = get_theme_file_uri("/public/banner.webp");
                                         echo $args['class'];
                                     } ?>">
             <!-- <img src="<?php echo $bannerUri ?>" alt=""> -->
-            <div class="flex gap-4 max-sm:flex-col">
+            <div class="flex gap-4 max-sm:flex-col h-full">
                 <div class="banner-left flex-1">
                     <p class="banner-para" data-aos="fade-up" data-aos-delay="100">
                         Vinod and Ranju Singhi laid the foundation of BASICS in 2004. Since then, BASICS Architects has
