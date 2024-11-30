@@ -69,7 +69,7 @@
                     </h3>
                     <div class="footer-content" data-newsletter>
                         <div class="fc-wrap">
-                            <p>
+                            <p class="max-sm:w-full">
                                 <strong>
                                     subscribe to our news letter</strong>
 

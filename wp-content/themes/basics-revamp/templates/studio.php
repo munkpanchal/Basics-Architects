@@ -4,8 +4,48 @@
 <?php get_header() ?>
 
 <?php
-get_template_part("/components/shared/content", "banner", array('class' => ''));;
+// get_template_part("/components/shared/content", "banner", array('class' => ''));;
 ?>
+
+<?php
+$bannerUri = get_theme_file_uri("/public/banner.webp");
+?>
+<section class="banner">
+    <div class="container">
+
+        <div class="banner-wrapper <?php if ($args['class']) {
+                                        echo $args['class'];
+                                    } ?>">
+            <!-- <img src="<?php echo $bannerUri ?>" alt=""> -->
+            <div class="flex gap-4">
+                <div class="banner-left">
+                    <p class="para" data-aos="fade-up" data-aos-delay="100">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque a tempore minima fuga
+                        facilis
+                        cum? Sequi consequuntur incidunt repellat vel maxime ut doloremque non, cum esse, rerum culpa
+                        aliquam! Ex?
+                    </p>
+
+                </div>
+                <div class="banner-left">
+                    <p class="banner-para" data-aos="fade-up" data-aos-delay="100">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque a tempore minima fuga
+                        facilis
+                        cum? Sequi consequuntur incidunt repellat vel maxime ut doloremque non, cum esse, rerum culpa
+                        aliquam! Ex?
+                    </p>
+
+                </div>
+
+                <!-- <h2 class="banner-heading text-white" data-aos="fade-up">
+                    Lorem ipsum dolor sit.
+                </h2> -->
+
+            </div>
+
+        </div>
+    </div>
+</section>
 
 <main class="main studio" id="studio">
     <div class="container">

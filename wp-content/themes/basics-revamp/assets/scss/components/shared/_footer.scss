@@ -106,7 +106,7 @@
         }
     }
     input {
-        @apply px-2 py-1 w-[min(100%_,_250px)];
+        @apply px-2 py-1 sm:w-[min(100%_,_250px)];
         border-bottom: 1px solid var(--clr-black);
         &:focus-within,
         &:focus,

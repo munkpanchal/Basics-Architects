@@ -95,7 +95,6 @@
                     }
                 }
                 &.video-wrap {
-                    @apply p-0;
                     video {
                         @apply w-full h-full object-cover object-center;
                     }

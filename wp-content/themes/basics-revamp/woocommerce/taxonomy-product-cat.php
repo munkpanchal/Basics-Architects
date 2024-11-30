@@ -61,9 +61,11 @@ $bannerUri = get_theme_file_uri("/public/banner.webp");
             $image_url = wp_get_attachment_url($thumbnail_id);
 
             ?>
+            <div class="banner-content subcat video-wrap active" data-content
+                data-content-id="<?php echo $category->slug; ?>">
 
-            <div class="banner-content subcat abc active video-wrap" data-content data-content-none
-                data-content-id="none">
+                <!-- <div class="banner-content subcat abc active video-wrap" data-content data-content-none
+                data-content-id="none"> -->
                 <?php
                 if ($current_category->slug === "architecture") {
 
@@ -73,7 +75,21 @@ $bannerUri = get_theme_file_uri("/public/banner.webp");
                     $videoUri = "https://lemonchiffon-hawk-580804.hostingersite.com/wp-content/uploads/2024/11/Interior-Category-Hero-Image-1.mp4";
                 }
                 ?>
-                <video src="<?php echo $videoUri; ?>" autoplay muted playsinline loop></video>
+                <video class="absolute left-0 top-0 w-full h-full" src="<?php echo $videoUri; ?>" autoplay muted
+                    playsinline loop></video>
+                <h2 class="banner-heading !text-white" data-aos="fade-up">
+                    <?php
+                    echo get_field('catlabel', $current_category);
+
+                    ?>
+                </h2>
+
+                <p class="banner-para" data-aos="fade-up" data-aos-delay="100">
+                    <?php
+                    echo $current_category->description
+                    ?>
+                </p>
+
 
             </div>
 
