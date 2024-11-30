@@ -250,11 +250,11 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
     <!-- Testimonial Container -->
 
     <?php
-    get_template_part("/components/homepage/content", "clients")
+    get_template_part("/components/homepage/content", "testimonial")
     ?>
 
     <?php
-    get_template_part("/components/homepage/content", "testimonial")
+    get_template_part("/components/homepage/content", "clients")
     ?>
 
 
