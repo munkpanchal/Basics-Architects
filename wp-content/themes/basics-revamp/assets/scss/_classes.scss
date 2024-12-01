@@ -228,6 +228,28 @@ details {
     video {
         @apply h-full w-full object-cover object-center;
     }
+
+    .img-box {
+        @apply h-full w-full;
+        position: relative;
+
+        .read-more {
+            position: absolute;
+            bottom: -6rem;
+            left: 1rem;
+            opacity: 0;
+            transition: all 300ms ease-in-out;
+        }
+        transition: all 300ms ease-in-out;
+
+        &:hover {
+            @apply grayscale;
+            .read-more {
+                opacity: 1;
+                bottom: 1rem;
+            }
+        }
+    }
 }
 
 .one-upon-two {

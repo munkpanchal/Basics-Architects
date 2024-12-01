@@ -34,28 +34,16 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
 
 
 
-
-    <!-- <section class="section">
-        <div class="container">
-            <p class="text-[22px] leading-7 sm:text-xl sm:px-8 xl:px-16 sm:text-center">
-                Basics Architects is an award-winning architecture and interior
-                design firm providing
-                Nature-integrated
-                design solutions across residential, commercial, educational and hospitality segments. Founded in 2004
-                by Vinod Singhi & Ranju Singhi, our firm has delivered 100+ projects in 28 cities across India, UK, UAE
-                and Canada. We create spaces that protect and prioritise the Fuman-nature connection, fostering user
-                health & wellness with minimal environmental impact.
-            </p>
-
-        </div>
-    </section> -->
-
     <section class="section h-section">
         <div class="container">
             <div class="one-side-two">
 
                 <div class="out-box">
-                    <img src="<?php echo get_theme_file_uri("/public/homepage/4.webp") ?>" alt="">
+                    <div class="img-box">
+                        <img src="<?php echo get_theme_file_uri("/public/homepage/4.webp") ?>" alt="">
+
+                        <a class="btn btn-white read-more" href="">Read More</a>
+                    </div>
                 </div>
                 <div class="out-box">
                     <div class="flex flex-col gap-2 justify-center h-full ">
@@ -82,19 +70,22 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                         </p>
                     </div>
                     <div class="flex flex-col gap-4 justify-center h-full ">
-                        <img src="<?php echo get_theme_file_uri("/public/homepage/5.webp") ?>" alt="">
+                        <?php
+                        $videoUri = get_theme_file_uri("/public/homepage/soti_carl.mp4");
+                        $videoUri = "https://lemonchiffon-hawk-580804.hostingersite.com/wp-content/uploads/2024/11/Vinod-Environment-Video.mp4"
+                        ?>
+                        <video class="max-sm:!aspect-[3/4] !aspect-square" src="<?php echo $videoUri; ?>" autoplay muted
+                            playsinline loop controls></video>
+
                     </div>
 
                 </div>
                 <div class="out-box">
-                    <?php
-                    $videoUri = get_theme_file_uri("/public/homepage/soti_carl.mp4");
-                    $videoUri = "https://lemonchiffon-hawk-580804.hostingersite.com/wp-content/uploads/2024/11/Vinod-Environment-Video.mp4"
-                    ?>
-                    <video class="max-sm:!aspect-[3/4] !aspect-square" src="<?php echo $videoUri; ?>" autoplay muted
-                        playsinline loop controls></video>
 
-
+                    <div class="img-box">
+                        <img src="<?php echo get_theme_file_uri("/public/homepage/7.webp") ?>" alt="">
+                        <a class="btn btn-white read-more" href="">Read More</a>
+                    </div>
                 </div>
 
             </div>
@@ -106,13 +97,25 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
             <div class="one-upon-two">
 
                 <div class="out-box">
-                    <img src="<?php echo get_theme_file_uri("/public/homepage/1.webp") ?>" alt="">
+                    <div class="img-box">
+                        <img src="<?php echo get_theme_file_uri("/public/homepage/1.webp") ?>" alt="">
+                        <a class="btn btn-white read-more" href="">Read More</a>
+                    </div>
                 </div>
                 <div class="out-box">
-                    <img src="<?php echo get_theme_file_uri("/public/homepage/2.webp") ?>" alt="">
+                    <div class="img-box">
+                        <img src="<?php echo get_theme_file_uri("/public/homepage/2.webp") ?>" alt="">
+
+                        <a class="btn btn-white read-more" href="">Read More</a>
+                    </div>
                 </div>
                 <div class="out-box">
-                    <img src="<?php echo get_theme_file_uri("/public/homepage/3.webp") ?>" alt="">
+                    <div class="img-box">
+                        <img src="<?php echo get_theme_file_uri("/public/homepage/3.webp") ?>" alt="">
+
+                        <a class="btn btn-white read-more" href="">Read More</a>
+
+                    </div>
                 </div>
             </div>
 
@@ -146,17 +149,21 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                         </p>
                     </div>
                     <div class="flex flex-col gap-4 justify-center h-full ">
-                        <img src="<?php echo get_theme_file_uri("/public/homepage/5.webp") ?>" alt="">
+                        <div class="img-box">
+                            <img src="<?php echo get_theme_file_uri("/public/homepage/5.webp") ?>" alt="">
+
+                            <a class="btn btn-white read-more" href="">Read More</a>
+                        </div>
                     </div>
 
                 </div>
                 <div class="out-box">
 
-                    <img src="<?php echo get_theme_file_uri("/public/homepage/7.webp") ?>" alt="">
+                    <div class="img-box">
+                        <img src="<?php echo get_theme_file_uri("/public/homepage/9.webp") ?>" alt="">
+                        <a class="btn btn-white read-more" href="">Read More</a>
+                    </div>
                 </div>
-                <!-- <div class="out-box">
-                    <img src="<?php echo get_theme_file_uri("/public/homepage/8.webp") ?>" alt="">
-                </div> -->
             </div>
 
         </div>
@@ -167,7 +174,11 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
             <div class="one-side-two">
 
                 <div class="out-box">
-                    <img src="<?php echo get_theme_file_uri("/public/homepage/9.webp") ?>" alt="">
+                    <div class="img-box">
+                        <img src="<?php echo get_theme_file_uri("/public/homepage/new1.webp") ?>" alt="">
+
+                        <a class="btn btn-white read-more" href="">Read More</a>
+                    </div>
                 </div>
                 <div class="out-box">
                     <?php
@@ -181,7 +192,11 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                 </div> -->
                 <div class="out-box">
                     <div class="flex flex-col gap-4 justify-center h-full ">
-                        <img src="<?php echo get_theme_file_uri("/public/homepage/8.webp") ?>" alt="">
+                        <div class="img-box">
+                            <img src="<?php echo get_theme_file_uri("/public/homepage/8.webp") ?>" alt="">
+
+                            <a class="btn btn-white read-more" href="">Read More</a>
+                        </div>
                     </div>
                     <div class="flex flex-col gap-4 justify-center h-full ">
 
@@ -217,7 +232,11 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                 </div>
 
                 <div class="out-box">
-                    <img src="<?php echo get_theme_file_uri("/public/homepage/12.webp") ?>" alt="">
+                    <div class="img-box">
+                        <img src="<?php echo get_theme_file_uri("/public/homepage/12.webp") ?>" alt="">
+
+                        <a class="btn btn-white read-more" href="">Read More</a>
+                    </div>
                 </div>
 
                 <div class="out-box">
@@ -235,7 +254,11 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                         </p>
                     </div>
                     <div class="flex flex-col gap-4 justify-center h-full ">
-                        <img src="<?php echo get_theme_file_uri("/public/homepage/5.webp") ?>" alt="">
+                        <div class="img-box">
+                            <img src="<?php echo get_theme_file_uri("/public/homepage/5.webp") ?>" alt="">
+
+                            <a class="btn btn-white read-more" href="">Read More</a>
+                        </div>
                     </div>
 
                 </div>
@@ -245,7 +268,11 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                     <img src="<?php echo get_theme_file_uri("/public/homepage/13.webp") ?>" alt="">
                 </div> -->
                 <div class="out-box">
-                    <img src="<?php echo get_theme_file_uri("/public/homepage/14.webp") ?>" alt="">
+                    <div class="img-box">
+                        <img src="<?php echo get_theme_file_uri("/public/homepage/14.webp") ?>" alt="">
+
+                        <a class="btn btn-white read-more" href="">Read More</a>
+                    </div>
                 </div>
             </div>
 
