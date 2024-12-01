@@ -10,7 +10,7 @@
 <?php
 $bannerUri = get_theme_file_uri("/public/banner.webp");
 if (has_post_thumbnail()) {
-    $bannerUri = get_the_post_thumbnail(get_the_ID(), 'full');
+    $bannerUri = get_the_post_thumbnail_url(get_the_ID(), 'full');
 }
 
 ?>
@@ -20,8 +20,6 @@ if (has_post_thumbnail()) {
         <div class="banner-wrapper <?php if ($args['class']) {
                                         echo $args['class'];
                                     } ?>" style="--bannerUri:url(<?php echo $bannerUri ?>)">
-            <!-- <img src="<?php echo $bannerUri ?>" alt=""> -->
-
 
         </div>
     </div>
