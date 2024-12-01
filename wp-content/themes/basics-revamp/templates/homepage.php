@@ -99,7 +99,7 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                 <div class="out-box">
                     <div class="img-box">
                         <img src="<?php echo get_theme_file_uri("/public/homepage/1.webp") ?>" alt="">
-                        <a class="btn btn-white read-more" href="">Read More</a>
+                        <a class="btn btn-white read-more" href="/projects/subhsankar-school">Read More</a>
                     </div>
                 </div>
                 <div class="out-box">
@@ -113,7 +113,8 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                     <div class="img-box">
                         <img src="<?php echo get_theme_file_uri("/public/homepage/3.webp") ?>" alt="">
 
-                        <a class="btn btn-white read-more" href="">Read More</a>
+                        <a class="btn btn-white read-more"
+                            href="/projects/arrival-centre-for-island-resort-ozone-group/">Read More</a>
 
                     </div>
                 </div>
@@ -152,7 +153,8 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                         <div class="img-box">
                             <img src="<?php echo get_theme_file_uri("/public/homepage/5.webp") ?>" alt="">
 
-                            <a class="btn btn-white read-more" href="">Read More</a>
+                            <a class="btn btn-white read-more"
+                                href="/projects/nature-inspired-residential-interiors/">Read More</a>
                         </div>
                     </div>
 
@@ -178,7 +180,8 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                     <div class="img-box">
                         <img src="<?php echo get_theme_file_uri("/public/homepage/new1.webp") ?>" alt="">
 
-                        <a class="btn btn-white read-more" href="">Read More</a>
+                        <a class="btn btn-white read-more" href="/projects/smart-world-housing-development/">Read
+                            More</a>
                     </div>
                 </div>
                 <div class="out-box">
@@ -236,7 +239,7 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                     <div class="img-box">
                         <img src="<?php echo get_theme_file_uri("/public/homepage/12.webp") ?>" alt="">
 
-                        <a class="btn btn-white read-more" href="">Read More</a>
+                        <a class="btn btn-white read-more" href="/projects/city-mall-in-gangtok/">Read More</a>
                     </div>
                 </div>
 
