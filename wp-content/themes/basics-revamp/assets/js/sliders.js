@@ -9,11 +9,11 @@ if (Splide && slider) {
             type: "loop",
             perPage: 1,
             perMove: 1,
-            interval: 3000,
+            interval: 2000,
             // arrows: false,
             pagination: false,
             autoplay: true,
-            speed: 300,
+            speed: 100,
             gap: 16,
             breakpoints: {
                 640: {
