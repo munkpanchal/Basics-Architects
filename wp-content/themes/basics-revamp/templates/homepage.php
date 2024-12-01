@@ -59,7 +59,9 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                 </div>
                 <div class="out-box">
                     <div class="flex flex-col gap-4 justify-center h-full ">
-
+                        <h2 class="secondary-heading">
+                            about
+                        </h2>
 
                         <p class="para">
 
