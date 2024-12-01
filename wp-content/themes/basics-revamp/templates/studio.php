@@ -151,15 +151,18 @@ if (has_post_thumbnail()) {
                     <div class="splide__track">
                         <ul class="splide__list">
                             <?php
-                            for ($i = 1; $i <= 3; $i++) {
+                            $team = array("1" => "11.jpg", "2" => "22.webp", "3" => "33.webp");;
+
+                            foreach ($team as $key => $value) {
+
                                 # code...
                             ?> <li class="splide__slide">
 
-                                    <div class="team-slide">
-                                        <img src="<?php echo get_theme_file_uri("/public/teams/") . $i . ".jpg" ?>" alt="">
-                                    </div>
+                                <div class="team-slide">
+                                    <img src="<?php echo get_theme_file_uri("/public/teams/") . $value ?>" alt="">
+                                </div>
 
-                                </li>
+                            </li>
                             <?php
                             }
                             ?>
