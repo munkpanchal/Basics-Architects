@@ -58,19 +58,19 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                     <img src="<?php echo get_theme_file_uri("/public/homepage/4.webp") ?>" alt="">
                 </div>
                 <div class="out-box">
-                    <div class="flex flex-col gap-4 justify-center h-full ">
-                        <h2 class="secondary-heading">
+                    <div class="flex flex-col gap-2 justify-center h-full ">
+                        <h2 class="secondary-heading capitalize">
                             about
                         </h2>
 
-                        <p class="para">
+                        <p class="para" style="line-height: 1.3;">
 
                             Basics Architects is an award-winning architecture and interior
                             design firm providing
                             Nature-integrated
                             design solutions across residential, commercial, educational and hospitality segments.
                         </p>
-                        <p class="para">
+                        <p class="para" style="line-height: 1.3;">
 
                             Founded in 2004
                             by Vinod Singhi & Ranju Singhi, our firm has delivered 100+ projects in 28 cities across
