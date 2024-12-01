@@ -13,3 +13,15 @@ hamburger?.addEventListener("click", (e) => {
         header.classList.add("active");
     }
 });
+
+window.addEventListener("resize", (e) => {
+    if (header.classList.contains("active")) {
+        header.classList.remove("active");
+    }
+    if (dropdown.classList.contains("active")) {
+        dropdown.classList.remove("active");
+    }
+    if (dropdown.classList.contains("active")) {
+        dropdown.classList.remove("active");
+    }
+});
