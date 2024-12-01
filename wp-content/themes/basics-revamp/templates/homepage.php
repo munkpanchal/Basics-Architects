@@ -106,7 +106,7 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                     <div class="img-box">
                         <img src="<?php echo get_theme_file_uri("/public/homepage/2.webp") ?>" alt="">
 
-                        <a class="btn btn-white read-more" href="">Read More</a>
+                        <a class="btn btn-white read-more" href="/projects/pernod-ricard-dubai-office/">Read More</a>
                     </div>
                 </div>
                 <div class="out-box">
@@ -161,7 +161,8 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
 
                     <div class="img-box">
                         <img src="<?php echo get_theme_file_uri("/public/homepage/9.webp") ?>" alt="">
-                        <a class="btn btn-white read-more" href="">Read More</a>
+                        <a class="btn btn-white read-more" href="/projects/witty-institute-of-art-and-science">Read
+                            More</a>
                     </div>
                 </div>
             </div>
@@ -255,9 +256,10 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                     </div>
                     <div class="flex flex-col gap-4 justify-center h-full ">
                         <div class="img-box">
-                            <img src="<?php echo get_theme_file_uri("/public/homepage/5.webp") ?>" alt="">
+                            <img src="<?php echo get_theme_file_uri("/public/homepage/14.webp") ?>" alt="">
 
-                            <a class="btn btn-white read-more" href="">Read More</a>
+                            <a class="btn btn-white read-more" href="/projects/diksha-knitwear-corporate-office/">Read
+                                More</a>
                         </div>
                     </div>
 
@@ -269,9 +271,11 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                 </div> -->
                 <div class="out-box">
                     <div class="img-box">
-                        <img src="<?php echo get_theme_file_uri("/public/homepage/14.webp") ?>" alt="">
 
-                        <a class="btn btn-white read-more" href="">Read More</a>
+                        <img src="<?php echo get_theme_file_uri("/public/homepage/soti5.webp") ?>" alt="">
+
+                        <a class="btn btn-white read-more" href="/projects/soti-corporate-office/">Read More</a>
+
                     </div>
                 </div>
             </div>
