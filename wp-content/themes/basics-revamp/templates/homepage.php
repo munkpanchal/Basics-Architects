@@ -42,7 +42,7 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                     <div class="img-box">
                         <img src="<?php echo get_theme_file_uri("/public/homepage/4.webp") ?>" alt="">
 
-                        <a class="btn btn-white read-more" href="">Read More</a>
+                        <a class="btn btn-white read-more" href="/projects/greatvalue-sharanam-clubhouse/">Read More</a>
                     </div>
                 </div>
                 <div class="out-box">
@@ -84,7 +84,7 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
 
                     <div class="img-box">
                         <img src="<?php echo get_theme_file_uri("/public/homepage/7.webp") ?>" alt="">
-                        <a class="btn btn-white read-more" href="">Read More</a>
+                        <a class="btn btn-white read-more" href="/projects/desert-resort-at-bikaner">Read More</a>
                     </div>
                 </div>
 
@@ -197,9 +197,9 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                 <div class="out-box">
                     <div class="flex flex-col gap-4 justify-center h-full ">
                         <div class="img-box">
-                            <img src="<?php echo get_theme_file_uri("/public/homepage/8.webp") ?>" alt="">
+                            <img src="<?php echo get_theme_file_uri("/public/homepage/88.webp") ?>" alt="">
 
-                            <a class="btn btn-white read-more" href="">Read More</a>
+                            <a class="btn btn-white read-more" href="/projects/dbds-shriram-school/">Read More</a>
                         </div>
                     </div>
                     <div class="flex flex-col gap-4 justify-center h-full ">
