@@ -291,7 +291,7 @@ details {
 // News letter
 
 .news-letter-form {
-    @apply flex gap-4 flex-col items-end;
+    @apply flex gap-4 flex-col sm:items-end;
     .wpcf7-form-control-wrap {
         @apply w-max;
         input {
