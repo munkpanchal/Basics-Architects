@@ -259,7 +259,7 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
                     </div>
                     <div class="flex flex-col gap-4 justify-center h-full ">
                         <div class="img-box">
-                            <img src="<?php echo get_theme_file_uri("/public/homepage/14.webp") ?>" alt="">
+                            <img src="<?php echo get_theme_file_uri("/public/homepage/141.webp") ?>" alt="">
 
                             <a class="btn btn-white read-more" href="/projects/diksha-knitwear-corporate-office/">Read
                                 More</a>
