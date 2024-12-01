@@ -9,6 +9,33 @@
 body {
     scroll-behavior: smooth;
 }
+/* Hide main content in landscape mode */
+.landscape-message {
+    display: none;
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    body {
+        & > *:is(.landscape-message) {
+            display: block;
+        }
+        & > *:is(:not(.landscape-message)) {
+            display: none; /* Show message in landscape mode */
+        }
+    }
+}
+
+/* Show content in portrait mode */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    body {
+        & > *:is(.landscape-message) {
+            display: none; /* Show message in landscape mode */
+        }
+        & > *:is(:not(.landscape-message)) {
+            display: block;
+        }
+    }
+}
+
 img {
     color: inherit;
     background: inherit;

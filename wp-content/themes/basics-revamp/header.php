@@ -22,6 +22,9 @@
 
 
 <body>
+    <div class="landscape-message">
+        please switch to portrait
+    </div>
     <header class="header ">
         <div class="container">
 
