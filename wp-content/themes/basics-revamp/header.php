@@ -8,11 +8,11 @@
     <?php wp_head(); ?>
 
     <?php if (is_single()) : ?>
-        <title><?php the_title(); ?> | <?php bloginfo('description'); ?> | <?php bloginfo('name'); ?></title>
+    <title><?php the_title(); ?> | <?php bloginfo('description'); ?> | <?php bloginfo('name'); ?></title>
     <?php elseif (is_page()) : ?>
-        <title><?php bloginfo('description'); ?> | <?php the_title(); ?> | <?php bloginfo('name'); ?></title>
+    <title><?php bloginfo('description'); ?> | <?php the_title(); ?> | <?php bloginfo('name'); ?></title>
     <?php else : ?>
-        <title><?php bloginfo('name'); ?> | <?php bloginfo('description'); ?></title>
+    <title><?php bloginfo('name'); ?> | <?php bloginfo('description'); ?></title>
     <?php endif; ?>
     <meta name="description" content="<?php echo bloginfo('description'); ?>">
     <link rel="shortcut icon" href="<?php echo get_theme_file_uri("/public/logo-ba.png") ?>" type="favicon">
@@ -22,9 +22,9 @@
 
 
 <body>
-    <div class="landscape-message">
+    <!-- <div class="landscape-message">
         please switch to portrait
-    </div>
+    </div> -->
     <header class="header ">
         <div class="container">
 
