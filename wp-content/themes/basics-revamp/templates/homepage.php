@@ -55,15 +55,15 @@ $bannerUri = get_theme_file_uri("/public/homepage/banner.webp");
 
                             Basics Architects is an award-winning architecture and interior
                             design firm providing
-                            Nature-integrated
-                            design solutions across residential, commercial, educational and hospitality segments.
+                            Nature-Integrated-Design solutions across residential, commercial, educational and
+                            hospitality segments.
                         </p>
                         <p class="para" style="line-height: 1.3;">
 
                             Founded in 2004
                             by Vinod Singhi & Ranju Singhi, our firm has delivered 100+ projects in 28 cities across
                             India, UK, UAE
-                            and Canada. We create spaces that protect and prioritise the Fuman-nature connection,
+                            and Canada. We create spaces that protect and prioritise the human-nature connection,
                             fostering user
                             health & wellness with minimal environmental impact.
 
