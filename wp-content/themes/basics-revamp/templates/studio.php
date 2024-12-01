@@ -9,6 +9,10 @@
 
 <?php
 $bannerUri = get_theme_file_uri("/public/banner.webp");
+if (has_post_thumbnail()) {
+    $bannerUri = get_the_post_thumbnail(get_the_ID(), 'full');
+}
+
 ?>
 <section class="banner">
     <div class="container">
