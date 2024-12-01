@@ -112,7 +112,9 @@
     &.active {
         opacity: 1;
         pointer-events: all;
-        // top: var(--header-height);
+        @include landscapes {
+            display: none;
+        }
     }
     .mobile-nav-links {
         @apply flex flex-col gap-6;
