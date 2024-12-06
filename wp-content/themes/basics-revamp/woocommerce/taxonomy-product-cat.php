@@ -102,7 +102,6 @@ $bannerUri = get_theme_file_uri("/public/banner.webp");
                 $thumbnail_id = get_term_meta($cat_id, 'thumbnail_id', true);
                 $image_url = wp_get_attachment_url($thumbnail_id);
                 $catlabel =    get_field('catlabel', $category);
-                echo $catlabel;
             ?>
                 <img src="<?php echo $image_url ?>" data-img data-image-id="<?php echo $category->slug; ?>" alt="">
 
