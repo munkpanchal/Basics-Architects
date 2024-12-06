@@ -22,7 +22,10 @@
     --fs-banner-heading: 2rem;
     --fs-banner-para: 1.5rem;
 
+    --gap: 1rem;
+
     @include media(sm) {
+        --gap: 2rem;
         --fs-para: 14px;
         --fs-primary-heading: 26px;
         --fs-sub-heading: 22px;

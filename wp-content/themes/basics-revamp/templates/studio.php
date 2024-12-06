@@ -31,7 +31,7 @@ if (has_post_thumbnail()) {
             <div class="section">
                 <div class="section-head">
 
-                    <div class="flex py-8 sm:py-16 gap-4 max-sm:flex-col  h-full ">
+                    <div class="flex py-8 sm:py-16 gap-4 sm:gap-8 max-sm:flex-col  h-full ">
                         <div class="banner-left flex-1">
                             <p class="banner-para" data-aos="fade-up">
                                 Vinod and Ranju Singhi laid the foundation of BASICS in 2004. Since then, BASICS
@@ -88,7 +88,7 @@ if (has_post_thumbnail()) {
                     <h2 class="primary-heading text-center" data-aos="fade-up">
                         our partners
                     </h2>
-                    <div class="flex gap-4 max-xl:flex-col sm:my-8">
+                    <div class="flex gap-4 sm:gap-8 max-xl:flex-col sm:my-8">
 
                         <div class="left-right flex-1">
 
@@ -151,11 +151,11 @@ if (has_post_thumbnail()) {
                                 # code...
                             ?> <li class="splide__slide">
 
-                                <div class="team-slide">
-                                    <img src="<?php echo get_theme_file_uri("/public/teams/") . $value ?>" alt="">
-                                </div>
+                                    <div class="team-slide">
+                                        <img src="<?php echo get_theme_file_uri("/public/teams/") . $value ?>" alt="">
+                                    </div>
 
-                            </li>
+                                </li>
                             <?php
                             }
                             ?>

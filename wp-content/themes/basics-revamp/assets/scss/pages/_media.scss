@@ -2,7 +2,8 @@
     padding-block: var(--mainPadding);
     padding-top: 0;
     &-section {
-        @apply gap-4 grid sm:grid-cols-3 sm:pt-[44px];
+        @apply grid sm:grid-cols-3 sm:pt-[44px];
+        gap: var(--gap);
 
         .media-wrap {
             @apply block relative overflow-hidden aspect-square;
@@ -10,7 +11,8 @@
                 @apply w-full h-full object-cover;
             }
             &-content {
-                @apply absolute left-0 top-0 w-full h-full opacity-0 flex justify-center flex-col p-4 gap-4;
+                @apply absolute left-0 top-0 w-full h-full opacity-0 flex justify-center flex-col p-4;
+                gap: var(--gap);
                 background-color: #24242450;
                 transition: 400ms ease-in-out;
                 backdrop-filter: blur(1px);
@@ -24,14 +26,14 @@
                 }
             }
             &:hover {
-                @apply grayscale;
+                @apply sm:grayscale;
                 .media-wrap-content {
                     @apply opacity-100;
                 }
             }
             &.in-view {
                 @include mobile {
-                    @apply grayscale;
+                    @apply sm:grayscale;
                     .media-wrap-content {
                         @apply opacity-100;
                     }

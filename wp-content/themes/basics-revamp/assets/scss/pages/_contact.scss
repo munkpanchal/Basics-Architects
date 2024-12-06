@@ -17,7 +17,8 @@
         .left {
             @apply max-sm:order-2;
             .form-input-wrapper {
-                @apply flex flex-col gap-4;
+                @apply flex flex-col;
+                gap: var(--gap);
                 margin: auto;
 
                 input,
@@ -48,7 +49,8 @@
             }
         }
         .right {
-            @apply flex flex-col gap-4 max-sm:order-1;
+            @apply flex flex-col max-sm:order-1;
+            gap: var(--gap);
             .contact-box {
                 h4 {
                     @apply font-bold uppercase mb-1;

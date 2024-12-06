@@ -7,13 +7,16 @@
     }
 
     .one-by-two {
-        @apply grid max-sm:grid-cols-1 gap-4 grid-cols-2;
+        @apply grid max-sm:grid-cols-1  grid-cols-2;
+        gap: var(--gap);
     }
     .two-by-two {
-        @apply grid max-sm:grid-cols-1 gap-4  grid-cols-2;
+        @apply grid max-sm:grid-cols-1   grid-cols-2;
+        gap: var(--gap);
     }
     .column {
-        @apply w-full h-full flex flex-col justify-center sm:gap-4;
+        @apply w-full h-full flex flex-col justify-center;
+        gap: var(--gap);
         img {
             @apply w-full object-cover object-center;
         }
@@ -24,11 +27,13 @@
     }
 
     .ts-wrap {
-        @apply flex flex-col gap-4;
+        @apply flex flex-col;
+        gap: var(--gap);
         border: 0.15px solid #99999950;
         padding: 1rem;
         .ts-head {
-            @apply flex gap-4 justify-center;
+            @apply flex  justify-center;
+            gap: var(--gap);
             // border-bottom: 1px solid var(--clr-gray);
             img {
                 @apply w-28 aspect-square object-cover rounded-full object-center;
@@ -57,11 +62,12 @@
 }
 
 .clients-wrapper {
-    @apply grid max-sm:grid-cols-3 sm:flex gap-4 sm:gap-8 flex-wrap justify-center;
+    @apply grid max-sm:grid-cols-3 sm:flex  sm:gap-8 flex-wrap justify-center;
+    gap: var(--gap);
     .cw-wrap {
         @apply sm:w-40 h-16 sm:h-20;
         img {
-            @apply w-full h-full object-contain grayscale hover:grayscale-0 transition-all ease-in-out duration-200;
+            @apply w-full h-full object-contain sm:grayscale hover:grayscale-0 transition-all ease-in-out duration-200;
         }
     }
 }
