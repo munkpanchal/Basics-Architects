@@ -43,6 +43,9 @@
             font-size: var(--fs-banner-category);
             max-width: 32ch;
             line-height: 1.35;
+            @include mobile {
+                left: 1rem;
+            }
         }
 
         .banner-content {
